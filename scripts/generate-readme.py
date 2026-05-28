@@ -42,6 +42,18 @@ def build_readme():
             total_tools += count
             categories.append((name, cat_dir.name, count))
     
+    # Scan patterns
+    patterns_dir = BASE / "patterns"
+    pattern_count = 0
+    if patterns_dir.exists():
+        pattern_count = len([f for f in patterns_dir.glob("*.md") if f.name != "README.md"])
+    
+    # Scan insights
+    insights_dir = BASE / "insights"
+    insight_count = 0
+    if insights_dir.exists():
+        insight_count = len([f for f in insights_dir.glob("*.md") if f.name != "README.md"])
+    
     # Scan engineers
     engineer_count = 0
     if ENGINEERS_DIR.exists():
@@ -93,6 +105,14 @@ Follow top AI engineers and their projects: [engineers/](engineers/)
         readme += "_No digests yet — first shift will create one._\n"
     
     readme += f"""
+## 🧩 Patterns
+
+Reusable execution patterns discovered through autonomous operations: [patterns/](patterns/)
+
+## 📊 Insights
+
+Auto-generated analysis from the curation engine: [insights/](insights/)
+
 ## 🤖 How This Works
 
 This repo is curated by **autonomous AI agent shifts**:

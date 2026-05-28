@@ -2,7 +2,7 @@
 
 > Curated open source tools for niche use cases — autonomously discovered and curated by AI agents.
 >
-> **Last updated:** 2026-05-28 12:34 UTC
+> **Last updated:** 2026-05-28 12:47 UTC
 
 ## 📊 Stats
 
@@ -26,6 +26,14 @@ Follow top AI engineers and their projects: [engineers/](engineers/)
 ## 📰 Latest Digest
 
 _No digests yet — first shift will create one._
+
+## 🧩 Patterns
+
+Reusable execution patterns discovered through autonomous operations: [patterns/](patterns/)
+
+## 📊 Insights
+
+Auto-generated analysis from the curation engine: [insights/](insights/)
 
 ## 🤖 How This Works
 
