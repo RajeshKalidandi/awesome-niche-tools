@@ -1,0 +1,31 @@
+# Curated URLs — 2026-05-29 Shift
+
+## Dev Tools
+https://github.com/chopratejas/headroom
+https://github.com/unclecode/crawl4ai
+https://github.com/knowsuchagency/mcp2cli
+https://github.com/DeusData/codebase-memory-mcp
+https://github.com/sno-ai/llmix
+https://github.com/forloopcodes/contextplus
+https://github.com/hardikpandya/stop-slop
+https://github.com/Lum1104/Understand-Anything
+https://github.com/colbymchenry/codegraph
+
+## AI Agents
+https://github.com/epiral/bb-browser
+https://github.com/Gentleman-Programming/engram
+https://github.com/moltis-org/moltis
+https://github.com/open-gitagent/opengap
+https://github.com/revfactory/harness
+https://github.com/can1357/oh-my-pi
+https://github.com/olo-dot-io/Uni-CLI
+https://github.com/Kaelio/ktx
+
+## Selfhosted
+https://github.com/craigmccaskill/posthorn
+https://github.com/PentHertz/LUKSbox
+https://github.com/xoriin/NetMap
+https://github.com/SpaceinvaderOne/a-eye
+
+## Productivity
+https://github.com/Manavarya09/design-extract
