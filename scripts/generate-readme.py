@@ -19,8 +19,8 @@ def count_tools(category_path):
     if not tools_file.exists():
         return 0
     lines = tools_file.read_text().splitlines()
-    # Count lines that start with | and have a link (tool entry)
-    return sum(1 for l in lines if l.startswith("| ") and "[ " in l)
+    # Count lines that start with ## and have a link (tool entry in header format)
+    return sum(1 for l in lines if l.startswith("## [") and "](" in l)
 
 def get_latest_digest():
     """Find the most recent weekly digest."""
