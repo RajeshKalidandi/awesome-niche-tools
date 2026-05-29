@@ -380,3 +380,206 @@ ktx serve --port 3002
 Yes — SKILL.md should cover: installation, context definition, query patterns, MCP integration, and data agent workflows.
 
 - **Discovered:** 2026-05-29 via Hacker News Show HN (credibility: 0.85)
+
+
+## [RuView](https://github.com/ruvnet/RuView)
+
+> Turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection
+
+- **Stars:** 67,436 (↑~4,690/week) | **Language:** Rust | **License:** MIT
+- **Last commit:** 2026-05-29
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 92/100
+
+### What It Does
+RuView uses commodity WiFi routers and a Rust-based DSP pipeline to extract spatial intelligence from WiFi signal reflections — no cameras, no wearables, no dedicated sensors. It detects presence, tracks movement, monitors vital signs (heart rate, breathing), and creates real-time spatial maps using only the WiFi signals already in your environment. Think of it as turning every WiFi router into a radar system.
+
+### Why Now
+WiFi sensing has been a research topic for years, but RuView is the first practical, open-source implementation that runs on commodity hardware. The Rust implementation makes it fast enough for real-time use. At 67K stars and growing 4,690/week, it's the hottest open-source project this month — signaling massive interest in camera-free spatial intelligence.
+
+### Why It Matters
+This fundamentally changes what's possible with existing infrastructure. Every building with WiFi already has the hardware for spatial intelligence. No cameras means no privacy concerns. No wearables means no compliance burden. Smart homes, elderly care, security, retail analytics — all become possible with software updates to existing WiFi hardware.
+
+### Who Should Care
+- Smart home enthusiasts wanting presence detection without cameras
+- Healthcare teams exploring non-invasive vital sign monitoring
+- Security professionals needing camera-free surveillance
+- IoT developers building on existing WiFi infrastructure
+- Privacy-conscious organizations that can't deploy cameras
+
+### Execution Pattern
+```bash
+# Clone and build
+git clone https://github.com/ruvnet/RuView.git
+cd RuView
+cargo build --release
+
+# Run with your WiFi interface
+./target/release/ruview --interface wlan0 --mode presence
+
+# Modes available:
+# presence — basic occupancy detection
+# tracking — movement path tracking
+# vital — heart rate and breathing monitoring
+# spatial — full 3D spatial mapping
+
+# Output as MCP server for AI integration
+./target/release/ruview serve --port 8090
+```
+
+### Skill Potential
+Yes — SKILL.md should cover: installation, WiFi interface requirements, mode selection, MCP server integration, privacy considerations, and calibration procedures.
+
+- **Discovered:** 2026-05-29 via GitHub Trending (credibility: 1.00)
+
+---
+
+## [heretic](https://github.com/p-e-w/heretic)
+
+> Fully automatic censorship removal for language models
+
+- **Stars:** 22,294 (↑~500/day) | **Language:** Python | **License:** AGPL-3.0
+- **Last commit:** 2026-05-28
+- **Source credibility weight:** 0.85 (Hacker News)
+- **Relevance score:** 80/100
+
+### What It Does
+Heretic automatically removes censorship and content restrictions from language models. It modifies model weights to eliminate refusals, safety filters, and content policies — turning any censored model into an uncensored one. Works with LLaMA, Mistral, and other open-weight models through targeted weight manipulation.
+
+### Why Now
+As LLMs become more capable, censorship has become a major frustration for researchers, developers, and power users. Heretic provides a systematic, automated approach to removing these restrictions. At 22K stars, there's clearly massive demand for uncensored AI capabilities. The AGPL-3.0 license ensures the tool remains open.
+
+### Why It Matters
+For AI researchers studying model behavior, this is an essential tool. For developers building applications that need uncensored outputs (creative writing, research, analysis), Heretic makes it trivial to unblock models. It also raises important questions about AI governance and the ethics of censorship removal.
+
+### Who Should Care
+- AI researchers studying model behavior and alignment
+- Developers building applications that need uncensored outputs
+- Creative writers using AI for fiction and worldbuilding
+- Security researchers analyzing model vulnerabilities
+- Anyone frustrated by overzealous content filtering
+
+### Execution Pattern
+```bash
+# Install
+pip install heretic
+
+# Remove censorship from a model
+heretic unblock --model meta-llama/Llama-3-8B --output ./uncensored-model
+
+# Apply to a local GGUF
+heretic unblock --gguf ./model.gguf --output ./uncensored.gguf
+
+# Verify censorship removed
+heretic test --model ./uncensored-model --prompt "How does a lock work?"
+```
+
+### Skill Potential
+Yes — SKILL.md should cover: installation, model compatibility, weight manipulation techniques, verification, and ethical considerations.
+
+- **Discovered:** 2026-05-29 via Hacker News (credibility: 0.85)
+
+---
+
+## [Dograh](https://github.com/dograh-hq/dograh)
+
+> Open source voice AI platform — self-hosted Vapi/Retell alternative with MCP
+
+- **Stars:** 3,570 (↑~100/day) | **Language:** Python | **License:** BSD-2-Clause
+- **Last commit:** 2026-05-29
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 82/100
+
+### What It Does
+Dograh is a self-hosted voice AI platform that provides the same capabilities as Vapi and Retell (speech-to-speech, LLM/STT/TTS integration, telephony) but runs entirely on your own infrastructure. It includes a visual workflow builder, MCP native support for AI agent integration, and BYOK (Bring Your Own Key) for all AI services. One platform to build, deploy, and manage voice AI applications.
+
+### Why Now
+Voice AI is exploding — customer service bots, appointment schedulers, sales assistants. But Vapi and Retell are expensive SaaS products ($0.05-0.15/minute) with data privacy concerns. Dograh makes self-hosted voice AI practical with a visual builder and MCP integration, meaning AI agents can make and receive calls natively.
+
+### Why It Matters
+Self-hosted voice AI means: no per-minute costs, full control over voice data, custom voices and behaviors, and no vendor lock-in. For companies handling sensitive conversations (healthcare, legal, finance), self-hosting isn't just cheaper — it's a compliance requirement. Dograh makes this accessible without building from scratch.
+
+### Who Should Care
+- Companies building voice AI applications
+- Contact centers exploring AI automation
+- Healthcare providers needing HIPAA-compliant voice AI
+- Developers building AI agents that need phone capabilities
+- Anyone paying too much for Vapi/Retell/Telephony APIs
+
+### Execution Pattern
+```bash
+# Clone and install
+git clone https://github.com/dograh-hq/dograh.git
+cd dograh
+pip install -e .
+
+# Start the server
+dograh serve --port 8080
+
+# Create a voice workflow via API
+curl -X POST http://localhost:8080/api/workflows \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "appointment-scheduler",
+    "voice": "alloy",
+    "llm": "gpt-4",
+    "prompt": "You are a friendly appointment scheduler..."
+  }'
+
+# Connect MCP server for AI agent integration
+dograh mcp --port 8090
+```
+
+### Skill Potential
+Yes — SKILL.md should cover: installation, provider configuration, workflow builder, MCP integration, telephony setup, and voice customization.
+
+- **Discovered:** 2026-05-29 via GitHub Trending (credibility: 1.00)
+
+---
+
+## [Microsoft Agent Governance Toolkit](https://github.com/microsoft/agent-governance-toolkit)
+
+> AI Agent Governance Toolkit — Policy enforcement, zero-trust identity, execution sandboxing, covers 10/10 OWASP Agentic Top 10
+
+- **Stars:** 3,187 (↑~100/day) | **Language:** Python | **License:** MIT
+- **Last commit:** 2026-05-28
+- **Source credibility weight:** 0.85 (Hacker News)
+- **Relevance score:** 82/100
+
+### What It Does
+Microsoft's Agent Governance Toolkit provides policy enforcement, zero-trust identity, and execution sandboxing for AI agents. It covers all 10 items in the OWASP Agentic Top 10 security risks. Think of it as security middleware for AI agents — it sits between your agent and the outside world, enforcing policies, verifying identity, and sandboxing execution.
+
+### Why Now
+As AI agents gain real-world capabilities (making purchases, sending emails, modifying databases), governance becomes critical. The OWASP Agentic Top 10 was just published, and Microsoft's toolkit is the first comprehensive implementation. At 3.2K stars and backed by Microsoft, it's becoming the de facto standard for agent security.
+
+### Why It Matters
+Every organization deploying AI agents needs governance. Without it, agents can: leak data, execute unauthorized actions, impersonate users, or cause cascading failures. This toolkit makes governance practical — not just a policy document, but code that enforces policies at runtime.
+
+### Who Should Care
+- Teams deploying AI agents in production
+- Security engineers responsible for AI safety
+- Compliance officers in regulated industries
+- Platform teams building agent infrastructure
+- Anyone who's ever wondered "what if my agent does something unexpected?"
+
+### Execution Pattern
+```bash
+# Install
+pip install agent-governance-toolkit
+
+# Initialize governance for your agent
+ag-init --project my-agent
+
+# Enforce policies in your agent
+from governance import AgentGovernor
+governor = AgentGovernor("policies.yaml")
+safe_agent = governor.wrap(my_agent)
+
+# Audit agent actions
+ag-audit --agent my-agent --since 24h
+```
+
+### Skill Potential
+Yes — SKILL.md should cover: installation, policy definition, zero-trust setup, OWASP coverage, and integration with Hermes Agent.
+
+- **Discovered:** 2026-05-29 via Hacker News (credibility: 0.85)

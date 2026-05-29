@@ -417,3 +417,152 @@ codegraph setup --agent claude-code
 No — better used as a standalone tool than wrapped in a skill.
 
 - **Discovered:** 2026-05-29 via GitHub Trending weekly (credibility: 1.00)
+
+
+## [Ratty](https://github.com/orhun/ratty)
+
+> GPU-rendered terminal emulator with inline 3D graphics
+
+- **Stars:** 2,663 (↑~50/day) | **Language:** Rust | **License:** MIT
+- **Last commit:** 2026-05-27
+- **Source credibility weight:** 0.80 (Lobsters)
+- **Relevance score:** 75/100
+
+### What It Does
+Ratty is a GPU-rendered terminal emulator that can display inline 3D graphics directly in your terminal output. Imagine running a command and seeing a rotating 3D model appear right in your terminal — no separate window, no browser, just the terminal. Built in Rust with GPU acceleration for smooth rendering.
+
+### Why Now
+Terminal emulators haven't fundamentally changed in decades. Ratty brings GPU rendering and inline 3D to the terminal, opening up new possibilities for CLI tools that need visual output — CAD previews, data visualization, game development, scientific computing. The Lobsters community (triangle-59 score) signals strong developer interest.
+
+### Why It Matters
+This blurs the line between terminal and GUI. CLI tools can now produce rich visual output without leaving the terminal. It's not just novelty — for developers who live in the terminal, having inline 3D means faster workflows and fewer context switches between terminal and browser/GUI.
+
+### Who Should Care
+- Terminal power users who want richer CLI experiences
+- CLI tool developers exploring visual output
+- Data scientists who want inline visualization
+- Game developers prototyping in the terminal
+- Anyone curious about the future of terminal interfaces
+
+### Execution Pattern
+```bash
+# Install via cargo
+cargo install ratty
+
+# Run as your terminal
+ratty
+
+# In a Ratty-compatible terminal, tools can render 3D
+# Example: render a 3D model inline
+echo '{"type":"mesh","vertices":[...]}' | ratty-render
+
+# Or use the library in your Rust CLI tool
+# Cargo.toml: ratty = "0.1"
+```
+
+### Skill Potential
+No — too niche for automation, better as a discovery entry.
+
+- **Discovered:** 2026-05-29 via Lobsters (credibility: 0.80)
+
+---
+
+## [LiteParse](https://github.com/run-llama/liteparse)
+
+> A fast, helpful, and open-source document parser — rewritten in Rust, 100x faster
+
+- **Stars:** 6,471 (↑~200/day) | **Language:** Rust | **License:** Apache-2.0
+- **Last commit:** 2026-05-29
+- **Source credibility weight:** 0.85 (Hacker News)
+- **Relevance score:** 88/100
+
+### What It Does
+LiteParse is a document parser rewritten in Rust that's 100x faster than existing Python-based parsers. It extracts text, tables, images, and metadata from PDFs, DOCX, HTML, and other document formats. Designed specifically for RAG pipelines and LLM context loading — output is clean, structured markdown optimized for token efficiency.
+
+### Why Now
+Document parsing is the bottleneck in every RAG pipeline. Python-based parsers (PyPDF2, pdfplumber, unstructured) are slow and produce noisy output. LiteParse's Rust implementation makes document parsing 100x faster while producing cleaner output. From the LlamaIndex team, it's designed specifically for AI/ML workflows.
+
+### Why It Matters
+If you're building a RAG pipeline, document parsing speed directly determines your pipeline throughput. Going from 100 docs/hour to 10,000 docs/hour changes what's possible. LiteParse also produces cleaner output, meaning fewer tokens wasted on noise and better retrieval quality. It's a foundational upgrade for any document-heavy AI application.
+
+### Who Should Care
+- RAG pipeline engineers parsing large document corpora
+- Data teams extracting structured data from documents
+- AI researchers building document understanding systems
+- Anyone processing PDFs/DOCX at scale
+- Developers tired of slow Python document parsers
+
+### Execution Pattern
+```bash
+# Install
+cargo install liteparse
+
+# Parse a single document
+liteparse document.pdf --output ./parsed/
+
+# Parse a directory of documents
+liteparse ./documents/ --recursive --output ./parsed/
+
+# Python API
+pip install liteparse
+```
+
+```python
+from liteparse import parse
+result = parse("document.pdf")
+print(result.markdown)   # Clean markdown output
+print(result.tables)     # Extracted tables as dataframes
+print(result.images)     # Extracted images as paths
+print(result.metadata)   # Title, author, dates
+```
+
+### Skill Potential
+Yes — SKILL.md should cover: installation, CLI usage, Python API, MCP server setup, document format support, and RAG pipeline integration.
+
+- **Discovered:** 2026-05-29 via Hacker News (credibility: 0.85)
+
+---
+
+## [AudioMass](https://github.com/pkalogiros/AudioMass)
+
+> Free full-featured web-based audio & waveform editing tool
+
+- **Stars:** 2,687 (↑steady) | **Language:** JavaScript | **License:** MIT
+- **Last commit:** 2026-05-25
+- **Source credibility weight:** 0.85 (Hacker News)
+- **Relevance score:** 78/100
+
+### What It Does
+AudioMass is a free, open-source, web-based audio editor with multitrack support. It runs entirely in the browser — no installation, no accounts, no data upload. Full waveform editing, effects, filters, and now multitrack editing for complex audio projects. Think Audacity, but in your browser with zero setup.
+
+### Why Now
+AudioMass just launched multitrack support (the HN post got 547 points), making it a serious alternative to desktop DAWs for quick audio work. The web-based nature means it works on any device, anywhere — no software installation needed. For developers who need quick audio editing (podcast clips, sound effects, voice memos), it's the fastest path from idea to edited audio.
+
+### Why It Matters
+Audio editing has traditionally required installing desktop software. AudioMass eliminates that friction entirely. Share a URL, start editing. This is especially valuable for teams that need quick audio edits without installing software on every machine — journalists, podcasters, educators, developers.
+
+### Who Should Care
+- Podcasters needing quick audio edits without a DAW
+- Developers building audio-related applications
+- Educators creating audio content
+- Journalists editing interview clips
+- Anyone who's ever needed to trim, cut, or enhance audio quickly
+
+### Execution Pattern
+```bash
+# Visit https://audiomass.co — no installation needed!
+
+# Or self-host
+git clone https://github.com/pkalogiros/AudioMass.git
+cd AudioMass
+npx serve .
+
+# Open http://localhost:3000 in your browser
+# Drag and drop audio files to start editing
+# Multitrack: click "+" to add tracks
+```
+
+### Skill Potential
+No — web-based tool, better as discovery entry than automation skill.
+
+- **Discovered:** 2026-05-29 via Hacker News (credibility: 0.85)

@@ -29,3 +29,17 @@ https://github.com/SpaceinvaderOne/a-eye
 
 ## Productivity
 https://github.com/Manavarya09/design-extract
+
+## AI Agents (Beta shift)
+https://github.com/ruvnet/RuView
+https://github.com/p-e-w/heretic
+https://github.com/dograh-hq/dograh
+https://github.com/microsoft/agent-governance-toolkit
+
+## Dev Tools (Beta shift)
+https://github.com/orhun/ratty
+https://github.com/run-llama/liteparse
+https://github.com/pkalogiros/AudioMass
+
+## Productivity (Beta shift)
+https://github.com/presenton/presenton
