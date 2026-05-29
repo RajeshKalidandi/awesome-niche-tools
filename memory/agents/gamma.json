@@ -1,0 +1,15 @@
+{
+  "agent_id": "gamma",
+  "enabled": true,
+  "schedule": "0 6 * * *",
+  "last_shift": null,
+  "health_metrics": {
+    "total_shifts": 0,
+    "successful_shifts": 0,
+    "failed_shifts": 0,
+    "validation_failures": 0,
+    "hallucination_rate": 0.0,
+    "duplicate_rate": 0.0
+  },
+  "updated_at": "2026-05-29T04:13:58.463558+00:00"
+}

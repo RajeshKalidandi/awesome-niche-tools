@@ -1,0 +1,21 @@
+{
+  "agent_id": "beta",
+  "enabled": true,
+  "schedule": "0 3 * * *",
+  "last_shift": {
+    "date": "2026-05-29",
+    "status": "merged",
+    "branch": "shift/20260529-beta (stale - merged to main)",
+    "tools_curated": 0,
+    "skills_generated": 0
+  },
+  "health_metrics": {
+    "total_shifts": 1,
+    "successful_shifts": 1,
+    "failed_shifts": 0,
+    "validation_failures": 0,
+    "hallucination_rate": 0.0,
+    "duplicate_rate": 0.0
+  },
+  "updated_at": "2026-05-29T04:13:58.463558+00:00"
+}
