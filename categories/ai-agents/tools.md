@@ -583,3 +583,52 @@ ag-audit --agent my-agent --since 24h
 Yes — SKILL.md should cover: installation, policy definition, zero-trust setup, OWASP coverage, and integration with Hermes Agent.
 
 - **Discovered:** 2026-05-29 via Hacker News (credibility: 0.85)
+
+---
+
+## [oracle](https://github.com/steipete/oracle)
+
+> Invoke GPT-5 Pro with custom context and files when stuck — multi-model escalation for coding agents.
+
+- **Stars:** 2,340 (↑~470/day) | **Language:** TypeScript | **License:** MIT
+- **Last commit:** 2026-05-28
+- **Source credibility weight:** 1.00 (engineer watch — Peter Steinberger)
+- **Relevance score:** 83/100
+
+### What It Does
+oracle is a CLI tool that invokes GPT-5 Pro (or other powerful models) with custom context and files when you're stuck on a complex problem. It supports OpenAI, Anthropic, and Gemini as oracle providers, with automatic context injection. Think of it as "ask the expert" for your coding agent — when the current model can't solve it, escalate to a more capable one.
+
+### Why Now
+As AI coding agents become mainstream, users are hitting quality ceilings with default models. oracle solves this by providing a structured escalation pathway. Created by Peter Steinberger (steipete), one of the most prolific AI tooling engineers, it's already at 2,340 stars in 5 days. The multi-model support means you're not locked into one provider.
+
+### Why It Matters
+This pattern — model escalation when stuck — is becoming essential for production agent workflows. Instead of either accepting poor quality or paying for the most expensive model on every call, oracle provides a middle path: use the cheap model for routine tasks, escalate to the powerful model only when needed. This can cut costs by 70-80% while maintaining quality on complex tasks.
+
+### Who Should Care
+- AI coding agent users hitting quality ceilings
+- Teams optimizing LLM costs without sacrificing quality
+- Developers building multi-model agent workflows
+- Anyone who's ever wished they could "ask a smarter model" mid-task
+
+### Execution Pattern
+```bash
+# Install
+npm install -g oracle
+
+# Invoke with context
+oracle "How do I implement a distributed lock in Rust?" --context ./src/
+
+# Use with specific provider
+oracle "Explain this error" --provider anthropic --model claude-opus-4-0520
+
+# Pipe context from file
+cat error.log | oracle "What's causing this?"
+
+# Integrate with Claude Code
+# Add to CLAUDE.md: "When stuck, use oracle to escalate"
+```
+
+### Skill Potential
+Yes — SKILL.md should cover: installation, provider configuration, context injection patterns, escalation triggers, and cost optimization strategies.
+
+- **Discovered:** 2026-05-29 via engineer watch (Peter Steinberger) (credibility: 1.00)

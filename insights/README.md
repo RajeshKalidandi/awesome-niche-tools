@@ -31,4 +31,6 @@
 
 ## Current Insights
 
-_No insights yet — first weekly digest will populate this._
+| Week | File | Top Pattern | Top Find |
+|------|------|-------------|----------|
+| 22 | [week-22.md](week-22.md) | MCP-First Integration | RuView (WiFi sensing, 67K stars) |
