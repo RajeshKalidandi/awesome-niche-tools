@@ -36,7 +36,13 @@ People love patterns more than tools. A good pattern is worth 100 tool links.
 
 | Pattern | Category | Discovered | Impact |
 |---------|----------|------------|--------|
-| _No patterns yet — first shifts will populate this_ | — | — | — |
+| [MCP-First Integration](mcp-first-integration.md) | Agent Orchestration | Week 22 | 32% of tools ship MCP servers |
+| [Single-Binary Distribution](single-binary-distribution.md) | Distribution | Week 22 | 21% of tools use Go/Rust binaries |
+| [Token Economy Layer](token-economy-layer.md) | Signal Processing | Week 22 | 60-95% token reduction |
+| [Agent Team Orchestration](agent-team-orchestration.md) | Agent Orchestration | Week 22 | +60% quality improvement |
+| [Privacy-First Self-Hosting](privacy-first-self-hosting.md) | Distribution | Week 22 | 21% of tools are self-hostable |
+| [WiFi/RF Sensing](wifi-rf-sensing.md) | Research Pipelines | Week 22 | New sensing modality |
+| [Model Escalation (Oracle)](model-escalation-oracle.md) | Agent Orchestration | Week 22 | 70-80% cost reduction |
 
 ## Categories
 
