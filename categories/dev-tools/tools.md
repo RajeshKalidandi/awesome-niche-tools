@@ -566,3 +566,201 @@ npx serve .
 No — web-based tool, better as discovery entry than automation skill.
 
 - **Discovered:** 2026-05-29 via Hacker News (credibility: 0.85)
+
+## [Absurd](https://github.com/earendil-works/absurd)
+
+> Postgres-native durable workflow system — moves durable execution into the database via stored procedures. No extra services needed.
+
+- **Stars:** 1,950 (↑~50/day) | **Language:** Python | **License:** MIT
+- **Last commit:** 2026-05-27
+- **Source credibility weight:** 0.85 (Lobsters)
+- **Relevance score:** 85/100
+
+### What It Does
+Absurd is a durable workflow system that stores all workflow state, execution logs, and task definitions directly in PostgreSQL using stored procedures. Unlike Temporal, Prefect, or Celery which require separate infrastructure (databases, message queues, worker fleets), Absurd runs entirely within Postgres. Define workflows as SQL, execute them via stored procedures, and get durability, retries, and observability from the database you already operate.
+
+### Why Now
+The durable execution space is fragmented — Temporal requires a full Java/Kotlin stack, Prefect needs its own server, and Celery requires Redis/RabbitMQ. Absurd eliminates this infrastructure sprawl by leveraging Postgres's existing ACID guarantees, WAL, and connection pooling. Created May 2026, already at 1.9K stars with daily commits — the community is validating the "Postgres as workflow engine" thesis.
+
+### Why It Matters
+If you already run Postgres (and most teams do), Absurd gives you durable workflows with zero additional infrastructure. No new services to deploy, monitor, or pay for. The stored-procedure approach means workflows are just SQL — version-controlled, testable, and familiar to any backend engineer. This could replace half the workflow orchestration tools in the ecosystem.
+
+### Who Should Care
+- Teams running Postgres who need workflow orchestration without new infrastructure
+- Solo devs who want durable execution without deploying Temporal/Prefect
+- Backend engineers who prefer SQL over YAML workflow definitions
+- Anyone tired of maintaining separate message queues for task processing
+
+### Execution Pattern
+```bash
+# Install
+pip install absurd
+
+# Initialize in your Postgres database
+absurd init --database postgresql://localhost/myapp
+
+# Define a workflow (SQL)
+absurd workflow create order_processing << 'SQL'
+INSERT INTO absurd.workflows (name, steps) VALUES
+  ('process_order', ARRAY['validate_payment', 'ship_items', 'send_notification']);
+SQL
+
+# Execute
+absurd run order_processing --input '{"order_id": 42}'
+
+# Check status
+absurd status <execution_id>
+```
+
+### Skill Potential
+Yes — SKILL.md should cover: installation, Postgres setup, workflow definition in SQL, execution patterns, monitoring, and integration with Hermes Agent for automated task orchestration.
+
+- **Discovered:** 2026-05-30 via Lobsters (credibility: 0.85)
+
+---
+
+## [AISlop](https://github.com/scanaislop/aislop)
+
+> Catch the slop AI coding agents leave in your code. 40+ rules, 7 languages, deterministic, no LLM needed.
+
+- **Stars:** 191 (↑~10/day) | **Language:** TypeScript | **License:** MIT
+- **Last commit:** 2026-05-30
+- **Source credibility weight:** 0.90 (Hacker News Show HN)
+- **Relevance score:** 78/100
+
+### What It Does
+AISlop is a static analysis linter specifically designed to detect AI-generated code patterns — the "slop" that coding agents leave behind. It has 40+ rules across 7 languages that catch telltale signs: over-commented code, redundant error handling, unnecessary abstractions, generic variable names, and the distinctive "helpful but bloated" style of AI output. Runs deterministically with no LLM calls — pure pattern matching.
+
+### Why Now
+AI coding agents are now producing a significant percentage of new code. But AI-generated code has recognizable patterns that experienced developers spot immediately — over-engineering, excessive comments, and generic naming. AISlop provides a systematic way to catch these patterns before they reach production. Created May 2026, already at 191 stars with daily commits — the community recognizes the need for AI code quality gates.
+
+### Why It Matters
+As AI agents write more code, the quality gap between human-written and AI-generated code becomes a real problem. AISlop is the linting layer that catches AI-specific anti-patterns without requiring a human reviewer. It's the CI gate between "agent wrote it" and "it ships." Teams using AI agents at scale need this to maintain code quality.
+
+### Who Should Care
+- Teams using AI coding agents (Claude Code, Codex, Cursor) in production
+- Code reviewers who want to catch AI-specific patterns automatically
+- Engineering managers concerned about AI code quality
+- Anyone running CI/CD pipelines that include AI-generated code
+
+### Execution Pattern
+```bash
+# Install
+npm install -g aislop
+
+# Run on a project
+aislop ./src/
+
+# Run with specific languages
+aislop --lang typescript,python ./src/
+
+# CI integration
+aislop --format json ./src/ | jq '.violations'
+
+# Fix auto-fixable issues
+aislop --fix ./src/
+```
+
+### Skill Potential
+Yes — SKILL.md should cover: installation, rule configuration, CI integration, language-specific rules, and integration with Hermes Agent's code review workflow.
+
+- **Discovered:** 2026-05-30 via Hacker News Show HN (credibility: 0.90)
+
+---
+
+## [Narwhal](https://github.com/Nonanti/narwhal)
+
+> TUI database client with a built-in MCP server. Five databases, vim editing, Lua plugins.
+
+- **Stars:** 21 (↑~5/day) | **Language:** Rust | **License:** MIT
+- **Last commit:** 2026-05-28
+- **Source credibility weight:** 0.75 (GitHub Search)
+- **Relevance score:** 72/100
+
+### What It Does
+Narwhal is a terminal UI database client that supports PostgreSQL, MySQL, SQLite, DuckDB, and Clickhouse. It features vim-style editing, Lua plugin support, and — critically — a built-in MCP server that exposes your database connections to AI agents. Query databases from your terminal, and let your AI coding agent query them too through the same interface.
+
+### Why Now
+The MCP ecosystem is growing rapidly, but most database MCP servers are standalone services that require separate setup. Narwhal combines a practical TUI database client with MCP server functionality — one tool that serves both human and AI agent needs. The vim editing and Lua plugins make it extensible for power users. Created May 2026, growing steadily.
+
+### Why It Matters
+Most developers use separate tools for human database access (pgAdmin, DBeaver, DataGrip) and AI agent database access (custom MCP servers). Narwhal unifies these — configure your database connections once, use them interactively in the TUI, and expose the same connections to AI agents via MCP. One tool, two interfaces, zero duplication.
+
+### Who Should Care
+- Developers who work with multiple database types
+- AI agent builders needing database MCP servers
+- Terminal-first developers who prefer vim-style interfaces
+- Teams wanting a unified database access layer for humans and agents
+
+### Execution Pattern
+```bash
+# Install
+cargo install narwhal
+
+# Connect to PostgreSQL
+narwhal postgresql://user:pass@localhost/mydb
+
+# Connect to SQLite
+narwhal sqlite://./data.db
+
+# Run as MCP server (exposes all configured connections)
+narwhal mcp --port 3090
+
+# In agent config:
+# { "mcpServers": { "narwhal": { "command": "narwhal", "args": ["mcp", "--port", "3090"] } } }
+
+# Vim-style navigation in TUI
+# :help for commands
+# Ctrl-n/Ctrl-p for result navigation
+```
+
+### Skill Potential
+Yes — SKILL.md should cover: installation, database connection setup, MCP server configuration, Lua plugin development, and integration with Hermes Agent's database tools.
+
+- **Discovered:** 2026-05-30 via GitHub Search (credibility: 0.75)
+
+---
+
+## [Roto](https://github.com/NLnetLabs/roto)
+
+> Statically-typed, compiled embedded scripting language for Rust — used by Rotonda BGP router.
+
+- **Stars:** 492 (↑~5/day) | **Language:** Rust | **License:** BSD-3-Clause
+- **Last commit:** 2026-05-28
+- **Source credibility weight:** 0.85 (Lobsters)
+- **Relevance score:** 68/100
+
+### What It Does
+Roto is a statically-typed, compiled scripting language designed to be embedded in Rust applications. Unlike Lua or Rhai (dynamic scripting), Roto provides compile-time type checking and AOT compilation — giving you the flexibility of a scripting language with the safety guarantees of a typed language. Used in production by the Rotonda BGP router for filter expressions and route policies.
+
+### Why Now
+Rust applications often need embedded scripting for user-defined logic (filters, plugins, rules), but existing options have tradeoffs: Lua is dynamically typed, Rhai lacks AOT compilation, and WASM is heavyweight. Roto fills this gap with static typing and compilation — scripts are validated at embed time, not runtime. The NLnet Labs backing (they maintain Routinator, the RPKI validator) signals production-grade quality.
+
+### Why It Matters
+For Rust developers building extensible systems (routers, proxies, rule engines), Roto provides a scripting layer that catches errors at compile time rather than runtime. This is critical for network infrastructure where a type error in a filter expression could cause an outage. The BGP router use case validates it for high-reliability environments.
+
+### Who Should Care
+- Rust developers building extensible applications
+- Network engineers building routing/filtering tools
+- Anyone needing embedded scripting without dynamic typing risks
+- Plugin system designers looking for type-safe scripting
+
+### Execution Pattern
+```rust
+// In your Rust application
+use roto::runtime::{Runtime, TypeRegistry};
+
+// Register types
+let mut reg = TypeRegistry::new();
+reg.register::<Route>();
+
+// Compile and run scripts
+let runtime = Runtime::new(reg);
+let script = runtime.compile("filter where prefix.len() <= 24")?;
+let result = script.run(&route)?;
+```
+
+### Skill Potential
+No — too niche for a Hermes skill. Best used as a library within Rust projects.
+
+- **Discovered:** 2026-05-30 via Lobsters (credibility: 0.85)

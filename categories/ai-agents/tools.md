@@ -632,3 +632,55 @@ cat error.log | oracle "What's causing this?"
 Yes — SKILL.md should cover: installation, provider configuration, context injection patterns, escalation triggers, and cost optimization strategies.
 
 - **Discovered:** 2026-05-29 via engineer watch (Peter Steinberger) (credibility: 1.00)
+## [Genspark-AI](https://github.com/veryyoldman/Genspark-AI)
+
+> Self-hosted Super Agent with multi-agent orchestration, deep research, Sparkpages, AI slides & sheets, image generation, and 80+ tools.
+
+- **Stars:** 280 (↑~20/day) | **Language:** Python | **License:** MIT
+- **Last commit:** 2026-05-24
+- **Source credibility weight:** 0.75 (GitHub Search)
+- **Relevance score:** 75/100
+
+### What It Does
+Genspark-AI is a self-hosted multi-agent orchestration platform that provides the capabilities of Genspark.ai as open source. It includes deep research agents, document generation (Sparkpages, AI slides, AI sheets), image generation, and 80+ built-in tools — all orchestrated through a unified agent framework. Run your own AI research and document generation platform without sending data to external services.
+
+### Why Now
+AI research agents are splitting into two camps: expensive SaaS (Genspark, Perplexity) and bare-bones open source (simple RAG). Genspark-AI fills the gap with a feature-rich self-hosted alternative that includes multi-agent coordination, document generation, and image creation. At 280 stars and growing, it's early but gaining traction as teams seek to self-host AI capabilities.
+
+### Why It Matters
+Self-hosted AI research means: no per-query costs, full control over data privacy, custom agent behaviors, and no vendor lock-in. For organizations handling sensitive research (legal, healthcare, finance), this is a compliance requirement. Genspark-AI provides the orchestration layer that makes multi-agent research practical — not just single-query RAG.
+
+### Who Should Care
+- Teams building self-hosted AI research platforms
+- Organizations with data privacy requirements
+- Developers who want multi-agent orchestration without building from scratch
+- Anyone seeking a FOSS alternative to Genspark.ai or Perplexity
+
+### Execution Pattern
+```bash
+# Clone and install
+git clone https://github.com/veryyoldman/Genspark-AI.git
+cd Genspark-AI
+pip install -r requirements.txt
+
+# Configure API keys
+export OPENAI_API_KEY=sk-...
+export ANTHROPIC_API_KEY=sk-ant-...
+
+# Run the server
+python app.py
+
+# Access web UI
+open http://localhost:8080
+
+# Use from CLI
+python cli.py research "quantum computing applications in drug discovery"
+python cli.py slides --topic "Q3 roadmap" --output roadmap.pptx
+```
+
+### Skill Potential
+Yes — SKILL.md should cover: installation, API key configuration, agent orchestration setup, tool integration, and document generation workflows.
+
+- **Discovered:** 2026-05-30 via GitHub Search (credibility: 0.75)
+
+---
