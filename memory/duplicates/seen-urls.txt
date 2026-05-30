@@ -56,3 +56,8 @@ https://github.com/veryyoldman/Genspark-AI
 ## Selfhosted (Beta shift 2026-05-30)
 https://github.com/compartmentdev/compartment
 https://github.com/sammwyy/singulary
+
+## Dev Tools (Alpha shift 2026-05-30)
+https://github.com/EveryInc/compound-engineering-plugin
+https://github.com/Leonxlnx/taste-skill
+https://github.com/Helvesec/rmux
