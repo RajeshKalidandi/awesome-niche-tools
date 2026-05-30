@@ -43,3 +43,16 @@ https://github.com/pkalogiros/AudioMass
 
 ## Productivity (Beta shift)
 https://github.com/presenton/presenton
+
+## Dev Tools (Beta shift 2026-05-30)
+https://github.com/earendil-works/absurd
+https://github.com/scanaislop/aislop
+https://github.com/Nonanti/narwhal
+https://github.com/NLnetLabs/roto
+
+## AI Agents (Beta shift 2026-05-30)
+https://github.com/veryyoldman/Genspark-AI
+
+## Selfhosted (Beta shift 2026-05-30)
+https://github.com/compartmentdev/compartment
+https://github.com/sammwyy/singulary

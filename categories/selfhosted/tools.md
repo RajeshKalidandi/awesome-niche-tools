@@ -211,3 +211,107 @@ open http://localhost:8090
 No — better used as a standalone web app.
 
 - **Discovered:** 2026-05-29 via GitHub search (credibility: 0.90)
+## [Compartment](https://github.com/compartmentdev/compartment)
+
+> Self-hosted application deployment system for teams — ship and share internal, private, or public web apps without building your own platform.
+
+- **Stars:** 76 (↑~10/day) | **Language:** TypeScript | **License:** MIT
+- **Last commit:** 2026-05-28
+- **Source credibility weight:** 0.75 (GitHub Search)
+- **Relevance score:** 72/100
+
+### What It Does
+Compartment is a self-hosted platform that lets teams deploy and share internal web applications. It provides SSO, RBAC, audit logging, and automated deployment — the features you'd expect from Heroku or Vercel, but running on your own infrastructure. Deploy a web app with `compartment deploy`, and it handles routing, authentication, and access control automatically.
+
+### Why Now
+Every team has internal tools — dashboards, admin panels, data viewers — that need to be shared securely. The current options are: deploy to a cloud platform (privacy concerns), build auth from scratch (time waste), or use enterprise PaaS (expensive). Compartment provides the middle ground: self-hosted deployment with built-in auth and access control. Created May 2026, actively developed.
+
+### Why It Matters
+Internal tool deployment is a solved problem at the infrastructure level (Docker, Kubernetes) but not at the access control level. Compartment adds SSO, RBAC, and audit logging on top of simple deployment — meaning your team can share tools without exposing them to the internet or building custom auth. This is the missing "internal Heroku" that every team needs.
+
+### Who Should Care
+- Teams building internal tools that need secure sharing
+- DevOps engineers deploying internal dashboards
+- Startups without enterprise PaaS budgets
+- Anyone who has built custom auth for internal apps
+
+### Execution Pattern
+```bash
+# Install
+npm install -g compartment
+
+# Initialize a project
+compartment init
+
+# Deploy
+compartment deploy --name my-dashboard
+
+# Configure access
+compartment auth add-group --group eng --role admin
+compartment auth add-group --group product --role viewer
+
+# Manage deployments
+compartment list
+compartment logs my-dashboard
+compartment rollback my-dashboard
+```
+
+### Skill Potential
+Yes — SKILL.md should cover: installation, SSO configuration, RBAC setup, deployment workflows, and audit log integration.
+
+- **Discovered:** 2026-05-30 via GitHub Search (credibility: 0.75)
+
+---
+
+## [Singulary](https://github.com/sammwyy/singulary)
+
+> Self-host your own AI app builder — FOSS alternative to v0 and Lovable.
+
+- **Stars:** 39 (↑~5/day) | **Language:** TypeScript | **License:** MIT
+- **Last commit:** 2026-05-25
+- **Source credibility weight:** 0.75 (GitHub Search)
+- **Relevance score:** 70/100
+
+### What It Does
+Singulary is a self-hosted AI app builder that generates full-stack web applications from natural language descriptions. Think v0 or Lovable, but running on your own infrastructure with your own LLM keys. Describe what you want, and Singulary generates the UI, API routes, database schema, and deployment configuration — all locally.
+
+### Why Now
+AI app builders (v0, Lovable, Bolt) are popular but expensive ($20-100/month) and lock your code into their platforms. Singulary provides the same capability as open source — generate apps from descriptions while keeping full control of your code and data. The self-hosted nature means no per-generation costs and no platform lock-in.
+
+### Why It Matters
+For teams that prototype frequently, AI app builders save hours of boilerplate. Singulary makes this accessible without SaaS costs or vendor lock-in. Generate a dashboard, admin panel, or landing page in minutes — then own the code completely. The FOSS nature means you can customize the generation pipeline for your specific needs.
+
+### Who Should Care
+- Solo devs and small teams prototyping web apps
+- Anyone tired of v0/Lovable subscription costs
+- Developers who want AI-generated code they fully own
+- Teams building internal tools rapidly
+
+### Execution Pattern
+```bash
+# Install
+npm install -g singulary
+
+# Start the server
+singulary serve
+
+# Access web UI
+open http://localhost:3000
+
+# Describe what you want
+# "Build a task management app with user auth, 
+#  drag-and-drop boards, and real-time updates"
+
+# Singulary generates:
+# - Next.js frontend with Tailwind CSS
+# - API routes with authentication
+# - Database schema (Prisma)
+# - Docker deployment config
+```
+
+### Skill Potential
+Yes — SKILL.md should cover: installation, LLM provider configuration, customization of generation templates, and integration with deployment pipelines.
+
+- **Discovered:** 2026-05-30 via GitHub Search (credibility: 0.75)
+
+---
