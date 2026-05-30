@@ -764,3 +764,149 @@ let result = script.run(&route)?;
 No — too niche for a Hermes skill. Best used as a library within Rust projects.
 
 - **Discovered:** 2026-05-30 via Lobsters (credibility: 0.85)
+
+---
+
+## [Compound Engineering Plugin](https://github.com/EveryInc/compound-engineering-plugin)
+
+> Official Compound Engineering plugin for Claude Code, Codex, Cursor, and more — AI skills and agents that make each unit of engineering work easier than the last.
+
+- **Stars:** 18,247 (↑~50/day) | **Language:** TypeScript | **License:** MIT
+- **Last commit:** 2026-05-29
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 72/100
+
+### What It Does
+Compound Engineering is a methodology-first plugin for AI coding agents that inverts the traditional development cycle: 80% planning and review, 20% execution. It provides a suite of skills (`/ce-brainstorm`, `/ce-plan`, `/ce-work`, `/ce-code-review`, `/ce-debug`, `/ce-compound`) that enforce rigorous planning before any code is written, and codify learnings afterward so future work compounds rather than accumulates debt. Built by Every Inc., the team behind Every.to.
+
+### Why Now
+As AI coding agents generate code at unprecedented speed, the bottleneck has shifted from *writing code* to *knowing what to write and whether it's right*. Compound Engineering addresses this directly — its skills enforce the planning and review discipline that keeps agent-generated codebases maintainable. At 18K stars and trending on GitHub, it's the most popular methodology plugin for AI coding agents. The Every Inc. backing (a well-known tech publication) lends it strong credibility.
+
+### Why It Matters
+Without methodology, AI agents generate massive amounts of low-quality code that accumulates technical debt faster than humans can review. Compound Engineering provides a structured workflow that turns AI agents from "fast typists" into "disciplined engineers." For teams scaling AI-assisted development, this is the difference between a codebase that gets better with age and one that becomes unmaintainable in weeks.
+
+### Who Should Care
+- Teams using Claude Code, Codex, or Cursor at scale
+- Engineering leads worried about AI-generated code quality
+- Developers who want agent-assisted workflows with guardrails
+- Anyone who's seen an AI agent produce 500 lines of wrong code
+
+### Execution Pattern
+```bash
+# Install via npx skills
+npx skills add EveryInc/compound-engineering-plugin
+
+# Or install via npm
+npm install -g @every-env/compound-plugin
+
+# In your AI coding agent, use the skills:
+# /ce-brainstorm — think through a feature before coding
+# /ce-plan — turn requirements into implementation plan
+# /ce-work — execute the plan with worktree tracking
+# /ce-code-review — multi-agent code review before merge
+# /ce-compound — document learnings for future reuse
+```
+
+### Skill Potential
+Yes — SKILL.md should cover: installation via npx skills and npm, skill reference, workflow integration with OpenCode/Claude Code, and team onboarding.
+
+- **Discovered:** 2026-05-30 via GitHub Trending (credibility: 1.00)
+
+---
+
+## [Taste Skill](https://github.com/Leonxlnx/taste-skill)
+
+> The Anti-Slop Frontend Framework for AI Agents — gives your AI good taste. Stops AI from generating boring, generic slop.
+
+- **Stars:** 28,539 (↑~300/day) | **Language:** Shell | **License:** MIT
+- **Last commit:** 2026-05-26
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 70/100
+
+### What It Does
+Taste Skill is a portable set of agent skill files that upgrade AI-built interfaces with professional-grade design: stronger layout, typography, motion, and spacing instead of boilerplate-looking UIs. It includes code-generation skills for Claude Code, Codex, and Cursor, plus image-generation skills for reference boards, brand kits, and design research. The skills enforce design quality standards — proper visual hierarchy, responsive layouts, deliberate spacing, and tasteful motion — so AI-generated frontends look like a human designer built them.
+
+### Why Now
+The biggest criticism of AI-generated UIs is that they all look the same — generic, soulless, and clearly machine-made. Taste Skill addresses this directly by encoding design principles into agent skills. At 28K stars and growing 300/day, it's clearly filling a massive need. Created February 2026, it's become the de facto standard for quality AI frontend generation with over 2K forks and active community contributions.
+
+### Why It Matters
+For solo founders and small teams shipping fast with AI coding tools, Taste Skill is the difference between a prototype that looks like a prototype and one that looks production-ready. It eliminates the "AI smell" from generated UIs — no more excessive padding, mismatched colors, or generic layouts. It's the design system that every AI coding agent should have installed by default.
+
+### Who Should Care
+- Solo founders building frontends with AI coding agents
+- Developers who want AI-generated UIs that look professionally designed
+- Teams using Claude Code, Codex, or Cursor for frontend work
+- Anyone tired of AI-generated UIs that look like Bootstrap from 2013
+
+### Execution Pattern
+```bash
+# Install via npx skills (recommended)
+npx skills add Leonxlnx/taste-skill
+
+# This installs all skills from the skills/ directory:
+# - Frontend design skills (layout, typography, motion, spacing)
+# - Image generation skills (reference boards, brand kits)
+# Works with: Codex, Cursor, Claude Code, Cline
+
+# For manual install, copy skills to your agent's skills folder:
+cp -r skills/* ~/.codex/skills/
+```
+
+### Skill Potential
+Yes — SKILL.md should cover: installation via npx skills, skill reference cards, design quality checklist, and integration with existing frontend workflows.
+
+- **Discovered:** 2026-05-30 via GitHub Trending (credibility: 1.00)
+
+---
+
+## [RMUX](https://github.com/Helvesec/rmux)
+
+> Universal Rust multiplexer for the agentic era: detachable, scriptable, and inspectable, with a tmux-compatible CLI, daemon-backed SDK, and native Ratatui integration.
+
+- **Stars:** 1,330 (↑~88/day) | **Language:** Rust | **License:** MIT OR Apache-2.0
+- **Last commit:** 2026-05-25
+- **Source credibility weight:** 0.85 (GitHub Search + HN cross-reference)
+- **Relevance score:** 62/100
+
+### What It Does
+RMUX is a terminal multiplexer rebuilt from scratch in Rust. Unlike tmux, it ships with a typed SDK that lets agents, scripts, and applications programmatically create, manage, and inspect terminal sessions — all 90 tmux-compatible commands are implemented with structured snapshots, persistent sessions, and native transports on Linux, macOS, and Windows (including Named Pipes). It's designed for the "agentic era": agents can spawn sessions, run commands, detach, reconnect, and inspect output — all from code.
+
+### Why Now
+Terminal multiplexers (tmux, screen) were designed for humans, not agents. As AI coding agents increasingly run on remote servers and need persistent terminal access, the lack of a typed, programmable multiplexer becomes a bottleneck. RMUX fills this gap with SDK support in Rust and Ratatui, making it the first terminal multiplexer designed for both humans and AI agents. Created May 15, 2026, it's already at 1.3K stars with 88 stars/day velocity — the community is voting with stars.
+
+### Why It Matters
+If you run AI coding agents over SSH (and most serious agent deployments do), you need persistent terminal sessions that survive disconnection. RMUX provides this with a proper SDK, not hacky tmux wrapper scripts. The typed SDK means agents can create, monitor, and orchestrate terminal sessions programmatically — enabling multi-agent orchestration, broadcast demos, browser mirroring, and agent-driven testing workflows that were previously impractical.
+
+### Who Should Care
+- DevOps engineers running AI agents over SSH
+- Developers building agent orchestration systems
+- Anyone using tmux who wants a modern, SDK-enabled replacement
+- Teams deploying multi-agent setups that need persistent terminal sessions
+- Ratatui (Rust TUI) ecosystem developers
+
+### Execution Pattern
+```bash
+# Install via cargo
+cargo install rmux
+
+# Start a session (tmux-compatible)
+rmux new-session -s my-agent
+
+# From Rust SDK
+use rmux::{Rmux, SessionConfig};
+
+let rmux = Rmux::new_daemon()?;
+let session = rmux.create_session(SessionConfig::new("agent-session"))?;
+session.send_command("npm run build")?;
+let output = session.wait_for_output()?;
+
+# Detach and reconnect later (sessions persist on disk)
+rmux detach -s my-agent
+# Later:
+rmux attach -t my-agent
+```
+
+### Skill Potential
+Yes — SKILL.md should cover: installation, tmux-compatible CLI reference, Rust SDK usage, daemon mode, cross-platform setup (Linux/macOS/Windows), and agent orchestration patterns.
+
+- **Discovered:** 2026-05-30 via GitHub Search + HN (credibility: 0.85)
