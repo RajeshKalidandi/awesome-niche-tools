@@ -1,25 +1,22 @@
 {
   "agent_id": "alpha",
   "enabled": true,
-  "schedule": "0 0 * * *",
   "last_shift": {
-    "date": "2026-05-30",
+    "date": "2026-06-01",
     "status": "merged",
-    "branch": "shift/20260530-alpha",
-    "tools_curated": 3,
-    "skills_generated": 0,
-    "categories_touched": [
-      "dev-tools"
-    ]
+    "branch": "shift/20260531-alpha",
+    "tools_curated": 6,
+    "skills_generated": 1,
+    "categories_touched": ["dev-tools", "ai-agents", "selfhosted"]
   },
   "health_metrics": {
-    "total_shifts": 2,
-    "successful_shifts": 2,
+    "total_shifts": 3,
+    "successful_shifts": 3,
     "failed_shifts": 0,
     "validation_failures": 0,
     "hallucination_rate": 0.0,
     "duplicate_rate": 0.0,
     "retries": 0
   },
-  "updated_at": "2026-05-30T10:20:00.000000+00:00"
+  "updated_at": "2026-06-01T00:45:00.000000+00:00"
 }
