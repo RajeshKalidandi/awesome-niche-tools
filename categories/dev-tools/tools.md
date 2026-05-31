@@ -910,3 +910,35 @@ rmux attach -t my-agent
 Yes — SKILL.md should cover: installation, tmux-compatible CLI reference, Rust SDK usage, daemon mode, cross-platform setup (Linux/macOS/Windows), and agent orchestration patterns.
 
 - **Discovered:** 2026-05-30 via GitHub Search + HN (credibility: 0.85)
+
+## [Pyrefly](https://github.com/facebook/pyrefly)
+
+> A fast type checker and language server for Python, developed by Meta. Successor to Pyre, written in Rust for performance. Supports type server protocol (TSP).
+
+- **Stars:** 6,564 (↑~40/day) | **Language:** Rust | **License:** MIT
+- **Last commit:** 2026-05-30
+- **Source credibility weight:** 0.85 (Lobsters)
+- **Relevance score:** 92/100
+
+### What It Does
+Pyrefly is a fast, incremental type checker and language server for Python. Created by Meta as the successor to Pyre, it's written in Rust for performance and includes advanced features like type server protocol (TSP) support. It provides real-time type checking in IDEs, catches type errors before runtime, and integrates with popular editors via LSP. Unlike gradual type checkers that allow untyped code, Pyrefly aims for soundness while maintaining usability.
+
+### Why Now
+Python's type ecosystem has matured significantly in 2024-2025, with widespread adoption of type hints in major projects. However, existing type checkers like mypy and Pyre suffer from performance issues on large codebases. Pyrefly addresses this with a Rust implementation that offers incremental checking and faster response times. Released as v1.0 in May 2026, it signals Meta's commitment to open-source Python tooling.
+
+### Why It Matters
+For teams with large Python codebases, type checking performance directly impacts developer velocity. Pyrefly's Rust engine can check millions of lines of code in seconds rather than minutes. The TSP support enables advanced IDE integrations beyond basic LSP. As a Meta-backed project, it benefits from strong engineering resources and long-term maintenance — critical for infrastructure tools.
+
+### Who Should Care
+- Teams with large Python codebases (>100K lines) frustrated by slow type checking
+- Organizations adopting type hints at scale who need performant checking
+- Dev tools builders creating Python IDEs or language integrations
+- Anyone using Python for performance-critical applications where type safety matters
+
+### Execution Pattern
+Install via pip (`pip install pyrefly`) or use the pre-built binaries. Run as a language server in your IDE (VS Code, Neovim, etc.) for real-time feedback. For CI, run `pyrefly check` on your codebase. Configure via pyrefly.toml to adjust strictness, enable/disable specific rules, and configure incremental caching.
+
+### Skill Potential
+Yes — SKILL.md would cover: installation, IDE integration, CI configuration, rule customization, incremental caching tuning, and integration with pre-commit hooks.
+
+- **Discovered:** 2026-05-31 via Lobsters (credibility: 0.85)

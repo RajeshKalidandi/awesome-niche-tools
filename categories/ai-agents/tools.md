@@ -684,3 +684,35 @@ Yes — SKILL.md should cover: installation, API key configuration, agent orches
 - **Discovered:** 2026-05-30 via GitHub Search (credibility: 0.75)
 
 ---
+
+## [Claw Patrol](https://github.com/denoland/clawpatrol)
+
+> Open-source security firewall for AI agents. Routes agent traffic through a gateway that evaluates requests against HCL rules — supports HTTP, SQL, and Kubernetes protocol gating with credential injection.
+
+- **Stars:** 518 (↑~15/day) | **Language:** Go | **License:** MIT
+- **Last commit:** 2026-05-28
+- **Source credibility weight:** 0.85 (Lobsters)
+- **Relevance score:** 85/100
+
+### What It Does
+Claw Patrol is a security firewall designed specifically for AI agents. It sits between your agent and the outside world, evaluating every outbound request against HCL-based policy rules. The gateway supports HTTP, SQL, and Kubernetes protocol gating — so you can restrict what APIs your agent calls, what databases it queries, and what K8s resources it touches. Critically, it handles credential injection: agents never hold real API keys or database passwords. The gateway injects them at request time, so even a compromised agent can't exfiltrate credentials.
+
+### Why Now
+AI agents are increasingly autonomous — they make HTTP calls, query databases, and interact with cloud APIs. But most agent frameworks have zero built-in security. Agents hold raw credentials, can call any endpoint, and have no request-level policy enforcement. Claw Patrol addresses this gap with a gateway pattern that's familiar from API gateway architectures but purpose-built for agent traffic. Created by the Deno team, it carries strong engineering credibility.
+
+### Why It Matters
+Without a firewall, a single prompt injection attack can turn your agent into a data exfiltration vector. Claw Patrol adds defense-in-depth: policy rules gate what the agent can do, credential injection prevents key exposure, and protocol-specific rules catch things like SQL injection via agent queries. For any team running agents in production, this is the missing security layer.
+
+### Who Should Care
+- Teams deploying AI agents that access external APIs or databases
+- Security engineers responsible for agent infrastructure
+- Anyone building agents that handle sensitive credentials
+- Organizations with compliance requirements around data access
+
+### Execution Pattern
+Deploy Claw Patrol as a sidecar or reverse proxy. Define HCL rules for each agent's permissions (e.g., "agent X can call GitHub API but not AWS"). Run your agent with the gateway as its HTTP proxy. The gateway evaluates each request against the policy, injects credentials, and either forwards or blocks. Monitor blocked requests for security auditing.
+
+### Skill Potential
+Yes — SKILL.md would cover: gateway deployment, HCL rule authoring, protocol-specific policies (HTTP/SQL/K8s), credential injection setup, and integration with agent frameworks.
+
+- **Discovered:** 2026-05-31 via Lobsters (credibility: 0.85)

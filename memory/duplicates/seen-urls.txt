@@ -1,63 +1,56 @@
-# Curated URLs — 2026-05-29 Shift
 
+# Curated URLs — 2026-05-29 Shift
+## AI Agents
+## AI Agents (Beta shift 2026-05-30)
+## AI Agents (Beta shift)
 ## Dev Tools
-https://github.com/chopratejas/headroom
-https://github.com/unclecode/crawl4ai
-https://github.com/knowsuchagency/mcp2cli
+## Dev Tools (Alpha shift 2026-05-30)
+## Dev Tools (Beta shift 2026-05-30)
+## Dev Tools (Beta shift)
+## Productivity
+## Productivity (Beta shift)
+## Selfhosted
+## Selfhosted (Beta shift 2026-05-30)
 https://github.com/DeusData/codebase-memory-mcp
-https://github.com/sno-ai/llmix
+https://github.com/EveryInc/compound-engineering-plugin
+https://github.com/Gentleman-Programming/engram
+https://github.com/Helvesec/rmux
+https://github.com/Kaelio/ktx
+https://github.com/Leonxlnx/taste-skill
+https://github.com/Lum1104/Understand-Anything
+https://github.com/Manavarya09/design-extract
+https://github.com/NLnetLabs/roto
+https://github.com/Nonanti/narwhal
+https://github.com/PentHertz/LUKSbox
+https://github.com/SpaceinvaderOne/a-eye
+https://github.com/can1357/oh-my-pi
+https://github.com/chopratejas/headroom
+https://github.com/colbymchenry/codegraph
+https://github.com/compartmentdev/compartment
+https://github.com/craigmccaskill/posthorn
+https://github.com/denoland/clawpatrol
+https://github.com/dograh-hq/dograh
+https://github.com/earendil-works/absurd
+https://github.com/epiral/bb-browser
+https://github.com/facebook/pyrefly
 https://github.com/forloopcodes/contextplus
 https://github.com/hardikpandya/stop-slop
-https://github.com/Lum1104/Understand-Anything
-https://github.com/colbymchenry/codegraph
-
-## AI Agents
-https://github.com/epiral/bb-browser
-https://github.com/Gentleman-Programming/engram
-https://github.com/moltis-org/moltis
-https://github.com/open-gitagent/opengap
-https://github.com/revfactory/harness
-https://github.com/can1357/oh-my-pi
-https://github.com/olo-dot-io/Uni-CLI
-https://github.com/Kaelio/ktx
-
-## Selfhosted
-https://github.com/craigmccaskill/posthorn
-https://github.com/PentHertz/LUKSbox
-https://github.com/xoriin/NetMap
-https://github.com/SpaceinvaderOne/a-eye
-
-## Productivity
-https://github.com/Manavarya09/design-extract
-
-## AI Agents (Beta shift)
-https://github.com/ruvnet/RuView
-https://github.com/p-e-w/heretic
-https://github.com/dograh-hq/dograh
+https://github.com/knowsuchagency/mcp2cli
 https://github.com/microsoft/agent-governance-toolkit
-
-## Dev Tools (Beta shift)
+https://github.com/moltis-org/moltis
+https://github.com/olo-dot-io/Uni-CLI
+https://github.com/open-gitagent/opengap
 https://github.com/orhun/ratty
-https://github.com/run-llama/liteparse
+https://github.com/p-e-w/heretic
 https://github.com/pkalogiros/AudioMass
-
-## Productivity (Beta shift)
 https://github.com/presenton/presenton
-
-## Dev Tools (Beta shift 2026-05-30)
-https://github.com/earendil-works/absurd
-https://github.com/scanaislop/aislop
-https://github.com/Nonanti/narwhal
-https://github.com/NLnetLabs/roto
-
-## AI Agents (Beta shift 2026-05-30)
-https://github.com/veryyoldman/Genspark-AI
-
-## Selfhosted (Beta shift 2026-05-30)
-https://github.com/compartmentdev/compartment
+https://github.com/revfactory/harness
+https://github.com/run-llama/liteparse
+https://github.com/ruvnet/RuView
 https://github.com/sammwyy/singulary
-
-## Dev Tools (Alpha shift 2026-05-30)
-https://github.com/EveryInc/compound-engineering-plugin
-https://github.com/Leonxlnx/taste-skill
-https://github.com/Helvesec/rmux
+https://github.com/scanaislop/aislop
+https://github.com/sno-ai/llmix
+https://github.com/thesaadmirza/feloxi
+https://github.com/unclecode/crawl4ai
+https://github.com/veryyoldman/Genspark-AI
+https://github.com/xoriin/NetMap
