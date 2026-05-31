@@ -67,3 +67,48 @@ Deploy via Docker Compose: run the feloxi service (backend) and optionally the d
 Yes — SKILL.md would cover: Docker deployment, Celery integration, dashboard usage, Prometheus metric configuration, failure alerting setup, and ClickHouse backup procedures.
 
 - **Discovered:** 2026-05-31 via Lobsters (credibility: 0.85)
+
+---
+
+## [Secluso](https://github.com/secluso/core)
+
+> Private DIY home security camera for Raspberry Pi — end-to-end encrypted, no cloud surveillance.
+
+- **Stars:** 1,505 (↑~376/day) | **Language:** Rust | **License:** GPL-3.0
+- **Last commit:** 2026-05-31
+- **Source credibility weight:** 0.85 (Hacker News)
+- **Relevance score:** 71/100
+
+### What It Does
+Secluso is a self-hosted home security camera system built for Raspberry Pi with end-to-end encryption. It provides encrypted remote access to live video, alerts, and recordings from your phone — all without cloud surveillance. Setup takes 5 minutes via Secluso Deploy. Requires a Pi Zero 2W, compatible camera modules, and a relay (your own VPS or free beta hosting).
+
+### Why Now
+Home security cameras from Ring, Nest, and Arlo send your video to the cloud — creating privacy risks and ongoing subscription costs. Secluso solves this with a fully self-hosted, E2E encrypted alternative. Created May 29, 2026, it is already at 1,505 stars with 42 forks. The Rust implementation ensures performance and security. The GPL-3.0 license guarantees it stays open.
+
+### Why It Matters
+Privacy-focused home security without cloud dependency. Your video never leaves your network (except through E2E encrypted relay). No monthly fees, no data harvesting, no third-party access. For privacy-conscious households, this is the security camera system that Ring should have been.
+
+### Who Should Care
+- Privacy-conscious households wanting home security
+- Raspberry Pi enthusiasts looking for projects
+- Anyone frustrated by cloud-dependent security cameras
+- Self-hosters who want encrypted remote access
+
+### Execution Pattern
+```bash
+# Flash SD card with Secluso image
+# Or install on existing Pi
+curl -sL https://secluso.com/install | bash
+
+# Configure via web interface
+# Access at http://secluso.local
+
+# Connect from phone
+# Download Secluso app (iOS/Android)
+# Scan QR code to pair
+```
+
+### Skill Potential
+Yes — SKILL.md should cover: Pi setup, camera module compatibility, relay configuration, phone app pairing, encryption setup, and troubleshooting.
+
+- **Discovered:** 2026-06-01 via Hacker News (credibility: 0.85)

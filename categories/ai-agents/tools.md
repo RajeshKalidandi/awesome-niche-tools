@@ -716,3 +716,94 @@ Deploy Claw Patrol as a sidecar or reverse proxy. Define HCL rules for each agen
 Yes — SKILL.md would cover: gateway deployment, HCL rule authoring, protocol-specific policies (HTTP/SQL/K8s), credential injection setup, and integration with agent frameworks.
 
 - **Discovered:** 2026-05-31 via Lobsters (credibility: 0.85)
+
+
+---
+
+## [pi-dynamic-workflows](https://github.com/Michaelliv/pi-dynamic-workflows)
+
+> Claude-Code-style dynamic workflows for Pi — model writes JS that fans work across isolated subagents, then synthesizes results.
+
+- **Stars:** 629 (↑~105/day) | **Language:** TypeScript | **License:** None declared
+- **Last commit:** 2026-05-31
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 74/100
+
+### What It Does
+pi-dynamic-workflows adds a workflow tool to Claude Code that enables dynamic task orchestration. The model writes JavaScript that fans work across isolated subagents, then synthesizes their results. Think of it as structured parallelism for AI coding tasks — the model decides how to decompose a problem, spawns workers for each subtask, and merges the results.
+
+### Why Now
+AI coding agents excel at single-file tasks but struggle with large refactors, multi-perspective reviews, and codebase-wide changes that require parallel exploration. pi-dynamic-workflows solves this by giving the model explicit control over task decomposition and parallel execution. Created May 28, 2026, at 629 stars with daily commits.
+
+### Why It Matters
+This is the missing piece for scaling AI coding from single-file edits to codebase-wide transformations. Instead of the agent processing files sequentially (slow, loses context), it can now fan out across multiple subagents working in parallel. Codebase audits, multi-perspective code reviews, and large refactors become practical.
+
+### Who Should Care
+- Claude Code users doing large-scale codebase work
+- Teams needing parallel code analysis
+- Developers working on monorepos with complex dependencies
+- Anyone who has hit the limits of single-agent coding
+
+### Execution Pattern
+```bash
+# Install as Claude Code skill
+npm install -g pi-dynamic-workflows
+
+# Use in Claude Code
+# The model automatically uses the workflow tool when tasks are complex
+# Example: "Audit this codebase for security vulnerabilities"
+# The model decomposes into subagents: auth audit, input validation, dependency check
+```
+
+### Skill Potential
+Yes — SKILL.md should cover: installation, workflow decomposition patterns, subagent isolation, result synthesis, and integration with Hermes delegate_task.
+
+- **Discovered:** 2026-06-01 via GitHub Trending (credibility: 1.00)
+
+
+---
+
+## [flashlib](https://github.com/FlashML-org/flashlib)
+
+> Fast and memory-efficient classical ML operators — GPU-accelerated kmeans, knn, pca, svd, dbscan, umap, t-sne on Triton.
+
+- **Stars:** 416 (↑~69/day) | **Language:** Python | **License:** Apache-2.0
+- **Last commit:** 2026-05-26
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 63/100
+
+### What It Does
+flashlib is a GPU library for classical machine learning operators built on Triton and CuteDSL. It provides GPU-accelerated implementations of kmeans, knn, pca, svd, dbscan, hdbscan, umap, t-sne, regression, and GEMM — the core algorithms that scikit-learn uses but without the CPU bottleneck. Pip-installable, with a familiar API that mirrors scikit-learn.
+
+### Why Now
+Classical ML (clustering, dimensionality reduction, nearest neighbors) is experiencing a renaissance as AI agents use these algorithms for data analysis, anomaly detection, and feature engineering. But CPU-based implementations are too slow for real-time agent workflows. flashlib brings GPU acceleration to these algorithms, making them practical for agent-integrated data pipelines.
+
+### Why It Matters
+For teams building AI agents that analyze data, flashlib eliminates the ML algorithm bottleneck. Instead of waiting minutes for kmeans on a CPU, you get seconds on GPU. The scikit-learn-compatible API means zero learning curve. The Apache-2.0 license makes it safe for commercial use.
+
+### Who Should Care
+- Data scientists wanting GPU acceleration without CUDA expertise
+- AI agents that perform real-time data analysis
+- Teams running ML pipelines at scale
+- Anyone tired of waiting for CPU-based clustering/dimensionality reduction
+
+### Execution Pattern
+```bash
+# Install
+pip install flashlib
+
+# Use like scikit-learn
+from flashlib.cluster import KMeans
+kmeans = KMeans(n_clusters=5, device='cuda')
+labels = kmeans.fit_predict(data)
+
+# Dimensionality reduction
+from flashlib.decomposition import UMAP
+umap = UMAP(n_components=2, device='cuda')
+embedding = umap.fit_transform(data)
+```
+
+### Skill Potential
+Yes — SKILL.md should cover: installation, GPU requirements, API compatibility with scikit-learn, performance benchmarks, and integration with data analysis workflows.
+
+- **Discovered:** 2026-06-01 via GitHub Trending (credibility: 1.00)

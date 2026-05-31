@@ -54,3 +54,9 @@ https://github.com/thesaadmirza/feloxi
 https://github.com/unclecode/crawl4ai
 https://github.com/veryyoldman/Genspark-AI
 https://github.com/xoriin/NetMap
+https://github.com/Sophomoresty/gemini-web2api
+https://github.com/Michaelliv/pi-dynamic-workflows
+https://github.com/secluso/core
+https://github.com/MatinSenPai/SenPaiScanner
+https://github.com/vinhnx/VTCode
+https://github.com/FlashML-org/flashlib
