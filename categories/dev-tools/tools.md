@@ -942,3 +942,147 @@ Install via pip (`pip install pyrefly`) or use the pre-built binaries. Run as a 
 Yes — SKILL.md would cover: installation, IDE integration, CI configuration, rule customization, incremental caching tuning, and integration with pre-commit hooks.
 
 - **Discovered:** 2026-05-31 via Lobsters (credibility: 0.85)
+
+---
+
+## [gemini-web2api](https://github.com/Sophomoresty/gemini-web2api)
+
+> Convert Google Gemini web into an OpenAI-compatible API. Zero auth, cross-platform, single file.
+
+- **Stars:** 870 (↑~217/day) | **Language:** Python | **License:** MIT
+- **Last commit:** 2026-05-31
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 82/100
+
+### What It Does
+gemini-web2api is a single-file Python server that turns Google Gemini's web interface into an OpenAI-compatible API endpoint. It intercepts Gemini's web traffic, extracts the authentication tokens, and exposes a standard `/v1/chat/completions` endpoint that any OpenAI-compatible client can use. No API keys needed — it uses your Gemini web session. Supports tool calling, streaming, and works cross-platform.
+
+### Why Now
+Google Gemini's web interface is free but has no official API for personal use. gemini-web2api bridges this gap by converting the web session into a standard API. Created May 28, 2026, it's already at 870 stars with 232 forks in 3 days — explosive growth. The OpenAI-compatible format means it's a drop-in replacement for any tool that uses OpenAI's API.
+
+### Why It Matters
+This effectively gives you a free, unlimited Gemini API for personal projects. Instead of paying $0.0025/1K tokens for Gemini API or $0.03/1K for GPT-4, you get Gemini's capabilities through the web interface at zero cost. For solo devs, researchers, and hobbyists building AI tools, this eliminates the API cost barrier entirely.
+
+### Who Should Care
+- Solo developers building AI tools on a budget
+- Researchers who need large-scale LLM inference without API costs
+- Anyone running local AI tools that support OpenAI-compatible endpoints
+- Developers prototyping with Gemini before committing to API costs
+
+### Execution Pattern
+```bash
+# Install
+pip install gemini-web2api
+
+# Run the server (uses your Gemini web session)
+gemini-web2api --port 8080
+
+# Use with any OpenAI-compatible client
+curl http://localhost:8080/v1/chat/completions \
+  -H "Content-Type: application/json" \
+  -d '{"model":"gemini","messages":[{"role":"user","content":"Hello!"}]}'
+
+# Or configure as OpenAI base URL in your tools
+export OPENAI_API_BASE=http://localhost:8080/v1
+```
+
+### Skill Potential
+Yes — SKILL.md should cover: installation, web session setup, OpenAI compatibility configuration, streaming support, tool calling, and integration with Hermes Agent model routing.
+
+- **Discovered:** 2026-06-01 via GitHub Trending (credibility: 1.00)
+
+---
+
+## [VTCode](https://github.com/vinhnx/VTCode)
+
+> Open-source terminal coding agent in Rust — LLM-native code understanding, shell safety, multi-provider failover.
+
+- **Stars:** 655 (↑~47/day) | **Language:** Rust | **License:** MIT
+- **Last commit:** 2026-05-31
+- **Source credibility weight:** 0.85 (Hacker News)
+- **Relevance score:** 64/100
+
+### What It Does
+VTCode is a terminal-based coding agent written in Rust with LLM-native code understanding. Unlike wrapper scripts around API calls, VTCode integrates deeply with your codebase through LSP, provides shell safety mechanisms (no accidental `rm -rf`), supports multiple LLM providers with automatic failover, and includes an agent skills system. Built with Ratatui/Crossterm for a polished TUI experience.
+
+### Why Now
+The terminal coding agent space is heating up (Claude Code, Codex, OpenCode, oh-my-pi), but most are Node.js-based with limited performance. VTCode brings Rust's performance and safety to the space — faster startup, lower memory usage, and native code understanding via LSP. The multi-provider failover means you're not locked into one LLM vendor. Available on crates.io for easy installation.
+
+### Why It Matters
+VTCode addresses the "one provider goes down, your workflow stops" problem with automatic failover. The shell safety mechanisms prevent common agent mistakes (deleting files, overwriting code). The Rust implementation means it's fast enough for real-time coding assistance without the overhead of Node.js. It's a serious alternative for developers who want a lightweight, reliable terminal agent.
+
+### Who Should Care
+- Terminal-first developers wanting AI coding assistance
+- Developers frustrated by Node.js-based agent performance
+- Teams needing multi-provider LLM failover
+- Anyone concerned about agent shell safety
+
+### Execution Pattern
+```bash
+# Install via cargo
+cargo install vtcode
+
+# Run in a project directory
+cd /path/to/project
+vtcode
+
+# Configure providers
+vtcode config set provider openai
+vtcode config set fallback-provider anthropic
+
+# Skills system
+vtcode skills list
+vtcode skills add my-custom-skill
+```
+
+### Skill Potential
+Yes — SKILL.md should cover: installation via cargo, provider configuration, failover setup, shell safety features, skills system, and MCP/ACP integration.
+
+- **Discovered:** 2026-06-01 via Hacker News (credibility: 0.85)
+
+
+---
+
+## [SenPaiScanner](https://github.com/MatinSenPai/SenPaiScanner)
+
+> Lightweight Cloudflare IP scanner written in Go — find origins behind Cloudflare in seconds.
+
+- **Stars:** 791 (↑~263/day) | **Language:** Go | **License:** MIT
+- **Last commit:** 2026-05-30
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 66/100
+
+### What It Does
+SenPaiScanner is a fast, lightweight Go tool that scans and identifies real IP addresses behind Cloudflare-protected domains. It uses multiple techniques (DNS history, subdomain enumeration, port scanning, SSL certificate analysis) to find origin servers that Cloudflare is proxying. Useful for security researchers, penetration testers, and sysadmins who need to verify their Cloudflare configuration is not leaking origin IPs.
+
+### Why Now
+Cloudflare is the most popular CDN/proxy service, but misconfigurations frequently leak origin server IPs. SenPaiScanner makes it trivial to audit your own infrastructure. Created May 28, 2026, it is already at 791 stars with active development. The Go implementation means it is fast and cross-platform with zero dependencies.
+
+### Why It Matters
+If you are behind Cloudflare and your origin IP is leaked, Cloudflare protection is worthless. SenPaiScanner lets you verify your configuration before someone else does. For security teams, it is an essential audit tool. For sysadmins, it is a quick sanity check after DNS changes.
+
+### Who Should Care
+- Security teams auditing Cloudflare configurations
+- Penetration testers doing reconnaissance
+- Sysadmins managing Cloudflare-protected infrastructure
+- Anyone who wants to verify their origin IP is not exposed
+
+### Execution Pattern
+```bash
+# Install
+go install github.com/MatinSenPai/SenPaiScanner@latest
+
+# Scan a domain
+senpaiscanner scan example.com
+
+# Scan with verbose output
+senpaiscanner scan example.com --verbose
+
+# Scan multiple domains
+senpaiscanner scan -f domains.txt
+```
+
+### Skill Potential
+Yes — SKILL.md should cover: installation, scanning modes, output interpretation, integration with security audit workflows, and batch scanning patterns.
+
+- **Discovered:** 2026-06-01 via GitHub Trending (credibility: 1.00)
