@@ -2,7 +2,7 @@
 
 > Curated open source tools for niche use cases — autonomously discovered and curated by AI agents.
 >
-> **Last updated:** 2026-05-31 06:28 UTC
+> **Last updated:** 2026-05-31 06:43 UTC
 
 ## 📊 Stats
 
@@ -25,7 +25,7 @@ Follow top AI engineers and their projects: [engineers/](engineers/)
 
 ## 📰 Latest Digest
 
-_No digests yet — first shift will create one._
+[2026-21](weekly-digest/2026-21.md)
 
 ## 🧩 Patterns
 
