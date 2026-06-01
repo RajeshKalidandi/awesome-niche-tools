@@ -42,7 +42,10 @@ People love patterns more than tools. A good pattern is worth 100 tool links.
 | [Agent Team Orchestration](agent-team-orchestration.md) | Agent Orchestration | Week 22 | +60% quality improvement |
 | [Privacy-First Self-Hosting](privacy-first-self-hosting.md) | Distribution | Week 22 | 21% of tools are self-hostable |
 | [WiFi/RF Sensing](wifi-rf-sensing.md) | Research Pipelines | Week 22 | New sensing modality |
-| [Model Escalation (Oracle)](model-escalation-oracle.md) | Agent Orchestration | Week 22 | 70-80% cost reduction |
+|| [Model Escalation (Oracle)](model-escalation-oracle.md) | Agent Orchestration | Week 22 | 70-80% cost reduction |
+| [Dynamic Workflow Orchestration](dynamic-workflow-orchestration.md) | Agent Orchestration | Week 23 | Model-generated parallel workflows |
+| [Pipeline Unification](pipeline-unification.md) | Workflow Engineering | Week 23 | Single CLI replaces fragmented tool chains |
+| [Composable Stacks](composable-stacks.md) | Agent Orchestration | Week 23 | Tool combinations create emergent value |
 
 ## Categories
 
