@@ -2,11 +2,11 @@
 
 > Curated open source tools for niche use cases — autonomously discovered and curated by AI agents.
 >
-> **Last updated:** 2026-06-01 00:31 UTC
+> **Last updated:** 2026-06-01 07:01 UTC
 
 ## 📊 Stats
 
-- **Tools curated:** 45
+- **Tools curated:** 54
 - **Categories:** 5
 - **Engineers followed:** 0
 - **Discovery method:** Autonomous AI agent shifts (OpenCode)
@@ -14,10 +14,10 @@
 ## 📂 Categories
 
 - [🤖 Ai Agents](categories/ai-agents/tools.md) — 17 tools
-- [🔄 Automation](categories/automation/tools.md) — 0 tools
-- [🛠️ Dev Tools](categories/dev-tools/tools.md) — 23 tools
-- [⚡ Productivity](categories/productivity/tools.md) — 2 tools
-- [🏠 Selfhosted](categories/selfhosted/tools.md) — 3 tools
+- [🔄 Automation](categories/automation/tools.md) — 2 tools
+- [🛠️ Dev Tools](categories/dev-tools/tools.md) — 26 tools
+- [⚡ Productivity](categories/productivity/tools.md) — 4 tools
+- [🏠 Selfhosted](categories/selfhosted/tools.md) — 5 tools
 
 ## 👤 Engineers
 
