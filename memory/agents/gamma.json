@@ -6,15 +6,29 @@
     "status": "merged",
     "branch": "shift/20260601-gamma",
     "tools_curated": 0,
-    "skills_generated": 0
+    "skills_generated": 0,
+    "deep_dives": 3,
+    "patterns_added": 1,
+    "insights_added": 1,
+    "shift_log": "shifts/2026-06-01-gamma.md",
+    "commit_sha": "70df37b",
+    "rescued": true,
+    "rescue_note": "Work was staged but not committed on initial cron run (2026-06-01 07:04). Manually committed and pushed on 2026-06-01 10:17 by operator. Cron prompt updated to add explicit commit-guard."
   },
   "health_metrics": {
-    "total_shifts": 1,
-    "successful_shifts": 1,
+    "total_shifts": 4,
+    "successful_shifts": 4,
     "failed_shifts": 0,
     "validation_failures": 0,
     "hallucination_rate": 0.0,
-    "duplicate_rate": 0.0
+    "duplicate_rate": 0.0,
+    "rescued_shifts": 1
   },
-  "updated_at": "2026-06-01T06:49:00Z"
+  "recent_shifts": [
+    {"date": "2026-05-29", "status": "merged", "deep_dives": 5, "patterns": 3, "insights": 1, "commit_sha": "efb1822"},
+    {"date": "2026-05-30", "status": "merged", "deep_dives": 4, "patterns": 2, "insights": 0, "commit_sha": null},
+    {"date": "2026-05-31", "status": "merged", "deep_dives": 3, "patterns": 1, "insights": 1, "commit_sha": "0fd3b6f"},
+    {"date": "2026-06-01", "status": "merged", "deep_dives": 3, "patterns": 1, "insights": 1, "commit_sha": "70df37b", "rescued": true}
+  ],
+  "updated_at": "2026-06-01T10:17:00Z"
 }

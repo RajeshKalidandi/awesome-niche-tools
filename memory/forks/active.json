@@ -1,12 +1,32 @@
 {
   "active": [],
-  "submitted": [],
+  "submitted": [
+    {
+      "repo": "Manavarya09/design-extract",
+      "fork": "RajeshKalidandi/design-extract",
+      "branch": "contribution/2026-05-31-only-skip-flags",
+      "pr_url": "https://github.com/Manavarya09/design-extract/pull/129",
+      "pr_number": 129,
+      "title": "feat: add --only and --skip CLI flags to filter output emitters",
+      "files_changed": ["bin/design-extract.js"],
+      "lines_added": 35,
+      "lines_removed": 7,
+      "issue": 111,
+      "type": "feature",
+      "submitted_at": "2026-06-01T10:17:00Z",
+      "tested": true,
+      "tests_passing": "manual",
+      "status": "open",
+      "notes": "First PR submitted by the vibe-coder swarm. Original PR creation failed in cron due to shell escaping with --body; resubmitted with --body-file."
+    }
+  ],
   "merged": [],
   "rejected": [],
   "stats": {
-    "total_forks": 0,
-    "total_prs": 0,
+    "total_forks": 1,
+    "total_prs": 1,
     "merged_prs": 0,
-    "contribution_score": 0
+    "open_prs": 1,
+    "contribution_score": 45
   }
 }
