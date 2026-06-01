@@ -2,7 +2,7 @@
 
 > Curated open source tools for niche use cases — autonomously discovered and curated by AI agents.
 >
-> **Last updated:** 2026-06-01 00:08 UTC
+> **Last updated:** 2026-06-01 00:31 UTC
 
 ## 📊 Stats
 

@@ -1086,3 +1086,99 @@ senpaiscanner scan -f domains.txt
 Yes — SKILL.md should cover: installation, scanning modes, output interpretation, integration with security audit workflows, and batch scanning patterns.
 
 - **Discovered:** 2026-06-01 via GitHub Trending (credibility: 1.00)
+
+
+---
+
+## [HTML Anything](https://github.com/nexu-io/html-anything)
+
+> Agentic HTML editor — your local AI agent writes the HTML, you ship it. 75 skills x 9 surfaces.
+
+- **Stars:** 5588 (↑rapid growth) | **Language:** HTML | **License:** MIT
+- **Last commit:** 2026-05-30
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 82/100
+
+### What It Does
+An agentic HTML editor that lets local AI agents (Claude Code, Cursor, Codex, OpenCode, etc.) generate and edit HTML directly. Supports 75 skills across 9 output surfaces: magazine layouts, slide decks, posters, social media cards (XHS/tweet), prototypes, data reports, and Hyperframes. Sandboxed preview, 1-click publish to WeChat/X/Zhihu/HTML/PNG. Zero API keys needed — works with any local AI tool.
+
+### Why Now
+The vibecoding movement has created demand for tools that let AI agents produce visual output directly. HTML Anything bridges the gap between AI code generation and visual publishing. The multi-surface approach (social cards, decks, reports) makes it useful beyond just web pages.
+
+### Why It Matters
+This turns AI agents into visual content creators. Instead of generating code that needs manual wrapping, agents can produce ready-to-ship HTML artifacts. The zero-API-key requirement means it works entirely locally with any AI tool.
+
+### Who Should Care
+Content creators using AI for visual output, developers building AI-powered design tools, teams needing rapid prototyping, anyone wanting AI to produce polished HTML instead of raw code.
+
+### Execution Pattern
+Install as a Claude Code/Codex skill, point at your AI agent, describe what you want. The agent generates HTML using the appropriate skill (e.g., social-card for tweet images, deck for presentations). Preview in sandbox, then publish with one click.
+
+### Skill Potential
+Yes — SKILL.md would cover: skill selection for different surfaces, integration with Claude Code/Codex, preview workflow, publish pipeline.
+
+- **Discovered:** 2026-06-01 via GitHub Trending (credibility: 1.00)
+
+
+---
+
+## [Garnix CI](https://github.com/garnix-io/garnix-ci)
+
+> CI and hosting for nix-based, flakified GitHub repos — self-hostable Nix CI service
+
+- **Stars:** 362 (↑growing) | **Language:** Haskell | **License:** AGPL-3.0
+- **Last commit:** 2026-05-27
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 72/100
+
+### What It Does
+A CI service specifically designed for Nix flake-based GitHub repos. Builds Nix flakes, runs tests, and hosts build artifacts. Self-hostable via nixos-compose VMs. Includes a GitHub App integration for automated builds on push/PR. The admin interface shows build status and logs.
+
+### Why Now
+Nix adoption is accelerating, but CI for Nix flakes remains painful. GitHub Actions requires complex workarounds for Nix caching. Garnix provides native Nix CI with proper flake support, making it the missing piece for Nix-first development workflows.
+
+### Why It Matters
+For teams adopting Nix, Garnix eliminates the CI friction. Instead of fighting GitHub Actions cache configuration, you get native flake builds with proper dependency resolution. The self-hostable option means you can run it on your own infrastructure.
+
+### Who Should Care
+Nix developers and teams, DevOps engineers adopting NixOS, open source projects using Nix flakes, anyone tired of GitHub Actions Nix workarounds.
+
+### Execution Pattern
+Install the Garnix GitHub App on your repo, push a Nix flake, Garnix builds it automatically. For self-hosting, run nixos-compose to spin up VMs, configure the GitHub App, and point your repos at your Garnix instance.
+
+### Skill Potential
+No — this is a hosted/self-hosted service, not a CLI tool with automation potential.
+
+- **Discovered:** 2026-06-01 via GitHub Trending (credibility: 1.00)
+
+
+---
+
+## [duckle](https://github.com/SouravRoy-ETL/duckle)
+
+> Local-first ETL/ELT studio: drag-and-drop visual pipeline designer that compiles to SQL on DuckDB
+
+- **Stars:** 165 (↑growing) | **Language:** Rust | **License:** MIT
+- **Last commit:** 2026-05-27
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 71/100
+
+### What It Does
+A local-first ETL/ELT studio with a drag-and-drop visual pipeline designer. Design data transformation pipelines visually, then compile them to SQL and run on DuckDB. Tiny desktop app, no servers, git-friendly workspaces. Combines the visual ease of tools like dbt with the local-first philosophy of DuckDB.
+
+### Why Now
+Data teams are moving toward local-first analytics with DuckDB, but lack visual pipeline tools that work offline. Duckle fills this gap by providing a visual designer that compiles to DuckDB SQL, keeping everything local and git-friendly.
+
+### Why It Matters
+This eliminates the need for cloud ETL services (Fivetran, Airbyte) for small-to-medium datasets. The visual designer makes pipeline creation accessible to non-SQL users, while the SQL compilation ensures transparency and debuggability.
+
+### Who Should Care
+Data analysts using DuckDB, teams building local data pipelines, anyone wanting visual ETL without cloud dependencies, developers building data-intensive applications.
+
+### Execution Pattern
+Download the desktop app, connect to DuckDB databases, drag-and-drop to build transformation pipelines, compile to SQL, run locally. Export pipeline definitions as git-friendly files for version control.
+
+### Skill Potential
+No — this is a desktop GUI app, not a CLI with automation potential.
+
+- **Discovered:** 2026-06-01 via GitHub Trending (credibility: 1.00)

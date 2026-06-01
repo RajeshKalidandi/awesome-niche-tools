@@ -106,3 +106,67 @@ curl -X POST http://localhost:3000/api/generate \
 Yes — SKILL.md should cover: installation, LLM backend configuration, API usage, presentation styles, and integration with meeting tools.
 
 - **Discovered:** 2026-05-29 via GitHub Trending (credibility: 1.00)
+
+
+---
+
+## [breathe-cli](https://github.com/marekkowalczyk/breathe-cli)
+
+> Paced resonance breathing in your terminal — vagal tone training with clinical backing
+
+- **Stars:** 155 (↑growing) | **Language:** Python | **License:** MIT
+- **Last commit:** 2026-05-25
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 68/100
+
+### What It Does
+A terminal app that paces resonance breathing (6 breaths per minute) for vagal tone training. Displays a visual bar that guides inhale/exhale timing. Supports custom ratios, multiple presets (calm, balanced, extended), logging, and HRV biofeedback integration for finding personal resonance frequency. Single file, no dependencies, macOS only.
+
+### Why Now
+Resonance breathing is one of the few non-pharmacological interventions shown to improve cardiac vagal tone (Bernardi et al. 1998, 2002). This tool makes the practice frictionless for terminal users — open terminal, run breathe, follow the bar. The clinical backing distinguishes it from generic breathing apps.
+
+### Why It Matters
+For developers who spend hours at terminals, this adds a health practice to the existing workflow. The HRV biofeedback integration lets users find their personal resonance frequency, making the practice more effective than one-size-fits-all apps.
+
+### Who Should Care
+Terminal-native developers, health-conscious engineers, anyone with heart failure with reduced ejection fraction (HFrEF) following clinical breathing protocols, HRV biofeedback practitioners.
+
+### Execution Pattern
+Install via pip or Homebrew, run breathe in terminal, follow the visual bar. Use --ratio to customize timing, --preset for pre-configured modes, --log for session tracking. Pair with HRV hardware for resonance frequency testing.
+
+### Skill Potential
+No — this is a simple terminal app, not a CLI with automation potential.
+
+- **Discovered:** 2026-06-01 via Lobsters (credibility: 0.85)
+
+
+---
+
+## [tuiboard](https://github.com/NazzarenoGiannelli/tuiboard)
+
+> Terminal dashboard for markdown task boards — kanban + Today/Tomorrow + 24h timeline + Claude Code agent view
+
+- **Stars:** 57 (↑new, created 2026-05-27) | **Language:** TypeScript | **License:** MIT
+- **Last commit:** 2026-05-27
+- **Source credibility weight:** 0.75 (GitHub Search)
+- **Relevance score:** 65/100
+
+### What It Does
+A terminal dashboard that unifies kanban boards, a Today/Tomorrow virtual panel, a 24-hour agenda (with Google/Microsoft 365 calendar overlay), and a live agent view for Claude Code sessions — all on top of plain markdown task files. Built with OpenTUI + SolidJS on Bun. Cross-platform. No vendor lock-in: boards are CommonMark with Obsidian Tasks-plugin emoji vocabulary.
+
+### Why Now
+The convergence of AI coding agents and terminal-native workflows has created demand for dashboards that show both human tasks and agent status. tuiboard uniquely combines kanban project management with live Claude Code session monitoring in a single TUI.
+
+### Why It Matters
+This bridges the gap between project management and AI agent monitoring. Instead of switching between a kanban app and terminal to check agent status, you get both in one view. The markdown-based storage means tasks are editable anywhere.
+
+### Who Should Care
+Claude Code users, terminal-native project managers, teams using AI coding agents who need visibility into agent progress, developers who prefer TUIs over GUIs.
+
+### Execution Pattern
+Install via bun, create markdown files with ## columns and - [ ] tasks, point tuiboard at them via config.yaml. The agent view auto-discovers Claude Code sessions from ~/.claude/. Overlay calendar events for time-blocked work.
+
+### Skill Potential
+No — this is a terminal dashboard app, not a CLI with automation potential.
+
+- **Discovered:** 2026-06-01 via GitHub Search (credibility: 0.75)

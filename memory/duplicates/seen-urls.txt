@@ -60,3 +60,12 @@ https://github.com/secluso/core
 https://github.com/MatinSenPai/SenPaiScanner
 https://github.com/vinhnx/VTCode
 https://github.com/FlashML-org/flashlib
+https://github.com/pewdiepie-archdaemon/odysseus
+https://github.com/nexu-io/html-anything
+https://github.com/AprilNEA/OpenLogi
+https://github.com/garnix-io/garnix-ci
+https://github.com/deusjin/subforge
+https://github.com/marekkowalczyk/breathe-cli
+https://github.com/NazzarenoGiannelli/tuiboard
+https://github.com/yb2460/harness-anything
+https://github.com/SouravRoy-ETL/duckle

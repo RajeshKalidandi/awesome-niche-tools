@@ -112,3 +112,67 @@ curl -sL https://secluso.com/install | bash
 Yes — SKILL.md should cover: Pi setup, camera module compatibility, relay configuration, phone app pairing, encryption setup, and troubleshooting.
 
 - **Discovered:** 2026-06-01 via Hacker News (credibility: 0.85)
+
+
+---
+
+## [Odysseus](https://github.com/pewdiepie-archdaemon/odysseus)
+
+> Self-hosted AI workspace — local-first ChatGPT/Claude alternative with agents, deep research, and email triage
+
+- **Stars:** 7877 (↑rapid growth, created 2026-05-31) | **Language:** JavaScript | **License:** MIT
+- **Last commit:** 2026-05-31
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 85/100
+
+### What It Does
+A full-featured self-hosted AI workspace that replicates the ChatGPT/Claude UI experience on your own hardware. Includes chat with any local model (vLLM, llama.cpp, Ollama), agent mode with tools (MCP, web, files, shell), deep research with multi-step synthesis, model comparison with blind testing, document editing with AI assistance, persistent memory/skills via ChromaDB, IMAP/SMTP email with AI triage, notes/tasks with reminders, and CalDAV calendar sync. Docker compose deployment with PWA mobile support.
+
+### Why Now
+Self-hosted AI tooling is maturing rapidly. Odysseus bundles the best patterns (local model serving, agent frameworks, memory systems) into a single polished package. Created 2026-05-31, it represents the current state of the art for self-hosted AI workspaces. The cookbook feature that scans hardware and recommends models is particularly novel.
+
+### Why It Matters
+This is the most complete self-hosted AI workspace available. Instead of stitching together Open WebUI + separate agent tools + separate email tools, you get everything in one deployment. For teams running on-prem AI or privacy-conscious users, this eliminates the need for multiple SaaS subscriptions.
+
+### Who Should Care
+Privacy-conscious developers, teams running on-prem AI infrastructure, self-hosters building local AI stacks, anyone wanting ChatGPT-like experience without sending data to OpenAI/Anthropic.
+
+### Execution Pattern
+Deploy via Docker Compose, point at your existing LLM server (Ollama/vLLM), configure email accounts in Settings. Use the Cookbook to auto-discover and serve optimal models for your hardware. The agent mode integrates with MCP servers for tool use. Memory and skills persist across sessions via ChromaDB.
+
+### Skill Potential
+Yes — SKILL.md would cover: Docker deployment, model selection via Cookbook, agent tool configuration, email triage setup, memory/skills persistence.
+
+- **Discovered:** 2026-06-01 via GitHub Trending (credibility: 1.00)
+
+
+---
+
+## [OpenLogi](https://github.com/AprilNEA/OpenLogi)
+
+> Native, local-first alternative to Logitech Options+ written in Rust — remap buttons, DPI, SmartShift over HID++
+
+- **Stars:** 1688 (↑growing) | **Language:** Rust | **License:** GPL-3.0
+- **Last commit:** 2026-05-28
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 78/100
+
+### What It Does
+A native, local-first replacement for Logitech Options+ written in Rust. Remap mouse buttons, adjust DPI settings, and configure SmartShift (free-spin/tilt wheel) via HID++ protocol directly. No account required, no telemetry, no cloud dependency. Supports multiple Logitech devices through the HID++ protocol.
+
+### Why Now
+Logitech Options+ has become increasingly bloated with mandatory accounts, cloud sync, and telemetry. The privacy-conscious community has been demanding a local alternative. OpenLogi delivers this in Rust (fast, safe, single binary) with full HID++ protocol support.
+
+### Why It Matters
+This eliminates the need for Logitech's proprietary software stack. Users get full device customization without surrendering privacy. The Rust implementation means it's fast, lightweight, and cross-platform.
+
+### Who Should Care
+Logitech mouse/keyboard users who refuse to install Options+, privacy-conscious developers, Linux users without native Logitech support, anyone wanting local hardware control.
+
+### Execution Pattern
+Download the binary for your platform, run it, detect connected Logitech devices via HID++, remap buttons and adjust settings through the GUI or CLI. Settings persist locally without cloud sync.
+
+### Skill Potential
+No — this is a desktop GUI app, not a CLI/API tool with automation potential.
+
+- **Discovered:** 2026-06-01 via GitHub Trending (credibility: 1.00)
