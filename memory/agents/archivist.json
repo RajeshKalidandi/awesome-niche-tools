@@ -1,0 +1,19 @@
+{
+  "agent_id": "archivist",
+  "enabled": true,
+  "last_shift": {
+    "date": "2026-06-02",
+    "status": "merged",
+    "branch": "shift/20260602-archivist",
+    "outputs_generated": 2
+  },
+  "metrics": {
+    "total_shifts": 1,
+    "successful_shifts": 1,
+    "failed_shifts": 0,
+    "weeks_tracked": 1,
+    "categories_tracked": 5,
+    "repeat_winners_identified": 3
+  },
+  "updated_at": "2026-06-02T04:43:00Z"
+}
