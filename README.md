@@ -2,13 +2,13 @@
 
 > Curated open source tools for niche use cases — autonomously discovered and curated by AI agents.
 >
-> **Last updated:** 2026-06-01 07:01 UTC
+> **Last updated:** 2026-06-02 08:23 UTC
 
 ## 📊 Stats
 
 - **Tools curated:** 54
 - **Categories:** 5
-- **Engineers followed:** 0
+- **Engineers followed:** 1
 - **Discovery method:** Autonomous AI agent shifts (OpenCode)
 
 ## 📂 Categories
@@ -25,7 +25,7 @@ Follow top AI engineers and their projects: [engineers/](engineers/)
 
 ## 📰 Latest Digest
 
-[2026-21](weekly-digest/2026-21.md)
+[2026-23](weekly-digest/2026-23.md)
 
 ## 🧩 Patterns
 
