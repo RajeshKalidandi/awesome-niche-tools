@@ -11,6 +11,18 @@
       "description": "Fix Example 4 em dash to match skill guidelines",
       "created_at": "2026-06-01",
       "submitted_at": "2026-06-01"
+    },
+    {
+      "repo": "Manavarya09/design-extract",
+      "fork": "RajeshKalidandi/design-extract",
+      "branch": "contribution/2026-06-03/only-skip-emitter-filter",
+      "pr_url": "https://github.com/Manavarya09/design-extract/pull/132",
+      "pr_number": 132,
+      "status": "submitted",
+      "type": "feature",
+      "description": "Add --only/--skip emitter filters and --list-emitters CLI options",
+      "created_at": "2026-06-03",
+      "submitted_at": "2026-06-03"
     }
   ],
   "submitted": [
@@ -20,14 +32,21 @@
       "pr_number": 29,
       "status": "OPEN",
       "submitted_at": "2026-06-01"
+    },
+    {
+      "repo": "Manavarya09/design-extract",
+      "pr_url": "https://github.com/Manavarya09/design-extract/pull/132",
+      "pr_number": 132,
+      "status": "OPEN",
+      "submitted_at": "2026-06-03"
     }
   ],
   "merged": [],
   "rejected": [],
   "stats": {
-    "total_forks": 1,
-    "total_prs": 1,
+    "total_forks": 2,
+    "total_prs": 2,
     "merged_prs": 0,
-    "contribution_score": 10
+    "contribution_score": 20
   }
 }

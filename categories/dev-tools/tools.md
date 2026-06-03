@@ -27,6 +27,16 @@ If you're running AI agents that make multiple tool calls per task, Headroom can
 - RAG pipeline builders struggling with context window limits
 - Solo devs paying out-of-pocket for API calls
 - Anyone building LLM-powered tools that process large outputs
+- Intel macOS users: avoid `pip install headroom-ai[proxy]`; use Docker or Docker Native instead, or wait for a resolved install path for `x86_64-apple-darwin`
+
+### Compatibility & Issues
+- **Open issue:** Headroom 0.22.4 install currently fails on macOS Intel (`x86_64-apple-darwin`) because `ort-sys v2.0.0-rc.12` has no prebuilt binaries for that target. Reported in `chopratejas/headroom#525`.
+- **Workaround:** Use the official Docker image and route clients through the proxy, e.g.:
+  ```bash
+  docker run --rm -it -p 8787:8787 ghcr.io/chopratejas/headroom:latest
+  ```
+  Set your client base URL to `http://localhost:8787` when launching tools like Claude Code. In that image, only the proxy is exposed; `headroom wrap` is not available.
+- **Implication:** If you need `headroom wrap` or a native CLI on Intel Macs, wait for an upstream fix that makes the ONNX backend optional or provides a prebuilt wheel.
 
 ### Execution Pattern
 ```bash
