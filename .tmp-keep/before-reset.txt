@@ -1,0 +1,6 @@
+---
+?? .tmp-keep/
+?? scripts/archivist-week-23.py
+?? scripts/bootstrap-archivist.sh
+?? shifts/2026-06-03-alpha.md
+?? shifts/latest-metrics.json

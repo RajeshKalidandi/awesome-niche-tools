@@ -807,3 +807,119 @@ embedding = umap.fit_transform(data)
 Yes — SKILL.md should cover: installation, GPU requirements, API compatibility with scikit-learn, performance benchmarks, and integration with data analysis workflows.
 
 - **Discovered:** 2026-06-01 via GitHub Trending (credibility: 1.00)
+
+
+---
+
+## [PilotDeck](https://github.com/OpenBMB/PilotDeck)
+
+> Task-oriented AI Agent productivity platform for building agent workflows and productivity systems.
+
+- **Stars:** 2857 | **Language:** TypeScript | **License:** AGPL-3.0
+- **Last commit:** 2026-06-03
+- **Source:** Verified GitHub API (active, non-archived)
+
+### What It Does
+PilotDeck provides a structured platform for designing, running, and managing task-oriented AI agent workflows. It is focused on productivity use cases: planning, scheduling, and execution of multi-step agent tasks with a clear UI and workflow model.
+
+### Why Now
+Newly surfaced and recently pushed, with active development today. Task-oriented agent platforms are gaining traction as teams move beyond chat interfaces to workflow-based automation.
+
+### Why It Matters
+It reduces the gap between prototype agent apps and production task workflows. For devs building AI products, this offers a reusable scaffold instead of building orchestration from scratch.
+
+### Who Should Care
+Teams building AI assistant products, workflow automation, or multi-step agent UIs who want a starting scaffold with community momentum.
+
+### Execution Pattern
+Integrate PilotDeck as the task orchestration layer; define agent workflows; wire to local or hosted LLMs; use its persistence and scheduling primitives for recurring tasks.
+
+### Skill Potential
+Yes — if the CLI exposes task creation and management operations, a SKILL.md can cover setting up task pipelines and integrations.
+
+
+---
+
+## [PilotDeck](https://github.com/OpenBMB/PilotDeck)
+
+> Task-oriented AI Agent productivity platform for building agent workflows and productivity systems.
+
+- **Stars:** 2857 | **Language:** TypeScript | **License:** AGPL-3.0
+- **Last commit:** 2026-06-03
+- **Source:** Verified GitHub API (active, non-archived)
+
+### What It Does
+PilotDeck provides a structured platform for designing, running, and managing task-oriented AI agent workflows. It is focused on productivity use cases: planning, scheduling, and execution of multi-step agent tasks with a clear UI and workflow model.
+
+### Why Now
+Newly surfaced and recently pushed, with active development today. Task-oriented agent platforms are gaining traction as teams move beyond chat interfaces to workflow-based automation.
+
+### Why It Matters
+It reduces the gap between prototype agent apps and production task workflows. For devs building AI products, this offers a reusable scaffold instead of building orchestration from scratch.
+
+### Who Should Care
+Teams building AI assistant products, workflow automation, or multi-step agent UIs who want a starting scaffold with community momentum.
+
+### Execution Pattern
+Integrate PilotDeck as the task orchestration layer; define agent workflows; wire to local or hosted LLMs; use its persistence and scheduling primitives for recurring tasks.
+
+### Skill Potential
+Yes — if the CLI exposes task creation and management operations, a SKILL.md can cover setting up task pipelines and integrations.
+
+
+---
+
+## [vibecode-pro-max-kit](https://github.com/withkynam/vibecode-pro-max-kit)
+
+> Spec-driven coding harness that preserves context across AI coding sessions, offering 12 agents and 32 skills for Claude Code and Codex.
+
+- **Stars:** 729 | **Language:** JavaScript | **License:** MIT
+- **Last commit:** 2026-06-02
+- **Source:** Verified GitHub API (active, non-archived)
+
+### What It Does
+Stores structured context and skill configurations for AI coding sessions so the assistant does not lose prior decisions, constraints, or codebase knowledge between prompts.
+
+### Why Now
+Context rot is a real bottleneck in vibe-coding workflows. A harness that auto-curates context has immediate value for solo devs and small teams.
+
+### Why It Matters
+It changes the economics of AI-assisted development by reducing repetition, which increases throughput and reduces errors from forgotten context.
+
+### Who Should Care
+Solo devs, product owners, and engineering leads using Claude Code or Codex who want higher-quality AI outputs without extra prompt engineering.
+
+### Execution Pattern
+Adopt the harness for a project, define the skill and context schema, and use it as the standard wrapping layer around AI coding sessions.
+
+### Skill Potential
+Yes — the kit itself centers on skills, so a SKILL.md can document setup and the 12 agent configurations.
+
+
+---
+
+## [DeepSeek-GUI](https://github.com/XingYu-Zhong/DeepSeek-GUI)
+
+> AI agent workspace for DeepSeek models, with Code and Claw modes built into your application.
+
+- **Stars:** 819 | **Language:** TypeScript | **License:** MIT
+- **Last commit:** 2026-05-28
+- **Source:** Verified GitHub API (active, non-archived)
+
+### What It Does
+Brings DeepSeek models directly into apps as an embedded agent workspace, supporting code and claw-style interaction modes that go beyond chat.
+
+### Why Now
+DeepSeek models are expanding accessibility. GUI wrappers that expose coding and tool modes help adoption by non-researcher developers.
+
+### Why It Matters
+It lowers the barrier for teams to run DeepSeek inside an application without building UI/integration from scratch.
+
+### Who Should Care
+App developers embedding AI coding features, teams evaluating DeepSeek as a backend model, and builders of agent UIs.
+
+### Execution Pattern
+Integrate the workspace into apps, expose code-mode and claw-mode APIs to end users, and iterate on prompt wrappers around DeepSeek endpoints.
+
+### Skill Potential
+Yes — if there is a CLI or config surface, a SKILL.md can document embedding patterns.

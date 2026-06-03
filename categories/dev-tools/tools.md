@@ -1182,3 +1182,32 @@ Download the desktop app, connect to DuckDB databases, drag-and-drop to build tr
 No — this is a desktop GUI app, not a CLI with automation potential.
 
 - **Discovered:** 2026-06-01 via GitHub Trending (credibility: 1.00)
+
+
+---
+
+## [skill-creator](https://github.com/sandiiarov/skill-creator)
+
+> Turn any MCP server, OpenAPI spec, or GraphQL endpoint into a CLI at runtime.
+
+- **Stars:** 543 | **Language:** TypeScript | **License:** MIT
+- **Last commit:** 2026-06-03
+- **Source:** Verified GitHub API (active, non-archived)
+
+### What It Does
+Generates a CLI from external runtimes at runtime. Instead of writing adapter code for each API or protocol, it creates a command surface from a spec or server description.
+
+### Why Now
+MCP and OpenAPI adoption is expanding. Reducing the adapter tax by generating CLIs on demand cuts developer friction and preserves portability.
+
+### Why It Matters
+Spec-first integration is becoming the standard workflow. This tool lets teams move faster by turning specs into CLIs automatically.
+
+### Who Should Care
+Developers integrating many APIs, platform teams building internal CLIs, and engineers exploring MCP ecosystems.
+
+### Execution Pattern
+Point it at an MCP server or OpenAPI document, discover the generated commands, and pipe outputs into agent tool calls or shell scripts.
+
+### Skill Potential
+Yes — can be wrapped into a Hermes skill for on-demand MCP-to-CLI conversion with usage examples.
