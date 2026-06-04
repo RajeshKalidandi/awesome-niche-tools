@@ -25,22 +25,12 @@
       "submitted_at": "2026-06-03"
     }
   ],
-  "submitted": [
-    {
-      "repo": "hardikpandya/stop-slop",
-      "pr_url": "https://github.com/hardikpandya/stop-slop/pull/29",
-      "pr_number": 29,
-      "status": "OPEN",
-      "submitted_at": "2026-06-01"
-    },
-    {
-      "repo": "Manavarya09/design-extract",
-      "pr_url": "https://github.com/Manavarya09/design-extract/pull/132",
-      "pr_number": 132,
-      "status": "OPEN",
-      "submitted_at": "2026-06-03"
-    }
-  ],
+  "target_under_review": {
+    "repo": "veryyoldman/Genspark-AI",
+    "reason": "AI-related candidate from curated pool; low stars (~114), scored for doc optimization",
+    "status": "pending_prerequisites",
+    "created_at": "2026-06-04"
+  },
   "merged": [],
   "rejected": [],
   "stats": {
