@@ -2,19 +2,19 @@
   "agent_id": "gamma",
   "enabled": true,
   "last_shift": {
-    "date": "2026-06-02",
-    "status": "partial",
-    "branch": "shift/20260602-gamma",
+    "date": "2026-06-04",
+    "status": "merged",
+    "branch": "shift/20260604-gamma",
     "tools_curated": 0,
     "skills_generated": 0
   },
   "health_metrics": {
-    "total_shifts": 1,
-    "successful_shifts": 0,
+    "total_shifts": 2,
+    "successful_shifts": 1,
     "failed_shifts": 0,
     "validation_failures": 0,
     "hallucination_rate": 0.0,
     "duplicate_rate": 0.0
   },
-  "updated_at": "2026-06-02T08:30:00Z"
+  "updated_at": "2026-06-04T00:30:00.000000+00:00"
 }
