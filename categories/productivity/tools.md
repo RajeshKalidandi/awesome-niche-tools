@@ -170,3 +170,42 @@ Install via bun, create markdown files with ## columns and - [ ] tasks, point tu
 No — this is a terminal dashboard app, not a CLI with automation potential.
 
 - **Discovered:** 2026-06-01 via GitHub Search (credibility: 0.75)
+
+
+---
+
+## [html-video](https://github.com/nexu-io/html-video)
+
+> HTML→Video meta-layer for coding agents.
+
+- **Stars:** 741 | **Language:** HTML | **License:** Apache-2.0
+- **Last commit:** 2026-06-05
+- **Source credibility weight:** 1.00 (GitHub trending discovery)
+- **Relevance score:** 69/100
+
+### What It Does
+html-video turns HTML into video outputs suitable for agent pipelines. It serves as a meta-layer coding agents can call to render prototypes, demos, or marketing clips from structured markup.
+
+### Why Now
+Agents increasingly need multimodal outputs, not just text. HTML-to-video generation bridges structured markup and motion media in agent workflows.
+
+### Why It Matters
+It narrows the gap between a structured spec and a deliverable asset. Agents can ship a video instead of only text.
+
+### Who Should Care
+- Agencies using agents for content production
+- Product teams wanting auto-generated walkthroughs
+- Devs building agent pipelines that need motion deliverables
+- Indie makers who ship videos
+
+### Execution Pattern
+```bash
+# Render HTML spec to video through agent
+html-video render ./walkthrough.html ./walkthrough.mp4
+# Optional templates and timing flags
+```
+
+### Skill Potential
+Yes — CLI/REST integration, template styling, agent output wiring, and rendering performance tips.
+
+- **Discovered:** 2026-06-05 via GitHub trending discovery (credibility: 1.00)

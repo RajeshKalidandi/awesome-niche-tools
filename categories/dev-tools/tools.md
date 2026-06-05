@@ -1192,3 +1192,42 @@ Download the desktop app, connect to DuckDB databases, drag-and-drop to build tr
 No — this is a desktop GUI app, not a CLI with automation potential.
 
 - **Discovered:** 2026-06-01 via GitHub Trending (credibility: 1.00)
+
+
+---
+
+## [vibecode-pro-max-kit](https://github.com/withkynam/vibecode-pro-max-kit)
+
+> Spec-driven coding harness for vibecoders — self-improving context memory, 12 agents, 32 skills. Works with Claude Code and Codex.
+
+- **Stars:** 780 | **Language:** JavaScript | **License:** MIT
+- **Last commit:** 2026-06-05
+- **Source credibility weight:** 1.00 (GitHub trending discovery)
+- **Relevance score:** 70/100
+
+### What It Does
+vibecode-pro-max-kit reframes agent coding around specs and memory, not raw prompts. It gives a team of agents persistent project context and a reusable skill library so build quality compounds over time instead of degrading.
+
+### Why Now
+Vibe coding is shifting from vibes-only to spec-plus-memory-driven execution. This harness mirrors that shift, and 780 stars shows early adoption.
+
+### Why It Matters
+It treats agent context as infrastructure, not an accident. That makes agent-produced codebases coherent at scale.
+
+### Who Should Care
+- Product and eng leads prototyping with agents
+- Claude Code/Codex users burning context on each session
+- Teams who want agentizable product specs
+- AI-native startups
+
+### Execution Pattern
+```bash
+# Use as a harness during Claude Code or Codex sessions
+npx vibecode-pro-max-kit@latest
+# Load spec + agent roster, then iterate
+```
+
+### Skill Potential
+Yes — spec workflow, harness lifecycle, skill extension, and quickstart for Claude Code / Codex.
+
+- **Discovered:** 2026-06-05 via GitHub trending discovery (credibility: 1.00)
