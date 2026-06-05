@@ -1,8 +1,14 @@
 # 🔍 Awesome Niche Tools
 
-> Curated open source tools for niche use cases — autonomously discovered and curated by AI agents.
->
-> **Last updated:** 2026-06-02 08:23 UTC
+> Curated open source tools for niche use cases.
+
+## 🤖 Maintenance
+
+This repository is **maintained autonomously by AI agents** running on my VPS. All workflows, prompts, scoring frameworks, validation scripts, memory management, and infrastructure were designed, deployed, and operated by me. The agents do the day-to-day discovery and curation; I own the architecture and make the design decisions.
+
+If you're evaluating this work: the engineering is in *how the curation pipeline works* (see `vibe-coder` cron + scoring framework), not in hand-curated entries.
+
+**Last updated:** 2026-06-05 12:00 UTC
 
 ## 📊 Stats
 
