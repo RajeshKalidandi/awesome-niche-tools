@@ -807,3 +807,161 @@ embedding = umap.fit_transform(data)
 Yes — SKILL.md should cover: installation, GPU requirements, API compatibility with scikit-learn, performance benchmarks, and integration with data analysis workflows.
 
 - **Discovered:** 2026-06-01 via GitHub Trending (credibility: 1.00)
+
+
+---
+
+## [lazycodex](https://github.com/code-yeongyu/lazycodex)
+
+> Agent harness for complex codebases inside Codex CLI — project memory, planning, execution, and verified completion.
+
+- **Stars:** 480 | **Language:** TypeScript | **License:** MIT
+- **Last commit:** 2026-06-05
+- **Source credibility weight:** 1.00 (GitHub trending discovery)
+- **Relevance score:** 78/100
+
+### What It does
+lazycodex turns Codex into a full project-aware coding agent by adding persistent memory, planning steps, execution tracking, and verified completion built right into the CLI harness. Instead of dumb translation, it gives the agent a workspace memory and a plan.
+
+### Why Now
+AI coding agents are graduating from single-shot prompts to multi-step coding projects, and agent harnesses are the missing layer. lazycodex packages this as a drop-in agent harness for Codex, and 480 stars in just a few days shows demand.
+
+### Why It Matters
+For any developer running Codex on real repos, lazycodex removes the "agent amnesia" problem. The agent remembers prior steps, tracks open plans, and verifies work before declaring done.
+
+### Who Should Care
+- Solo devs running Codex on large codebases
+- Teams who want repeatable AI-assisted implementation plans
+- Engineers building internal agent harnesses
+- Agent SDK evaluators
+
+### Execution Pattern
+```bash
+# Install / use via Codex integration
+npx lazycodex@latest
+# Follow the project memory workflow for plan-then-execute coding.
+```
+
+### Skill Potential
+Yes — cover Codex integration, memory workflow setup, plan-driven execution, verification loops, and observer patterns.
+
+- **Discovered:** 2026-06-05 via GitHub trending discovery (credibility: 1.00)
+
+
+---
+
+## [memory-os](https://github.com/ClaudioDrews/memory-os)
+
+> A 7-layer memory operating system for Hermes Agent — persistent memory with Qdrant, structured facts, fabric recall, auto-curated wiki, and surgical context injection.
+
+- **Stars:** 830 | **Language:** Python | **License:** MIT
+- **Last commit:** 2026-06-05
+- **Source credibility weight:** 1.00 (GitHub trending discovery)
+- **Relevance score:** 73/100
+
+### What It Does
+memory-os provides structured persistent memory for agent systems. It layers vector recall (Qdrant) alongside symbolic facts, auto-curates a wiki from past sessions, and injects only what's relevant back into agent context.
+
+### Why Now
+Context inflation is now the primary bottleneck for capable agents. memory-os directly attacks it by giving agents a persistent, searchable memory substrate instead of an ever-growing transcript.
+
+### Why It Matters
+Better memory changes agent quality more than model upgrades in many cases. If agents recall past decisions, preferences, and project context, they reduce hallucination, improve consistency, and ship faster.
+
+### Who Should Care
+- AI agent operators managing long-lived workflows
+- Dev teams running multiple agent sessions over weeks
+- OSS contributors building long-running automation
+- Researchers comparing memory architectures
+
+### Execution Pattern
+```bash
+# Start memory-os service
+python -m memory_os serve
+# Agents call MCP or HTTP endpoints to recall/store
+curl -X POST http://localhost:8000/recall -d '{"query":"deployment decisions"}'
+```
+
+### Skill Potential
+Yes — describe memory topology, installation modes, Qdrant setup, recall pipelines, wiki curation, and context-injection safety.
+
+- **Discovered:** 2026-06-05 via GitHub trending discovery (credibility: 1.00)
+
+
+---
+
+## [adhd](https://github.com/UditAkhourii/adhd)
+
+> A skill for coding agents. Tree-of-thought with pruning, parallel divergent thoughts under different cognitive frames, and survivor deepening.
+
+- **Stars:** 749 | **Language:** TypeScript | **License:** MIT
+- **Last commit:** 2026-06-05
+- **Source credibility weight:** 1.00 (GitHub trending discovery)
+- **Relevance score:** 71/100
+
+### What It Does
+adhd makes coding agents fan out their thinking in parallel, score each branch, prune weak options, and deepen the winners. It's a tree-of-thought skill with built-in cognitive frames and an LLM judge to prune dead-ends fast.
+
+### Why Now
+Reasoning budgets are growing but raw thinking isn't automatically better. Directed reasoning budgets with pruning become the next productivity unlock.
+
+### Why It Matters
+For creative and interdisciplinary work, more ideas help — but only if you can drop the bad ones fast. adhd formalizes that into an agent skill.
+
+### Who Should Care
+- Coding agent operators wanting richer planning loops
+- Teams exploring reasoning-time compute scaling
+- Prompt engineers building agent policies
+- Researchers studying agent cognition models
+
+### Execution Pattern
+```bash
+# Install in Claude Code or Codex library
+npm install -g @udit/adhd
+# Use in a thinking-heavy task to expand-and-prune planning.
+```
+
+### Skill Potential
+Yes — benchmark framework, integration examples, pruning prompts, and cognitive frame selection guidance.
+
+- **Discovered:** 2026-06-05 via GitHub trending discovery (credibility: 1.00)
+
+
+---
+
+## [Duel-Agents](https://github.com/2aronS/Duel-Agents)
+
+> CLI, SDK, and IDE plugins for Duel Agents.
+
+- **Stars:** 714 | **Language:** TypeScript | **License:** MIT
+- **Last commit:** 2026-06-05
+- **Source credibility weight:** 1.00 (GitHub trending discovery)
+- **Relevance score:** 68/100
+
+### What It Does
+Duel-Agents provides a CLI, SDK, and IDE plugins for running structured agent interactions in development workflows. It exposes agents as first-class primitives you can invoke, pipe, and debug from your editor.
+
+### Why Now
+Developer experience for agent usage is still primitive. Bundling CLI, SDK, and IDE plugins lowers the adoption burden and embeds agentic behavior inside everyday tooling.
+
+### Why It Matters
+DX improvements for agents matter: if invoking an agent costs one terminal command, usage scales. Duel-Agents makes agent calls keyboard-native.
+
+### Who Should Care
+- IDE-native engineers (VS Code, JetBrains)
+- CLI-first automation builders
+- SDK integrators wrapping agent behaviors
+- Teams debugging agent pipelines live
+
+### Execution Pattern
+```bash
+# Install CLI
+npm install -g duel-agents
+# Run an agent task
+duel run "refactor auth module" --dry-run
+```
+
+### Skill Potential
+Yes — install flow, IDE config, SDK binding patterns, task templates, and multi-provider fallback.
+
+- **Discovered:** 2026-06-05 via GitHub trending discovery (credibility: 1.00)

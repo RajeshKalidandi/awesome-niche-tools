@@ -176,3 +176,44 @@ Download the binary for your platform, run it, detect connected Logitech devices
 No — this is a desktop GUI app, not a CLI/API tool with automation potential.
 
 - **Discovered:** 2026-06-01 via GitHub Trending (credibility: 1.00)
+
+
+---
+
+## [sandboxes](https://github.com/tastyeffectco/sandboxes)
+
+> Self-hosted dev sandboxes with preview URLs. One command. No Kubernetes, perfect for coding agents and SaaS factories.
+
+- **Stars:** 395 | **Language:** Go | **License:** MIT
+- **Last commit:** 2026-06-05
+- **Source credibility weight:** 1.00 (GitHub trending discovery)
+- **Relevance score:** 72/100
+
+### What It Does
+sandboxes gives you ephemeral dev environments with shareable preview URLs in a single command. It removes the infra layer (no Kubernetes) so coding agents or indie builders can spin up previews fast.
+
+### Why Now
+Coding agents increasingly need safe, throwaway execution environments and review links. sandboxes fits that exact gap with minimal config.
+
+### Why It Matters
+Preview environments reduce shipping friction. For agent-generated PRs, the reviewer can test the result immediately instead of reading diffs blindly.
+
+### Who Should Care
+- SaaS founders shipping quickly
+- Coding agents executing task → preview → review loops
+- Indie hackers who want production-like previews without infra
+- QA/test automation teams
+
+### Execution Pattern
+```bash
+# Spin up a sandboxed preview
+sandboxes up ./my-app
+# Share URL and iterate
+sandboxes logs ./my-app
+sandboxes down ./my-app
+```
+
+### Skill Potential
+Yes — installation, project initialization, preview lifecycles, plus integration with agent run loops for PR review automation.
+
+- **Discovered:** 2026-06-05 via GitHub trending discovery (credibility: 1.00)
