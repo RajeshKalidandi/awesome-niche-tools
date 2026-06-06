@@ -1,29 +1,23 @@
 # 🔍 Awesome Niche Tools
 
-> Curated open source tools for niche use cases.
-
-## 🤖 Maintenance
-
-This repository is **maintained autonomously by AI agents** running on my VPS. All workflows, prompts, scoring frameworks, validation scripts, memory management, and infrastructure were designed, deployed, and operated by me. The agents do the day-to-day discovery and curation; I own the architecture and make the design decisions.
-
-If you're evaluating this work: the engineering is in *how the curation pipeline works* (see `vibe-coder` cron + scoring framework), not in hand-curated entries.
-
-**Last updated:** 2026-06-05 12:00 UTC
+> Curated open source tools for niche use cases — autonomously discovered and curated by AI agents.
+>
+> **Last updated:** 2026-06-06 02:06 UTC
 
 ## 📊 Stats
 
-- **Tools curated:** 54
+- **Tools curated:** 64
 - **Categories:** 5
 - **Engineers followed:** 1
 - **Discovery method:** Autonomous AI agent shifts (OpenCode)
 
 ## 📂 Categories
 
-- [🤖 Ai Agents](categories/ai-agents/tools.md) — 17 tools
+- [🤖 Ai Agents](categories/ai-agents/tools.md) — 21 tools
 - [🔄 Automation](categories/automation/tools.md) — 2 tools
-- [🛠️ Dev Tools](categories/dev-tools/tools.md) — 26 tools
-- [⚡ Productivity](categories/productivity/tools.md) — 4 tools
-- [🏠 Selfhosted](categories/selfhosted/tools.md) — 5 tools
+- [🛠️ Dev Tools](categories/dev-tools/tools.md) — 28 tools
+- [⚡ Productivity](categories/productivity/tools.md) — 6 tools
+- [🏠 Selfhosted](categories/selfhosted/tools.md) — 7 tools
 
 ## 👤 Engineers
 

@@ -217,3 +217,34 @@ sandboxes down ./my-app
 Yes — installation, project initialization, preview lifecycles, plus integration with agent run loops for PR review automation.
 
 - **Discovered:** 2026-06-05 via GitHub trending discovery (credibility: 1.00)
+
+
+---
+
+## [papernews](https://github.com/marcj/papernews)
+
+> Self-hosted daily newspaper PDF generator for e-ink readers, powered by Claude
+
+- **Stars:** 95 (47/day velocity) | **Language:** Python | **License:** MIT
+- **Last commit:** 2026-06-04
+- **Source credibility weight:** 0.88 (Hacker News Show HN, 11 points)
+- **Relevance score:** 64/100
+- **Discovered:** 2026-06-06 via Hacker News
+
+### What It Does
+papernews pulls RSS feeds and Hacker News stories, uses Claude to clean up and rewrite full article bodies (not summaries), and renders everything into a consistently typeset LaTeX PDF. Designed for e-ink readers like the reMarkable, but works in any PDF viewer.
+
+### Why Now
+The proliferation of news sites with different layouts, ads, and visual noise makes reading painful. papernews solves this by creating a single,安静, offline-readable PDF each day. The Docker-based setup makes it trivial to run on any machine.
+
+### Why It Matters
+Instead of juggling 5 browser tabs refreshed throughout the day, you get one calm PDF. The Claude-powered rewriting produces clean, full-text articles without the visual noise of the original sites.
+
+### Who Should Care
+reMarkable owners, e-ink enthusiasts, and anyone who prefers reading news in a clean, offline-first format. Also useful for teams wanting a daily digest of industry news.
+
+### Execution Pattern
+Clone the repo, set your Anthropic API key in .env, configure sources in sources.toml, then run docker compose up. The PDF builds on demand and is cached. Background ingest runs every 4 hours.
+
+### Skill Potential
+Yes - could automate daily newspaper generation as a cron job, or integrate with specific RSS feeds for niche industry monitoring.

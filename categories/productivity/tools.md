@@ -209,3 +209,34 @@ html-video render ./walkthrough.html ./walkthrough.mp4
 Yes — CLI/REST integration, template styling, agent output wiring, and rendering performance tips.
 
 - **Discovered:** 2026-06-05 via GitHub trending discovery (credibility: 1.00)
+
+
+---
+
+## [Open Notebook](https://github.com/lfnovo/open-notebook)
+
+> Open-source, privacy-focused alternative to Google NotebookLM with 18+ AI providers
+
+- **Stars:** 25,984 (1,152 today) | **Language:** TypeScript | **License:** MIT
+- **Last commit:** 2026-06-04
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 85/100
+- **Discovered:** 2026-06-06 via GitHub Trending
+
+### What It Does
+Open Notebook is a self-hosted alternative to Google NotebookLM that lets you organize multi-modal content (PDFs, videos, audio, web pages), chat with your research using AI, and generate multi-speaker podcasts. Supports 18+ AI providers including OpenAI, Anthropic, Ollama, and LM Studio.
+
+### Why Now
+Google NotebookLM locked users into Google's ecosystem. Open Notebook fills the demand for a privacy-respecting, provider-flexible alternative. The 1,152 stars gained today signals strong community adoption of this niche.
+
+### Why It Matters
+If you use NotebookLM for research but want to keep your data private and choose your own AI provider, this is the only mature open-source option. The podcast generation feature (1-4 speakers with custom profiles) is ahead of Google's offering.
+
+### Who Should Care
+Researchers, knowledge workers, and anyone who uses LLM-powered note-taking but wants data sovereignty and provider flexibility.
+
+### Execution Pattern
+Clone the repo, configure your preferred AI provider in the settings, add content sources (URLs, PDFs, audio), and use the web UI to chat with your research or generate podcasts. Can be deployed via Docker.
+
+### Skill Potential
+Yes — could generate a SKILL.md for automating podcast generation from web content feeds, or for batch-processing research papers into a searchable knowledge base.

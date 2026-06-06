@@ -1231,3 +1231,37 @@ npx vibecode-pro-max-kit@latest
 Yes — spec workflow, harness lifecycle, skill extension, and quickstart for Claude Code / Codex.
 
 - **Discovered:** 2026-06-05 via GitHub trending discovery (credibility: 1.00)
+
+
+---
+
+
+---
+
+## [lowfat](https://github.com/zdk/lowfat)
+
+> Lightweight CLI filter that strips noise from command output before it reaches your LLM agent, saving 60-95% of tokens
+
+- **Stars:** 192 | **Language:** Rust | **License:** Apache-2.0
+- **Last commit:** 2026-06-05
+- **Source credibility weight:** 0.88 (Hacker News Show HN, 102 points)
+- **Relevance score:** 66/100
+- **Discovered:** 2026-06-06 via Hacker News
+
+### What It Does
+lowfat is a CLI filter that preprocesses command output before it reaches your LLM agent. It strips ANSI colors, collapses verbose diffs, removes build noise, and compresses git output, reducing token usage by 60-95% while preserving the information the agent actually needs.
+
+### Why Now
+As AI coding agents (Claude Code, Codex, OpenCode) become standard, token costs from verbose tool output are a real problem. lowfat solves this with a single binary that integrates as a shell hook or Claude Code pre-tool-use hook.
+
+### Why It Matters
+A coding agent running git diff or docker ps wastes tokens on formatting noise. lowfat filters this at the shell level, so every tool call automatically becomes cheaper without changing agent behavior.
+
+### Who Should Care
+Developers using AI coding agents who want to reduce token costs. Teams running agent workflows at scale where tool output volume compounds costs.
+
+### Execution Pattern
+Install via cargo install lowfat or brew install zdk/tools/lowfat. Add as a Claude Code hook in .claude/settings.json, or use as a shell prefix: lowfat git status. Also supports OpenCode plugin installation.
+
+### Skill Potential
+Yes - SKILL.md could cover integration with Claude Code hooks, shell configuration, and custom filter creation for domain-specific output compression.
