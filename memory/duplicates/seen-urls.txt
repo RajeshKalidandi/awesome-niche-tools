@@ -70,3 +70,6 @@ https://github.com/NazzarenoGiannelli/tuiboard
 https://github.com/yb2460/harness-anything
 https://github.com/SouravRoy-ETL/duckle
 https://github.com/sxyazi/warpnote
+https://github.com/lfnovo/open-notebook
+https://github.com/zdk/lowfat
+https://github.com/marcj/papernews
