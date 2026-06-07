@@ -1265,3 +1265,111 @@ Install via cargo install lowfat or brew install zdk/tools/lowfat. Add as a Clau
 
 ### Skill Potential
 Yes - SKILL.md could cover integration with Claude Code hooks, shell configuration, and custom filter creation for domain-specific output compression.
+
+
+---
+
+## [ai-rules-sync](https://github.com/PanisHandsome/ai-rules-sync)
+
+> Zero-dependency CLI to keep one source of truth for your AI coding-agent rules (AGENTS.md, CLAUDE.md, .cursorrules, Copilot, Windsurf, Cline, Aider, Gemini).
+
+- **Stars:** 112 (↑~19/day) | **Language:** JavaScript | **License:** MIT
+- **Last commit:** 2026-06-03
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 74/100 (after multipliers)
+- **Confidence:** HIGH (MIT, npm package, CI green, live playground)
+
+### What It Does
+`agentsync` syncs your AI coding-agent rules across every IDE and CLI agent that has its own conventions. Write once, convert everywhere. Ships a `scaffold` command that generates a fresh `AGENTS.md` if you don’t have one yet. No deps, no build step.
+
+### Why Now
+The AI coding-agent space has fragmented: every tool invents its own rules file (AGENTS.md, CLAUDE.md, .cursorrules, Copilot, Windsurf, Cline, Aider, Gemini). Devs who run more than one are stuck copy-pasting the same standards into 5+ paths. Released 2026-06-01, 112 stars in 6 days.
+
+### Why It Matters
+When your team mixes Claude Code, Codex, Cursor and Copilot, the standards drift by 24 hours. `agentsync` makes the canonical version the only version — a build-time dependency, not a chore.
+
+### Who Should Care
+Polyglot agent teams, Vibe Coder-style cron workers, devs running multiple agents on the same repo, anyone tired of `.cursorrules` going stale.
+
+### Execution Pattern
+- `npx @panishandsome/agentsync init` — scaffold an `AGENTS.md`
+- `npx @panishandsome/agentsync sync` — fan out to CLAUDE.md, .cursorrules, etc.
+- `npx @panishandsome/agentsync convert <file>` — single direction
+- Wire `sync` into a pre-commit hook so standards never drift
+
+### Skill Potential
+YES — SKILL.md generated in `skills/ai-rules-sync/`. Covers the `agentsync` CLI and the canonical-rules workflow for Hermes agents.
+
+- **Discovered:** 2026-06-07 via GitHub Trending (credibility: 1.00)
+
+
+---
+
+## [vimhjkl](https://github.com/S-Sigdel/vimhjkl)
+
+> Learn real vim/nvim with spaced repetition. 61 lessons, 548 challenges, graded on your actual keystrokes.
+
+- **Stars:** 384 (↑~64/day) | **Language:** Python (pure stdlib) | **License:** MIT
+- **Last commit:** 2026-06-06
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 70/100 (after multipliers)
+- **Confidence:** HIGH (MIT, AUR package, pure stdlib, very active)
+
+### What It Does
+`vimhjkl` is a CLI that drills the techniques `vimtutor` skips — the dot command, operator+motion grammar, text objects, registers, macros, ex commands (`:g`, `:normal`, ranges), and substitution. Every challenge replays through real vim/nvim, so the “optimal” it shows is what your editor will actually do.
+
+### Why Now
+Vim learning resources plateau at `vimtutor`. New users learn hjkl in 30 minutes and never reach the productive layer. `vimhjkl` uses spaced repetition and graded keystrokes to drive home the intermediate/advanced muscle memory. Released 2026-06-01, 384 stars in 6 days — explosive velocity.
+
+### Why It Matters
+For devs running terminal-based agents (Claude Code, Codex, opencode) the bottleneck is typing speed and modal fluency, not prompting. `vimhjkl` is the first spaced-repetition tool built around real keystroke verification rather than flashcards.
+
+### Who Should Care
+Devs using vim/nvim in agent-driven workflows, junior engineers coming up on modal editors, anyone who learned vim once and never reached fluency.
+
+### Execution Pattern
+- Install: `yay -S vimhjkl` (Arch AUR), `pip install`, or `cargo`
+- `vimhjkl drill` — start a session
+- Challenges replay into your actual vim session; `vimhjkl` grades what you typed
+- Spaced repetition surfaces challenges at the edge of your ability
+
+### Skill Potential
+PARTIAL — useful as a personal upskilling tool but not a multi-step automation target. Logged for awareness.
+
+- **Discovered:** 2026-06-07 via GitHub Trending (credibility: 1.00)
+
+
+---
+
+## [lexa](https://github.com/anvia-hq/lexa)
+
+> Fast, local code-intelligence graph for humans and AI agents. Turn a codebase into a portable, queryable graph so every tool works from the same stable view.
+
+- **Stars:** 83 (↑~17/day) | **Language:** Rust | **License:** MIT
+- **Last commit:** 2026-06-06
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 68/100 (after multipliers)
+- **Confidence:** MEDIUM (MIT, active, but very new and small)
+
+### What It Does
+Lexa parses a codebase into a portable, queryable graph (functions, types, references, modules) and exposes it via a stable interface that both humans (CLI, LSP-style queries) and AI agents (MCP server, structured output) can consume. Written in Rust, runs locally, no cloud.
+
+### Why Now
+The “code graph for agents” niche is suddenly crowded — every agent vendor wants a slice (cursor, aider, continue.dev, sourcegraph). Lexa is a fresh Rust take that markets itself as backend-agnostic, MIT, and tiny. Released 2026-06-02, 83 stars in 5 days with consistent commit activity.
+
+### Why It Matters
+A shared, portable code graph is the substrate that lets multiple agents (Claude Code, Codex, your custom swarm) reason about the same repo without re-parsing. Lexa’s bet: an open-source, language-agnostic core beats SaaS-locked alternatives on cost and auditability.
+
+### Who Should Care
+Agent-runtime builders, teams running multi-agent setups on the same repo, devs who want graph queries (`lexa callers <fn>`, `lexa impact <module>`) without a hosted subscription.
+
+### Execution Pattern
+- `cargo install lexa` or prebuilt binary
+- `lexa init` — parse the repo into a graph
+- `lexa query "<natural language or symbol>"` — structured results
+- Wire as MCP server so Claude/Codex consume the same graph
+
+### Skill Potential
+YES — possible SKILL.md candidate once MCP surface stabilizes. Logged as a watch item.
+
+- **Discovered:** 2026-06-07 via GitHub Trending (credibility: 1.00)
