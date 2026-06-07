@@ -965,3 +965,39 @@ duel run "refactor auth module" --dry-run
 Yes — install flow, IDE config, SDK binding patterns, task templates, and multi-provider fallback.
 
 - **Discovered:** 2026-06-05 via GitHub trending discovery (credibility: 1.00)
+
+
+---
+
+## [mnemo](https://github.com/zaydmulani09/mnemo)
+
+> Local-first AI memory layer for any LLM. Persistent knowledge graph, entity extraction, semantic retrieval.
+
+- **Stars:** 193 (↑~48/day) | **Language:** Rust | **License:** MIT
+- **Last commit:** 2026-06-04
+- **Source credibility weight:** 1.00 (GitHub Trending) corroborated by HN (0.85)
+- **Relevance score:** 77/100 (after multipliers)
+- **Confidence:** HIGH (MIT-licensed Rust crate + PyPI, multi-source)
+
+### What It Does
+Mnemo is a self-hosted memory substrate that gives any LLM long-term recall. It extracts entities, builds a persistent knowledge graph, and supports semantic retrieval — all running locally with SQLite. Works with Ollama, OpenAI, Anthropic, or any OpenAI-compatible endpoint.
+
+### Why Now
+Every LLM-backed app reinvents the same memory wheel: vector stores, dedup, entity extraction, retrieval. Mnemo collapses the scaffolding into a single Rust binary/Python wheel so a one-liner gets your agent/chatbot persistent recall. Released 2026-06-02, picked up 193 stars in four days across two discovery channels.
+
+### Why It Matters
+Memory is the missing primitive for personal agents and tool-using bots. Mnemo’s backend-agnostic design means you can swap Claude for a local Ollama model without losing context, which makes it a foundation layer rather than a feature.
+
+### Who Should Care
+Agent builders, RAG tinkerers, devs building persistent chatbots, teams who want Claude/Codex to remember project context across sessions.
+
+### Execution Pattern
+- `pip install mnemo` or `cargo install mnemo`
+- Point it at your model endpoint (Ollama, OpenAI, Anthropic)
+- Feed it conversations/docs — it extracts entities and persists a graph
+- Query it from any client: “What did we decide about the cache invalidation strategy?” returns contextually linked entities, not just chunks
+
+### Skill Potential
+YES — SKILL.md generated in `skills/mnemo/`. Covers the `mnemo` CLI, the Python SDK, and integration patterns with Hermes and other agent harnesses.
+
+- **Discovered:** 2026-06-07 via GitHub Trending (credibility: 1.00) and HN (0.85)
