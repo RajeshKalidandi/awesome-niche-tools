@@ -81,3 +81,11 @@ https://github.com/xoriin/NetMap
 https://github.com/yb2460/harness-anything
 https://github.com/zaydmulani09/mnemo
 https://github.com/zdk/lowfat
+
+# Curated URLs - 2026-06-10 Shift
+https://github.com/mvanhorn/last30days-skill
+https://github.com/aaif-goose/goose
+https://github.com/refactoringhq/tolaria
+https://github.com/RyanCodrai/turbovec
+https://github.com/Andyyyy64/whichllm
+https://github.com/roboflow/supervision

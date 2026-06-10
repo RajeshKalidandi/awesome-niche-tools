@@ -1,0 +1,68 @@
+AISlop|https://github.com/scanaislop/aislop
+Absurd|https://github.com/earendil-works/absurd
+AudioMass|https://github.com/pkalogiros/AudioMass
+BB-Browser|https://github.com/epiral/bb-browser
+Claw Patrol|https://github.com/denoland/clawpatrol
+Codebase Memory MCP|https://github.com/DeusData/codebase-memory-mcp
+Codegraph|https://github.com/colbymchenry/codegraph
+Compound Engineering Plugin|https://github.com/EveryInc/compound-engineering-plugin
+ContextPlus|https://github.com/forloopcodes/contextplus
+Crawl4AI|https://github.com/unclecode/crawl4ai
+Design-Extract|https://github.com/Manavarya09/design-extract
+Dograh|https://github.com/dograh-hq/dograh
+Duel-Agents|https://github.com/2aronS/Duel-Agents
+Engram|https://github.com/Gentleman-Programming/engram
+Feloxi|https://github.com/thesaadmirza/feloxi
+Garnix CI|https://github.com/garnix-io/garnix-ci
+Genspark-AI|https://github.com/veryyoldman/Genspark-AI
+HTML Anything|https://github.com/nexu-io/html-anything
+Headroom|https://github.com/chopratejas/headroom
+Ktx|https://github.com/Kaelio/ktx
+LLMix|https://github.com/sno-ai/llmix
+LiteParse|https://github.com/run-llama/liteparse
+Microsoft Agent Governance Toolkit|https://github.com/microsoft/agent-governance-toolkit
+Moltis|https://github.com/moltis-org/moltis
+Narwhal|https://github.com/Nonanti/narwhal
+Odysseus|https://github.com/pewdiepie-archdaemon/odysseus
+Open Notebook|https://github.com/lfnovo/open-notebook
+OpenGap|https://github.com/open-gitagent/opengap
+OpenLogi|https://github.com/AprilNEA/OpenLogi
+Posthorn|https://github.com/craigmccaskill/posthorn
+Pyrefly|https://github.com/facebook/pyrefly
+RMUX|https://github.com/Helvesec/rmux
+Ratty|https://github.com/orhun/ratty
+Roto|https://github.com/NLnetLabs/roto
+RuView|https://github.com/ruvnet/RuView
+Secluso|https://github.com/secluso/core
+SenPaiScanner|https://github.com/MatinSenPai/SenPaiScanner
+SubForge|https://github.com/deusjin/subforge
+Taste Skill|https://github.com/Leonxlnx/taste-skill
+Understand-Anything|https://github.com/Lum1104/Understand-Anything
+Uni-CLI|https://github.com/olo-dot-io/Uni-CLI
+VTCode|https://github.com/vinhnx/VTCode
+adhd|https://github.com/UditAkhourii/adhd
+ai-rules-sync|https://github.com/PanisHandsome/ai-rules-sync
+breathe-cli|https://github.com/marekkowalczyk/breathe-cli
+duckle|https://github.com/SouravRoy-ETL/duckle
+flashlib|https://github.com/FlashML-org/flashlib
+gemini-web2api|https://github.com/Sophomoresty/gemini-web2api
+harness-anything|https://github.com/yb2460/harness-anything
+harness|https://github.com/revfactory/harness
+heretic|https://github.com/p-e-w/heretic
+html-video|https://github.com/nexu-io/html-video
+lazycodex|https://github.com/code-yeongyu/lazycodex
+lexa|https://github.com/anvia-hq/lexa
+lowfat|https://github.com/zdk/lowfat
+mcp2cli|https://github.com/knowsuchagency/mcp2cli
+memory-os|https://github.com/ClaudioDrews/memory-os
+mnemo|https://github.com/zaydmulani09/mnemo
+oh-my-pi|https://github.com/can1357/oh-my-pi
+oracle|https://github.com/steipete/oracle
+papernews|https://github.com/marcj/papernews
+pi-dynamic-workflows|https://github.com/Michaelliv/pi-dynamic-workflows
+presenton|https://github.com/presenton/presenton
+sandboxes|https://github.com/tastyeffectco/sandboxes
+stop-slop|https://github.com/hardikpandya/stop-slop
+tuiboard|https://github.com/NazzarenoGiannelli/tuiboard
+vibecode-pro-max-kit|https://github.com/withkynam/vibecode-pro-max-kit
+vimhjkl|https://github.com/S-Sigdel/vimhjkl
