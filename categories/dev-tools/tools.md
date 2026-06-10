@@ -1373,3 +1373,138 @@ Agent-runtime builders, teams running multi-agent setups on the same repo, devs 
 YES — possible SKILL.md candidate once MCP surface stabilizes. Logged as a watch item.
 
 - **Discovered:** 2026-06-07 via GitHub Trending (credibility: 1.00)
+
+---
+
+## [turbovec](https://github.com/RyanCodrai/turbovec)
+
+> A vector index built on TurboQuant, written in Rust with Python bindings
+
+- **Stars:** 10,152 (↑~1,801/day) | **Language:** Python | **License:** MIT
+- **Last commit:** 2026-06-09
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 80/100
+
+### What It Does
+Turbovec is a high-performance vector index built on TurboQuant, featuring a Rust core with Python bindings. It provides fast vector storage and retrieval capabilities for similarity search, which is fundamental to many AI and machine learning applications like recommendation systems, semantic search, and RAG (Retrieval-Augmented Generation) pipelines.
+
+### Why Now
+As LLMs and AI agents become more prevalent, the need for efficient vector storage grows exponentially. Turbovec combines the performance of Rust with the ease of Python, making it accessible to ML engineers while delivering production-grade performance. The 10K+ stars and 1.8K stars/day momentum indicates strong community adoption.
+
+### Why It Matters
+Turbovec democratizes access to high-performance vector search. Previously, organizations needed complex infrastructure (Pinecone, Weaviate, etc.) for vector operations. Turbovec provides a lightweight, embeddable alternative that can run locally or in edge deployments, reducing latency and cost for AI applications.
+
+### Who Should Care
+- ML engineers building recommendation systems
+- Developers implementing semantic search
+- Teams building RAG pipelines for LLMs
+- Anyone needing fast similarity search in their applications
+
+### Execution Pattern
+```bash
+# Install via pip
+pip install turbovec
+
+# Python usage
+import turbovec
+
+# Create an index
+index = turbovec.Index(dim=128)
+index.add(vectors, ids)
+
+# Search for similar vectors
+results = index.search(query_vector, k=10)
+```
+
+### Skill Potential
+High - Turbovec could be integrated into Hermes for enhanced vector-based memory and retrieval.
+
+---
+
+## [whichllm](https://github.com/Andyyyy64/whichllm)
+
+> Find the local LLM that actually runs and performs best on your hardware
+
+- **Stars:** 4,073 (↑~633/day) | **Language:** Python | **License:** MIT
+- **Last commit:** 2026-06-09
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 79/100
+
+### What It Does
+Whichllm is a CLI tool that benchmarks local LLMs on your specific hardware to find the best model for your setup. Instead of relying on generic benchmarks or parameter counts, it runs actual inference tests on your machine and ranks models by real performance. One command gives you a personalized recommendation.
+
+### Why Now
+The explosion of local LLMs (llama.cpp, Ollama, etc.) has created a paradox of choice: hundreds of models exist, but which one actually runs well on YOUR hardware? Whichllm solves this by providing empirical, hardware-specific benchmarks. With 4K+ stars and rapid growth, it's becoming the go-to tool for local LLM selection.
+
+### Why It Matters
+Whichllm eliminates the guesswork from local LLM deployment. Instead of trial-and-error or relying on potentially misleading marketing, users get data-driven recommendations. This saves hours of testing and prevents wasted resources on models that won't perform well on their specific hardware configuration.
+
+### Who Should Care
+- Anyone running local LLMs (Ollama, llama.cpp, etc.)
+- Developers optimizing AI inference for specific hardware
+- Teams deploying LLMs on edge devices or constrained environments
+- AI researchers comparing model performance across hardware
+
+### Execution Pattern
+```bash
+# Install
+pip install whichllm
+
+# Run benchmarks on your hardware
+whichllm benchmark
+
+# Get recommendations
+whichllm recommend --hardware "RTX 3090, 32GB RAM"
+```
+
+### Skill Potential
+High - Whichllm could be integrated into Hermes to automatically select the best local model for the current hardware context.
+
+---
+
+## [supervision](https://github.com/roboflow/supervision)
+
+> Reusable computer vision tools
+
+- **Stars:** 42,966 (↑~733/day) | **Language:** Python | **License:** MIT
+- **Last commit:** 2026-06-09
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 77/100
+
+### What It Does
+Supervision is a Python library providing reusable computer vision tools from Roboflow. It offers utilities for detection, tracking, annotation, and dataset management that work with popular frameworks like Ultralytics YOLO, Detectron2, and Transformers. The library simplifies common computer vision workflows that previously required writing boilerplate code.
+
+### Why Now
+Computer vision is experiencing a renaissance with foundation models and improved detection algorithms. However, integrating these models into production workflows still requires significant boilerplate. Supervision abstracts away this complexity, making it easier to deploy CV solutions. With 43K+ stars and steady growth, it's becoming the standard toolkit for Python CV developers.
+
+### Why It Matters
+Supervision lowers the barrier to entry for computer vision applications. Instead of spending weeks building infrastructure for detection, tracking, and visualization, developers can focus on their specific use case. This accelerates prototyping and deployment of CV solutions across industries from manufacturing to healthcare.
+
+### Who Should Care
+- Computer vision developers and researchers
+- Teams building object detection or tracking systems
+- Anyone working with YOLO, Detectron2, or similar frameworks
+- Developers need ing production-ready CV pipelines
+
+### Execution Pattern
+```bash
+# Install
+pip install supervision
+
+# Python usage
+import supervision as sv
+from ultralytics import YOLO
+
+# Load model
+model = YOLO("yolov8n.pt")
+
+# Run detection
+results = model("image.jpg")
+
+# Annotate with supervision
+annotator = sv.BoxAnnotator()
+annotated = annotator.annotate(scene=image, detections=results[0].boxes)
+```
+
+### Skill Potential
+Medium - Supervision could be integrated into Hermes for computer vision tasks and image analysis.

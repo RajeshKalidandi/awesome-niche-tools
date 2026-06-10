@@ -240,3 +240,45 @@ Clone the repo, configure your preferred AI provider in the settings, add conten
 
 ### Skill Potential
 Yes — could generate a SKILL.md for automating podcast generation from web content feeds, or for batch-processing research papers into a searchable knowledge base.
+
+---
+
+## [tolaria](https://github.com/refactoringhq/tolaria)
+
+> Desktop app to manage markdown knowledge bases
+
+- **Stars:** 14,305 (↑~829/day) | **Language:** TypeScript | **License:** AGPL-3.0
+- **Last commit:** 2026-06-09
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 82/100
+
+### What It Does
+Tolaria is a desktop application for managing markdown-based knowledge bases. It provides a visual interface for organizing, linking, and navigating through interconnected markdown documents. Think of it as a modern, local-first alternative to Notion or Obsidian, but specifically designed for developers who prefer plain markdown files.
+
+### Why Now
+As AI agents become more capable, there's growing demand for structured knowledge management that works with plain files. Tolaria bridges the gap between the simplicity of markdown files and the power of connected knowledge graphs. With 14K+ stars and rapid growth, it's filling a gap in the developer productivity space.
+
+### Why It Matters
+Tolaria enables developers to maintain complex knowledge bases without vendor lock-in. All data stays in plain markdown files that can be version controlled, searched with standard tools, and processed by AI agents. This makes it ideal for documentation, personal knowledge management, and team wikis that need to be both human and machine-readable.
+
+### Who Should Care
+- Developers managing extensive documentation
+- Teams building internal wikis or knowledge bases
+- Anyone using markdown for note-taking or documentation
+- AI developers needing structured, searchable knowledge repositories
+
+### Execution Pattern
+```bash
+# Download from GitHub releases
+# Or build from source:
+git clone https://github.com/refactoringhq/tolaria.git
+cd tolaria
+npm install
+npm run build
+
+# Run the app
+npm start
+```
+
+### Skill Potential
+Medium - Tolaria could be integrated with AI agents for automated knowledge base management and querying.

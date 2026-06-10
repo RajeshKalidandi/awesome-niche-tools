@@ -1001,3 +1001,93 @@ Agent builders, RAG tinkerers, devs building persistent chatbots, teams who want
 YES — SKILL.md generated in `skills/mnemo/`. Covers the `mnemo` CLI, the Python SDK, and integration patterns with Hermes and other agent harnesses.
 
 - **Discovered:** 2026-06-07 via GitHub Trending (credibility: 1.00) and HN (0.85)
+
+
+---
+
+## [last30days-skill](https://github.com/mvanhorn/last30days-skill)
+
+> AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary
+
+- **Stars:** 37,272 (↑~3,191/day) | **Language:** Python | **License:** MIT
+- **Last commit:** 2026-06-09
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 90/100
+
+### What It Does
+last30days-skill is an AI agent skill that performs cross-platform research on any topic. It crawls Reddit, X (Twitter), YouTube, Hacker News, Polymarket, and the general web to gather recent information, then synthesizes a grounded summary with citations. The skill is designed for AI agents that need to understand current events, trends, or topics across multiple platforms.
+
+### Why Now
+With the explosion of AI agents, there's a growing need for agents to access real-time, multi-platform information. Traditional web search gives static results; last30days-skill provides dynamic, cross-platform research capability. At 37K+ stars with 3K+ stars/day, it's gaining massive traction as agents become more capable.
+
+### Why It Matters
+This skill transforms AI agents from static knowledge repositories into dynamic research assistants. Instead of relying on pre-trained knowledge, agents can now gather current information from multiple sources and synthesize it into coherent summaries. This is critical for tasks like market research, news analysis, trend monitoring, and fact-checking.
+
+### Who Should Care
+- AI agent developers building research-capable agents
+- Anyone building personal assistant agents that need current information
+- Teams building market intelligence or monitoring systems
+- Researchers who need automated cross-platform literature review
+
+### Execution Pattern
+
+
+### Skill Potential
+Yes — this is already a skill! It can be integrated into any AI agent framework that supports Python skills.
+
+
+
+---
+
+---
+
+
+skill = Last30DaysSkill()
+result = await skill.research("latest developments in AI agents")
+print(result.summary)
+print(result.sources)
+```
+
+### Skill Potential
+Yes - this is already a skill! It can be integrated into any AI agent framework that supports Python skills.
+
+---
+
+## [goose](https://github.com/aaif-goose/goose)
+
+> An open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM
+
+- **Stars:** 48,490 (↑~489/day) | **Language:** Rust | **License:** Apache-2.0
+- **Last commit:** 2026-06-09
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 87/100
+
+### What It Does
+Goose is an extensible, open-source AI agent that goes beyond simple code suggestions. Written in Rust for performance, it can install packages, execute commands, edit files, and run tests using any LLM backend. Unlike typical code assistants that only suggest changes, Goose can actually perform complex development workflows end-to-end.
+
+### Why Now
+AI agents are evolving from passive assistants to active participants in development workflows. Goose represents the next generation: agents that don't just suggest code but can actually implement, test, and deploy it. With 48K+ stars and steady growth, it's becoming the reference implementation for capable AI coding agents.
+
+### Why It Matters
+Goose shifts the paradigm from "AI suggests, human implements" to "AI implements, human reviews." This dramatically accelerates development cycles and enables solo developers to accomplish what previously required teams. The Rust implementation ensures performance at scale.
+
+### Who Should Care
+- Developers looking to automate repetitive coding tasks
+- Teams wanting to accelerate development velocity
+- AI researchers studying agent architectures
+- Anyone building custom AI coding assistants
+
+### Execution Pattern
+```bash
+# Install via package manager or from source
+# See GitHub repo for installation instructions
+
+# Configure with your preferred LLM
+goose configure
+
+# Run a coding task
+goose run "refactor the authentication module to use JWT tokens"
+```
+
+### Skill Potential
+Yes - Goose can be used as a backend for Hermes agents or integrated into custom agent workflows.
