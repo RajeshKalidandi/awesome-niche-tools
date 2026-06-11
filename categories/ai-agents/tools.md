@@ -1091,3 +1091,67 @@ goose run "refactor the authentication module to use JWT tokens"
 
 ### Skill Potential
 Yes - Goose can be used as a backend for Hermes agents or integrated into custom agent workflows.
+
+
+---
+
+## [Agent Skills](https://github.com/addyosmani/agent-skills)
+
+> Production-grade engineering skills for AI coding agents with 7 slash commands mapping to the dev lifecycle
+
+- **Stars:** 51,715 | **Language:** Shell | **License:** MIT
+- **Last commit:** 2026-06-11
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 85/100 (after multipliers)
+
+### What It Does
+Agent Skills encodes the workflows, quality gates, and best practices that senior engineers use when building software into reusable skill files for AI coding agents. It provides 7 slash commands (/spec, /plan, /build, /test, /review, /code-simplify, /ship) that map to the development lifecycle, with skills activating automatically based on context.
+
+### Why Now
+The AI coding agent ecosystem has exploded, but most agents lack structured engineering discipline. Addy Osmani (Chrome team lead) packaged real engineering practices into agent-compatible skill files. The /build auto mode enables autonomous multi-step development while maintaining verification gates — a critical capability as agents take on larger tasks.
+
+### Why It Matters
+This bridges the gap between raw AI coding ability and production-grade software engineering. Instead of agents hacking together code without process, these skills enforce spec-first development, test-driven implementation, and systematic code review. It turns AI coding assistants from code generators into engineering partners.
+
+### Who Should Care
+Developers using Claude Code, Cursor, Codex CLI, or any AI coding agent. Engineering teams wanting to standardize AI-assisted development. Anyone building production software with AI assistance who needs quality gates.
+
+### Execution Pattern
+Install via plugin marketplace for Claude Code, or clone locally for other agents. Skills activate automatically based on what you're doing — designing an API triggers interface design skills, building UI triggers frontend engineering skills. Use /build auto for autonomous end-to-end development.
+
+### Skill Potential
+Yes — automation of engineering workflows, quality gate enforcement, multi-agent development orchestration.
+
+- **Discovered:** 2026-06-11 via GitHub Trending (credibility: 1.00)
+
+
+---
+
+## [hivemind](https://github.com/activeloopai/hivemind)
+
+> Multi-agent orchestration framework for building coordinated AI agent teams
+
+- **Stars:** 820 | **Language:** TypeScript | **License:** Apache-2.0
+- **Last commit:** 2026-06-10
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 72/100 (after multipliers)
+
+### What It Does
+Hivemind is a framework for building coordinated multi-agent systems. It provides the infrastructure for multiple AI agents to share context, divide tasks, and work together on complex problems. The tagline 'One brain for all your agents' captures its goal of creating unified agent teams from individual LLM instances.
+
+### Why Now
+Single-agent systems are hitting complexity limits. Tasks that require parallel research, cross-validation, or specialized expertise benefit from coordinated agent teams. Hivemind from Activeloop (the Deep Lake company) brings production multi-agent orchestration to TypeScript, making it accessible for web-native agent development.
+
+### Why It Matters
+Building reliable multi-agent systems from scratch requires solving coordination, state sharing, task decomposition, and failure handling. Hivemind provides these primitives, letting developers focus on agent logic rather than infrastructure. For teams building complex AI workflows, this reduces the coordination overhead significantly.
+
+### Who Should Care
+AI/ML engineers building multi-agent systems, teams developing complex AI workflows, developers creating agent orchestrations for research or automation, and anyone exploring the frontier of agent coordination.
+
+### Execution Pattern
+Install via npm/yarn, define agent roles and communication patterns, configure shared state management, and deploy. The framework handles inter-agent messaging, task routing, and result aggregation. Integrate with existing LLM providers for the underlying intelligence.
+
+### Skill Potential
+Yes — multi-agent workflow design, coordination pattern libraries, integration with existing agent frameworks.
+
+- **Discovered:** 2026-06-11 via GitHub Trending (credibility: 1.00)
