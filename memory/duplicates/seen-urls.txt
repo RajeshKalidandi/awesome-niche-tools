@@ -89,3 +89,11 @@ https://github.com/refactoringhq/tolaria
 https://github.com/RyanCodrai/turbovec
 https://github.com/Andyyyy64/whichllm
 https://github.com/roboflow/supervision
+
+# Curated URLs - 2026-06-11 Shift
+https://github.com/soxoj/maigret
+https://github.com/HelixDB/helix-db
+https://github.com/apple/container
+https://github.com/addyosmani/agent-skills
+https://github.com/activeloopai/hivemind
+https://github.com/amElnagdy/guard-skills

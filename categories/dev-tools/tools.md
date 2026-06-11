@@ -1508,3 +1508,99 @@ annotated = annotator.annotate(scene=image, detections=results[0].boxes)
 
 ### Skill Potential
 Medium - Supervision could be integrated into Hermes for computer vision tasks and image analysis.
+
+
+---
+
+## [Maigret](https://github.com/soxoj/maigret)
+
+> OSINT username reconnaissance tool that collects dossiers on people from 3000+ sites using only a username
+
+- **Stars:** 31,993 | **Language:** Python | **License:** MIT
+- **Last commit:** 2026-06-10
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 84/100 (after multipliers)
+
+### What It Does
+Maigret checks for accounts on thousands of websites using just a username, then gathers all available public information from those profiles. No API keys required. It supports AI-powered profiling to analyze the collected data and generate insights about a person's online presence.
+
+### Why Now
+OSINT tools are in high demand as AI-powered security analysis grows. Maigret is actively maintained (last commit June 10), has strong community adoption (32K stars, 2.3K forks), and its no-API-key approach makes it accessible for quick investigations. The AI profiling feature adds a modern twist to classic username enumeration.
+
+### Why It Matters
+Maigret turns a single username into a comprehensive digital dossier in seconds. For security researchers, threat hunters, and penetration testers, this eliminates the manual work of checking dozens of sites individually. The CLI interface makes it scriptable and automatable for batch operations.
+
+### Who Should Care
+Security researchers, penetration testers, OSINT practitioners, threat intelligence analysts, and anyone doing background research on individuals using public data.
+
+### Execution Pattern
+Use as a CLI tool for single-target investigations or batch processing. Pipe results to other tools for correlation. The AI profiling feature can generate human-readable summaries from raw data. Integrate into automated security workflows via Python API.
+
+### Skill Potential
+Yes — CLI automation for OSINT workflows, batch username checking, integration with security pipelines.
+
+- **Discovered:** 2026-06-11 via GitHub Trending (credibility: 1.00)
+
+
+---
+
+## [HelixDB](https://github.com/HelixDB/helix-db)
+
+> Graph-vector database built from scratch in Rust for AI memory and knowledge graphs
+
+- **Stars:** 4,769 | **Language:** Rust | **License:** Apache-2.0
+- **Last commit:** 2026-06-10
+- **Source credibility weight:** 0.85 (Hacker News Show HN)
+- **Relevance score:** 67/100 (after multipliers)
+
+### What It Does
+HelixDB is a unified graph-vector database that eliminates the need for separate relational, vector, and graph databases in AI applications. It provides federated access to company data for agent memory, knowledge graphs, and applications — all in a single platform built in Rust for performance.
+
+### Why Now
+The AI agent ecosystem is fragmenting data across multiple storage systems (vector DBs for embeddings, graph DBs for relationships, relational DBs for structured data). HelixDB collapses this into one system. As AI agents become more complex and need richer memory structures, a unified graph-vector store becomes increasingly valuable.
+
+### Why It Matters
+Building AI applications currently requires stitching together 3-4 different databases. HelixDB replaces that complexity with a single system that handles graph relationships, vector similarity, key-value, documents, and relational data. The Rust performance means it can handle real-time agent workloads without becoming a bottleneck.
+
+### Who Should Care
+AI/ML engineers building RAG systems, agent developers needing rich memory, teams running knowledge graph applications, and anyone tired of managing multiple database systems for a single AI application.
+
+### Execution Pattern
+Install via the Helix CLI, use  for interactive bootstrapping, or set up manually. The query language supports graph traversal, vector search, and relational queries. Integrates with coding agents via MCP for development workflows.
+
+### Skill Potential
+Yes — database setup and management, query optimization, integration patterns for AI agent memory systems.
+
+- **Discovered:** 2026-06-11 via Hacker News Show HN (credibility: 0.85)
+
+
+---
+
+## [container](https://github.com/apple/container)
+
+> Apple's Swift-native tool for running Linux containers as lightweight VMs on Apple silicon Macs
+
+- **Stars:** 29,723 | **Language:** Swift | **License:** Apache-2.0
+- **Last commit:** 2026-06-09
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 81/100 (after multipliers)
+
+### What It Does
+Apple's official container tool creates and runs Linux containers as lightweight virtual machines on Apple silicon Macs. It produces OCI-compatible container images, so you can pull from any standard registry and push images you build. Written in Swift and optimized specifically for Apple silicon performance.
+
+### Why Now
+Docker and Podman on Mac have always struggled with the Linux VM abstraction layer, causing performance overhead and compatibility issues. Apple's native solution eliminates this by using Swift and Apple silicon's virtualization framework directly. With macOS 26 optimization, this is the first truly native container experience on Mac.
+
+### Why It Matters
+Mac developers have long accepted a performance penalty when running Linux containers. Apple's native container tool removes that tax entirely. For teams building cloud-native applications on MacBooks, this means faster builds, lower resource usage, and fewer compatibility surprises when deploying to Linux production environments.
+
+### Who Should Care
+Mac-based developers running containerized applications, DevOps engineers who develop on Mac, teams transitioning from Docker Desktop, and anyone using Apple silicon for cloud-native development.
+
+### Execution Pattern
+Install via the GitHub release package, start the system service, then use standard container commands (pull, run, build, push). OCI compatibility means existing Dockerfiles and workflows transfer directly. The update script handles version management.
+
+### Skill Potential
+Yes — container management workflows, migration from Docker, optimization patterns for Apple silicon.
+
+- **Discovered:** 2026-06-11 via GitHub Trending (credibility: 1.00)
