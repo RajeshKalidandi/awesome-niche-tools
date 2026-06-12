@@ -1155,3 +1155,173 @@ Install via npm/yarn, define agent roles and communication patterns, configure s
 Yes — multi-agent workflow design, coordination pattern libraries, integration with existing agent frameworks.
 
 - **Discovered:** 2026-06-11 via GitHub Trending (credibility: 1.00)
+
+
+---
+
+## [NVIDIA/SkillSpector](https://github.com/NVIDIA/SkillSpector)
+
+> Security scanner for AI agent skills — detects vulnerabilities, malicious patterns, and security risks before installing agent skills.
+
+- **Stars:** 2619 (↑~33/day) | **Language:** Python | **License:** Apache-2.0
+- **Last commit:** 2026-06-10
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 83/100 (after multipliers)
+
+### What It Does
+SkillSpector scans AI agent skills (Claude Code, Codex CLI, Gemini CLI, etc.) for 64 vulnerability patterns across 16 categories: prompt injection, data exfiltration, privilege escalation, supply chain attacks, MCP tool poisoning, and more. It provides a 0-100 risk score with severity labels and clear recommendations. Supports Git repos, URLs, zip files, and directories as input.
+
+### Why Now
+AI agent skills execute with implicit trust and minimal vetting. Research shows 26.1% of skills contain vulnerabilities and 5.2% show likely malicious intent. As the agent skills ecosystem explodes (Agent Skills, Superpowers, pm-skills), the need for automated security scanning is critical. SkillSpector fills this gap with a comprehensive, NVIDIA-backed solution.
+
+### Why It Matters
+Without SkillSpector, users install agent skills blind — trusting that a community-contributed SKILL.md won't exfiltrate data or inject prompts. This tool makes the agent skills ecosystem safer by providing automated, reproducible security auditing. It's the missing piece for enterprise adoption of AI coding agents.
+
+### Who Should Care
+- Teams deploying AI coding agents in production environments
+- Platform engineers managing agent skill repositories
+- Security teams auditing AI agent supply chains
+- Individual developers who install community-contributed skills
+
+### Execution Pattern
+
+
+### Skill Potential
+Yes — SKILL.md covers: installation, scanning workflows, CI/CD integration, custom rule authoring, and SARIF output for GitHub Security.
+
+- **Discovered:** 2026-06-12 via GitHub Trending (credibility: 1.00)
+
+
+---
+
+## [kenn-io/agentsview](https://github.com/kenn-io/agentsview)
+
+> Local-first session intelligence and analytics for coding agents — browse, search, and track costs across Claude Code, Codex, and 20+ other agents.
+
+- **Stars:** 1623 (up ~15/day) | **Language:** Go | **License:** MIT
+- **Last commit:** 2026-06-11
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 78/100 (after multipliers)
+
+### What It Does
+AgentsView is a local-first tool that discovers, indexes, and analyzes sessions from AI coding agents on your machine. It supports Claude Code, Codex CLI, Forge, and 20+ other agents. It provides a web UI dashboard for browsing sessions, searching conversations, and tracking API costs — all stored in a local SQLite database with no accounts or cloud dependencies. It is positioned as a 100x faster replacement for ccusage.
+
+### Why Now
+As developers adopt multiple AI coding agents simultaneously, there is no unified way to track what each agent did, how much it cost, or how sessions relate to each other. AgentsView fills this gap with a single binary that indexes everything locally. The timing is perfect — agent usage is exploding but observability tools have not caught up.
+
+### Why It Matters
+Without AgentsView, developers have no visibility into their agent usage across tools. They cannot compare costs between Claude Code and Codex, cannot search old sessions, and cannot audit what agents did. This tool provides the missing observability layer for the multi-agent development workflow.
+
+### Who Should Care
+- Developers using 2+ AI coding agents daily
+- Teams tracking AI coding costs across tools
+- Engineering managers auditing agent usage
+- Anyone who wants to search or browse their agent session history
+
+### Execution Pattern
+See the GitHub repo for installation instructions. Supports Homebrew, direct install script, and Docker.
+
+### Skill Potential
+Yes — SKILL.md covers: installation, session indexing, cost tracking, web UI usage, and integration with agent workflows.
+
+- **Discovered:** 2026-06-12 via GitHub Trending (credibility: 1.00)
+
+
+---
+
+## [hexo-ai/sia](https://github.com/hexo-ai/sia)
+
+> Self-Improving AI framework — autonomously improves AI system performance on benchmark tasks via meta-agent orchestration.
+
+- **Stars:** 1280 (up ~16/day) | **Language:** Python | **License:** MIT
+- **Last commit:** 2026-06-11
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 74/100 (after multipliers)
+
+### What It Does
+SIA (Self-Improving AI) is a framework where a language-model agent updates both the harness and the weights of a task-specific agent through an iterative loop. It coordinates three agent types — Meta-Agent, Target Agent, and Feedback Agent — to continuously refine performance. The paper reports 56.6% gain on LawBench, 91.9% runtime reduction on GPU kernels, and 502% improvement on single-cell RNA denoising over baseline.
+
+### Why Now
+Self-improving AI is transitioning from research curiosity to practical tooling. SIA provides a concrete, benchmarked implementation with published results on MLE-Bench (ranked #1), LawBench, and CUDA kernel optimization. As AI agents become more capable, frameworks that let them improve themselves will be essential.
+
+### Why It Matters
+SIA demonstrates that AI agents can autonomously improve their own performance — not just solve tasks, but get better at solving them over time. This is a foundational capability for building truly autonomous AI systems. The framework is practical enough to run locally with built-in tasks.
+
+### Who Should Care
+- AI researchers exploring self-improving agent architectures
+- ML engineers optimizing model performance on specific tasks
+- Developers building autonomous AI systems
+- Anyone interested in agent-as-optimizer patterns
+
+### Execution Pattern
+Install via pip with the appropriate agent implementation (Claude or OpenHands), then run built-in tasks:
+Collecting sia-agent
+  Downloading sia_agent-0.5.1-py3-none-any.whl.metadata (13 kB)
+Requirement already satisfied: python-dotenv>=1.0 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from sia-agent) (1.2.2)
+Requirement already satisfied: numpy>=2.0 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from sia-agent) (2.4.3)
+Requirement already satisfied: pandas>=2.0 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from sia-agent) (3.0.3)
+Requirement already satisfied: scikit-learn>=1.4 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from sia-agent) (1.9.0)
+Requirement already satisfied: fastapi>=0.110 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from sia-agent) (0.133.1)
+Requirement already satisfied: uvicorn>=0.29 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from sia-agent) (0.41.0)
+Requirement already satisfied: pydantic>=2.0 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from sia-agent) (2.13.4)
+Requirement already satisfied: claude-agent-sdk>=0.1.50 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from sia-agent) (0.2.88)
+Requirement already satisfied: anyio>=4.0.0 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from claude-agent-sdk>=0.1.50->sia-agent) (4.13.0)
+Requirement already satisfied: mcp>=1.23.0 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from claude-agent-sdk>=0.1.50->sia-agent) (1.26.0)
+Requirement already satisfied: sniffio>=1.0.0 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from claude-agent-sdk>=0.1.50->sia-agent) (1.3.1)
+Requirement already satisfied: starlette>=0.40.0 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from fastapi>=0.110->sia-agent) (1.0.1)
+Requirement already satisfied: typing-extensions>=4.8.0 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from fastapi>=0.110->sia-agent) (4.15.0)
+Requirement already satisfied: typing-inspection>=0.4.2 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from fastapi>=0.110->sia-agent) (0.4.2)
+Requirement already satisfied: annotated-doc>=0.0.2 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from fastapi>=0.110->sia-agent) (0.0.4)
+Requirement already satisfied: python-dateutil>=2.8.2 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from pandas>=2.0->sia-agent) (2.9.0.post0)
+Requirement already satisfied: annotated-types>=0.6.0 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from pydantic>=2.0->sia-agent) (0.7.0)
+Requirement already satisfied: pydantic-core==2.46.4 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from pydantic>=2.0->sia-agent) (2.46.4)
+Requirement already satisfied: scipy>=1.10.0 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from scikit-learn>=1.4->sia-agent) (1.17.1)
+Requirement already satisfied: joblib>=1.4.0 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from scikit-learn>=1.4->sia-agent) (1.5.3)
+Requirement already satisfied: narwhals>=2.0.1 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from scikit-learn>=1.4->sia-agent) (2.22.0)
+Requirement already satisfied: threadpoolctl>=3.5.0 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from scikit-learn>=1.4->sia-agent) (3.6.0)
+Requirement already satisfied: click>=7.0 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from uvicorn>=0.29->sia-agent) (8.4.1)
+Requirement already satisfied: h11>=0.8 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from uvicorn>=0.29->sia-agent) (0.16.0)
+Requirement already satisfied: idna>=2.8 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from anyio>=4.0.0->claude-agent-sdk>=0.1.50->sia-agent) (3.18)
+Requirement already satisfied: httpx-sse>=0.4 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from mcp>=1.23.0->claude-agent-sdk>=0.1.50->sia-agent) (0.4.3)
+Requirement already satisfied: httpx>=0.27.1 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from mcp>=1.23.0->claude-agent-sdk>=0.1.50->sia-agent) (0.28.1)
+Requirement already satisfied: jsonschema>=4.20.0 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from mcp>=1.23.0->claude-agent-sdk>=0.1.50->sia-agent) (4.26.0)
+Requirement already satisfied: pydantic-settings>=2.5.2 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from mcp>=1.23.0->claude-agent-sdk>=0.1.50->sia-agent) (2.14.1)
+Requirement already satisfied: pyjwt>=2.10.1 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from pyjwt[crypto]>=2.10.1->mcp>=1.23.0->claude-agent-sdk>=0.1.50->sia-agent) (2.13.0)
+Requirement already satisfied: python-multipart>=0.0.9 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from mcp>=1.23.0->claude-agent-sdk>=0.1.50->sia-agent) (0.0.30)
+Requirement already satisfied: sse-starlette>=1.6.1 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from mcp>=1.23.0->claude-agent-sdk>=0.1.50->sia-agent) (3.4.4)
+Requirement already satisfied: six>=1.5 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from python-dateutil>=2.8.2->pandas>=2.0->sia-agent) (1.17.0)
+Requirement already satisfied: certifi in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from httpx>=0.27.1->mcp>=1.23.0->claude-agent-sdk>=0.1.50->sia-agent) (2026.5.20)
+Requirement already satisfied: httpcore==1.* in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from httpx>=0.27.1->mcp>=1.23.0->claude-agent-sdk>=0.1.50->sia-agent) (1.0.9)
+Requirement already satisfied: attrs>=22.2.0 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from jsonschema>=4.20.0->mcp>=1.23.0->claude-agent-sdk>=0.1.50->sia-agent) (26.1.0)
+Requirement already satisfied: jsonschema-specifications>=2023.03.6 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from jsonschema>=4.20.0->mcp>=1.23.0->claude-agent-sdk>=0.1.50->sia-agent) (2025.9.1)
+Requirement already satisfied: referencing>=0.28.4 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from jsonschema>=4.20.0->mcp>=1.23.0->claude-agent-sdk>=0.1.50->sia-agent) (0.37.0)
+Requirement already satisfied: rpds-py>=0.25.0 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from jsonschema>=4.20.0->mcp>=1.23.0->claude-agent-sdk>=0.1.50->sia-agent) (2026.5.1)
+Requirement already satisfied: cryptography>=3.4.0 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from pyjwt[crypto]>=2.10.1->mcp>=1.23.0->claude-agent-sdk>=0.1.50->sia-agent) (46.0.7)
+Requirement already satisfied: cffi>=2.0.0 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from cryptography>=3.4.0->pyjwt[crypto]>=2.10.1->mcp>=1.23.0->claude-agent-sdk>=0.1.50->sia-agent) (2.0.0)
+Requirement already satisfied: pycparser in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from cffi>=2.0.0->cryptography>=3.4.0->pyjwt[crypto]>=2.10.1->mcp>=1.23.0->claude-agent-sdk>=0.1.50->sia-agent) (3.0)
+Downloading sia_agent-0.5.1-py3-none-any.whl (3.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.8/3.8 MB 10.9 MB/s eta 0:00:00
+Installing collected packages: sia-agent
+Successfully installed sia-agent-0.5.1
+
+     _______. __       ___
+    /       ||  |     /      |   (----`|  |    /  ^      \   \    |  |   /  /_\  .----)   |   |  |  /  _____  |_______/    |__| /__/     \__
+    Self-Improving AI framework
+
+    • Version : v0.5.1
+    • Docs    : https://github.com/hexo-ai/sia
+    • Help    : sia --help
+
+
+     _______. __       ___
+    /       ||  |     /      |   (----`|  |    /  ^      \   \    |  |   /  /_\  .----)   |   |  |  /  _____  |_______/    |__| /__/     \__
+    Self-Improving AI framework
+
+    • Version : v0.5.1
+    • Docs    : https://github.com/hexo-ai/sia
+    • Help    : sia --help
+
+### Skill Potential
+Yes — SKILL.md covers: installation, running built-in tasks, adding custom tasks, and integrating with different LLM providers.
+
+- **Discovered:** 2026-06-12 via GitHub Trending (credibility: 1.00)

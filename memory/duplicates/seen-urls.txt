@@ -97,3 +97,7 @@ https://github.com/apple/container
 https://github.com/addyosmani/agent-skills
 https://github.com/activeloopai/hivemind
 https://github.com/amElnagdy/guard-skills
+https://github.com/NVIDIA/SkillSpector
+https://github.com/kenn-io/agentsview
+https://github.com/hexo-ai/sia
+https://github.com/refactoringhq/tolaria
