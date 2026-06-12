@@ -1604,3 +1604,38 @@ Install via the GitHub release package, start the system service, then use stand
 Yes — container management workflows, migration from Docker, optimization patterns for Apple silicon.
 
 - **Discovered:** 2026-06-11 via GitHub Trending (credibility: 1.00)
+
+
+---
+
+## [refactoringhq/tolaria](https://github.com/refactoringhq/tolaria)
+
+> Desktop app to manage markdown knowledge bases — organize, search, and navigate your notes with a beautiful UI.
+
+- **Stars:** 15374 (up ~131/day) | **Language:** TypeScript | **License:** AGPL-3.0
+- **Last commit:** 2026-06-11
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 70/100 (after multipliers)
+
+### What It Does
+Tolaria is a desktop application for managing markdown knowledge bases. It provides a beautiful UI for organizing, searching, and navigating markdown files — think of it as a modern alternative to Obsidian or Notion for local-first note management. Built with TypeScript, it offers fast full-text search, graph visualization, and seamless markdown editing.
+
+### Why Now
+The markdown knowledge base space is heating up with tools like Obsidian, Logseq, and Notion competing for attention. Tolaria enters as a fresh, open-source alternative with a focus on speed and simplicity. Its rapid star growth (15K in 4 months) indicates strong community interest in a lighter-weight, more developer-friendly option.
+
+### Why It Matters
+Tolaria provides a local-first, open-source alternative to proprietary knowledge management tools. For developers who want full control over their notes without vendor lock-in, it offers a compelling option with native markdown support and a clean interface.
+
+### Who Should Care
+- Developers managing personal knowledge bases
+- Technical writers organizing documentation
+- Teams looking for open-source alternatives to Notion/Obsidian
+- Anyone who prefers local-first, markdown-based note management
+
+### Execution Pattern
+Download from GitHub Releases or build from source. The app is a desktop application — no CLI automation needed.
+
+### Skill Potential
+Limited — desktop app, not easily automatable. Best suited for logging rather than SKILL.md generation.
+
+- **Discovered:** 2026-06-12 via GitHub Trending (credibility: 1.00)
