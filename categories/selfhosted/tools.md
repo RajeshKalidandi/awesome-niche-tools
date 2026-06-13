@@ -248,3 +248,36 @@ Clone the repo, set your Anthropic API key in .env, configure sources in sources
 
 ### Skill Potential
 Yes - could automate daily newspaper generation as a cron job, or integrate with specific RSS feeds for niche industry monitoring.
+
+
+---
+
+## [OpenHuman](https://github.com/tinyhumansai/openhuman)
+
+> Personal AI super intelligence with persistent memory tree and 118+ integrations
+
+- **Stars:** 31,752 (↑4,383/day) | **Language:** Rust/TypeScript | **License:** GPL-3.0
+- **Last commit:** 2026-06-11 | **Source credibility:** 1.00 (GitHub Trending)
+- **Relevance score:** 82/100
+
+### What It Does
+OpenHuman is a personal AI assistant that runs locally with a persistent memory tree, 118+ integrations, token compression, native voice support, web search, and model routing. It's designed to be your personal AI that learns and remembers across sessions.
+
+### Why Now
+The personal AI space is heating up with OpenHuman leading the charge. With 6,363 stars gained in the last 30 days and Product Hunt #1 ranking, it's the fastest-growing personal AI tool. The GPL-3.0 license ensures it remains community-driven.
+
+### Why It Matters
+OpenHuman represents the shift from cloud-dependent AI to local-first personal assistants. The persistent memory tree means your AI gets smarter over time without sending your data to the cloud.
+
+### Who Should Care
+- Privacy-conscious users who want AI without cloud dependency
+- Power users who need a personal AI that learns their workflows
+- Developers interested in local-first AI architectures
+
+### Execution Pattern
+
+
+### Skill Potential
+Yes — OpenHuman's integration system could be wrapped as a Hermes skill for personal AI workflows.
+
+- **Discovered:** 2026-06-14 via GitHub Trending (credibility: 1.00)

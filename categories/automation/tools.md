@@ -68,3 +68,52 @@ Install via pip, use CLI commands to control WPS/Office: cli-anything-wps writer
 Yes — SKILL.md would cover: COM automation setup, office command reference, academic pipeline configuration, PPT design system usage.
 
 - **Discovered:** 2026-06-01 via GitHub Search (credibility: 0.75)
+
+
+---
+
+## [CloakBrowser](https://github.com/CloakHQ/CloakBrowser)
+
+> Stealth Chromium with 58 source-level C++ fingerprint patches
+
+- **Stars:** 25,743 (↑2,869/day) | **Language:** Python/C++ | **License:** MIT
+- **Last commit:** 2026-05-21 (v0.3.31) | **Source credibility:** 1.00 (GitHub Trending)
+- **Relevance score:** 77/100
+
+### What It Does
+CloakBrowser is a stealth Chromium browser with 58 source-level C++ fingerprint patches that make it undetectable by bot detection systems. It's a drop-in replacement for Playwright/Puppeteer that passes all 30/30 bot detection tests with human-like behavior simulation.
+
+### Why Now
+As AI agents increasingly need to interact with websites, bot detection systems are becoming more sophisticated. CloakBrowser solves this by making browser automation indistinguishable from human browsing, enabling agents to access services that would otherwise block them.
+
+### Why It Matters
+The ability to bypass bot detection is crucial for AI agents that need to gather information from protected websites. CloakBrowser makes this possible without compromising on security or performance.
+
+### Who Should Care
+- Developers building AI agents that need web scraping capabilities
+- Teams implementing competitive intelligence gathering
+- Organizations automating workflows that interact with protected websites
+
+### Execution Pattern
+Collecting cloakbrowser
+  Downloading cloakbrowser-0.3.31-py3-none-any.whl.metadata (57 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.2/57.2 kB 6.3 MB/s eta 0:00:00
+Requirement already satisfied: httpx>=0.24 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from cloakbrowser) (0.28.1)
+Requirement already satisfied: playwright>=1.40 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from cloakbrowser) (1.60.0)
+Requirement already satisfied: anyio in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from httpx>=0.24->cloakbrowser) (4.13.0)
+Requirement already satisfied: certifi in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from httpx>=0.24->cloakbrowser) (2026.5.20)
+Requirement already satisfied: httpcore==1.* in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from httpx>=0.24->cloakbrowser) (1.0.9)
+Requirement already satisfied: idna in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from httpx>=0.24->cloakbrowser) (3.18)
+Requirement already satisfied: h11>=0.16 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from httpcore==1.*->httpx>=0.24->cloakbrowser) (0.16.0)
+Requirement already satisfied: pyee<14,>=13 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from playwright>=1.40->cloakbrowser) (13.0.1)
+Requirement already satisfied: greenlet<4.0.0,>=3.1.1 in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from playwright>=1.40->cloakbrowser) (3.3.2)
+Requirement already satisfied: typing-extensions in /usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages (from pyee<14,>=13->playwright>=1.40->cloakbrowser) (4.15.0)
+Downloading cloakbrowser-0.3.31-py3-none-any.whl (76 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 76.6/76.6 kB 14.3 MB/s eta 0:00:00
+Installing collected packages: cloakbrowser
+Successfully installed cloakbrowser-0.3.31
+
+### Skill Potential
+Yes — CloakBrowser could be wrapped as a Hermes skill for stealth web browsing capabilities.
+
+- **Discovered:** 2026-06-14 via GitHub Trending (credibility: 1.00)

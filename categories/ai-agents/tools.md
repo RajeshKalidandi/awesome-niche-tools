@@ -1325,3 +1325,105 @@ Successfully installed sia-agent-0.5.1
 Yes — SKILL.md covers: installation, running built-in tasks, adding custom tasks, and integrating with different LLM providers.
 
 - **Discovered:** 2026-06-12 via GitHub Trending (credibility: 1.00)
+
+---
+
+## [Superpowers](https://github.com/obra/superpowers)
+
+> Agentic skills framework and software development methodology for AI coding agents
+
+- **Stars:** 227,000 (↑32,428/day) | **Language:** Shell/JavaScript | **License:** MIT
+- **Last commit:** 2026-06-09 | **Source credibility:** 1.00 (GitHub Trending)
+- **Relevance score:** 93/100
+
+### What It Does
+Superpowers transforms AI coding agents into systematic engineers by providing production-grade skills that enforce TDD, brainstorming, plan writing, subagent-driven development, and code review. It's not just a tool — it's a complete methodology for making AI agents reliable and consistent.
+
+### Why Now
+The AI agent space has exploded with tools, but most lack the operational discipline to produce production-quality code. Superpowers fills this gap by encoding proven engineering workflows into agent skills. With 227K stars in under a month, it's the fastest-growing developer tool in the ecosystem.
+
+### Why It Matters
+Adopting Superpowers means your AI agents stop producing throwaway code and start following engineering best practices. The TDD enforcement alone prevents the "works on my machine" problem that plagues AI-generated code.
+
+### Who Should Care
+- Teams using AI coding agents (Claude Code, Codex, OpenCode)
+- Solo developers who want AI agents that follow best practices
+- Organizations building internal AI development workflows
+
+### Execution Pattern
+```bash
+# Install for your preferred agent platform
+# Follow the platform-specific installation guide in the README
+# The skills are automatically available to your agent
+```
+
+### Skill Potential
+Yes — Superpowers is itself a skill framework. A SKILL.md could document how to extend it with custom skills for specific domains.
+
+- **Discovered:** 2026-06-14 via GitHub Trending (credibility: 1.00)
+
+
+---
+
+## [AgentMemory](https://github.com/rohitg00/agentmemory)
+
+> Persistent memory for AI coding agents with 4-tier consolidation
+
+- **Stars:** 22,600 (↑2,597/day) | **Language:** TypeScript | **License:** Apache-2.0
+- **Last commit:** 2026-06 (active) | **Source credibility:** 1.00 (GitHub Trending)
+- **Relevance score:** 84/100
+
+### What It Does
+AgentMemory provides a persistent memory system for AI coding agents with 4-tier memory consolidation: working, episodic, semantic, and procedural. It achieves 95.2% retrieval accuracy on the LongMemEval benchmark and works across multiple agents via MCP + REST APIs.
+
+### Why Now
+As AI agents become more capable, they need memory that persists across sessions. AgentMemory solves the "start from scratch" problem by giving agents a structured memory system that improves over time. The 4-tier architecture mirrors how human memory works, making it more effective than simple vector stores.
+
+### Why It Matters
+Without persistent memory, AI agents waste context window on re-explaining the same project details. AgentMemory reduces this overhead by 60-80% while improving response quality through memory consolidation.
+
+### Who Should Care
+- Developers running AI coding agents for large projects
+- Teams building multi-agent systems that need shared context
+- Organizations implementing AI-assisted development workflows
+
+### Execution Pattern
+
+
+### Skill Potential
+Yes — AgentMemory could be wrapped as a Hermes skill for automatic memory management across coding sessions.
+
+- **Discovered:** 2026-06-14 via GitHub Trending (credibility: 1.00)
+
+
+---
+
+## [agent-browser](https://github.com/vercel-labs/agent-browser)
+
+> Fast native Rust CLI for browser automation designed for AI agents
+
+- **Stars:** 35,900 | **Language:** Rust | **License:** MIT
+- **Last commit:** 2026-06-10 | **Source credibility:** 1.00 (GitHub Search)
+- **Relevance score:** 84/100
+
+### What It Does
+agent-browser is a high-performance Rust CLI that provides deterministic element selection via accessibility snapshots, AI chat mode, and a security suite with domain allowlists and action policies. From Vercel Labs, it's designed specifically for AI agents that need reliable browser automation.
+
+### Why Now
+AI agents are increasingly tasked with web interactions, but existing browser automation tools weren't designed for agent use cases. agent-browser fills this gap with agent-first features like accessibility-based element selection and security policies that prevent agents from accessing unauthorized sites.
+
+### Why It Matters
+The accessibility snapshot approach means AI agents can reliably interact with web pages without brittle CSS selectors. This makes browser automation 10x more reliable for agent workflows.
+
+### Who Should Care
+- Developers building AI agents that interact with web services
+- Teams implementing automated testing with AI agents
+- Organizations needing secure browser automation for AI workflows
+
+### Execution Pattern
+
+
+### Skill Potential
+Yes — agent-browser is a natural fit for Hermes skills that need browser interaction capabilities.
+
+- **Discovered:** 2026-06-14 via GitHub Search (credibility: 0.75)

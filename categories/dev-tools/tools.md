@@ -1639,3 +1639,36 @@ Download from GitHub Releases or build from source. The app is a desktop applica
 Limited — desktop app, not easily automatable. Best suited for logging rather than SKILL.md generation.
 
 - **Discovered:** 2026-06-12 via GitHub Trending (credibility: 1.00)
+
+
+---
+
+## [Forge](https://github.com/antoinezambelli/forge)
+
+> Open-source reliability layer for self-hosted LLM tool-calling
+
+- **Stars:** 2,100 | **Language:** Python | **License:** MIT
+- **Last commit:** 2026-05 (v0.7.5) | **Source credibility:** 0.85 (Hacker News)
+- **Relevance score:** 73/100
+
+### What It Does
+Forge adds guardrails to self-hosted LLM tool-calling with retry nudges, error recovery, and rescue parsing. It takes an 8B model from 53% to 99% success rate on agentic tasks. Published as an ACM CAIS '26 paper, it's available as a drop-in OpenAI-compatible proxy.
+
+### Why Now
+Self-hosted LLMs are increasingly used for tool-calling, but smaller models struggle with reliability. Forge solves this by adding a reliability layer that makes 8B models perform like 70B models on agentic tasks. The academic validation gives it credibility.
+
+### Why It Matters
+The ability to use smaller, cheaper models with high reliability is crucial for production deployments. Forge makes self-hosted LLMs viable for real-world agentic workflows.
+
+### Who Should Care
+- Teams running self-hosted LLMs for tool-calling
+- Organizations looking to reduce inference costs
+- Researchers exploring LLM reliability improvements
+
+### Execution Pattern
+
+
+### Skill Potential
+Yes — Forge could be wrapped as a Hermes skill for LLM reliability management.
+
+- **Discovered:** 2026-06-14 via Hacker News (credibility: 0.85)
