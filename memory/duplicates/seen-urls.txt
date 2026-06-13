@@ -101,3 +101,9 @@ https://github.com/NVIDIA/SkillSpector
 https://github.com/kenn-io/agentsview
 https://github.com/hexo-ai/sia
 https://github.com/refactoringhq/tolaria
+https://github.com/obra/superpowers
+https://github.com/rohitg00/agentmemory
+https://github.com/vercel-labs/agent-browser
+https://github.com/tinyhumansai/openhuman
+https://github.com/CloakHQ/CloakBrowser
+https://github.com/antoinezambelli/forge
