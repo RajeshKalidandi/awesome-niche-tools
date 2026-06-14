@@ -107,3 +107,11 @@ https://github.com/vercel-labs/agent-browser
 https://github.com/tinyhumansai/openhuman
 https://github.com/CloakHQ/CloakBrowser
 https://github.com/antoinezambelli/forge
+
+## Vibe Shift 2026-06-15
+https://github.com/DietrichGebert/ponytail
+https://github.com/alibaba/open-code-review
+https://github.com/MoonshotAI/kimi-code
+https://github.com/sandiiarov/skill-creator
+https://github.com/superloglabs/superlog
+https://github.com/CodeBendKit/codeseek

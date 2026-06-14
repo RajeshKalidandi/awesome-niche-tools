@@ -1672,3 +1672,99 @@ The ability to use smaller, cheaper models with high reliability is crucial for 
 Yes — Forge could be wrapped as a Hermes skill for LLM reliability management.
 
 - **Discovered:** 2026-06-14 via Hacker News (credibility: 0.85)
+
+
+---
+
+## [Open Code Review](https://github.com/alibaba/open-code-review)
+
+> Battle-tested AI code review tool from Alibaba — deterministic pipelines + LLM agent, precise line-level comments
+
+- **Stars:** 6,920 | **Language:** Go | **License:** Apache-2.0
+- **Last commit:** 2026-06-14
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 92/100
+
+### What It Does
+Open-source AI code review CLI developed internally at Alibaba, where it served tens of thousands of developers and identified millions of code defects over two years. Reads Git diffs, sends changed files to a configurable LLM, and generates structured review comments with line-level precision. Combines deterministic engineering (precise file selection, smart bundling, fine-grained rule matching) with agent-driven dynamic decisions.
+
+### Why Now
+As AI code review tools proliferate, most suffer from incomplete coverage, position drift, and unstable quality. Open Code Review solves this with a hybrid architecture that pairs deterministic pipelines (NPE, thread-safety, XSS, SQL injection rules) with LLM reasoning for complex cases.
+
+### Why It Matters
+Production-proven at Alibaba scale with millions of defects found. Self-hostable with any LLM endpoint (OpenAI, Anthropic). Unlike cloud-only review tools, this runs entirely on your infrastructure.
+
+### Who Should Care
+- Teams with CI/CD pipelines that need automated code review
+- Security-conscious orgs wanting local-first code analysis
+- Open source maintainers drowning in PR reviews
+
+### Execution Pattern
+Clone the repo, configure your LLM endpoint, and run against any Git repo. Integrates with GitHub Actions, GitLab CI, or any webhook-based system. Fine-tuned ruleset covers common vulnerabilities out of the box.
+
+### Skill Potential
+Yes — CLI tool with clear automation potential for CI/CD integration.
+
+
+---
+
+## [Superlog](https://github.com/superloglabs/superlog)
+
+> Open-source agentic telemetry — AI agents that self-heal your software
+
+- **Stars:** 816 | **Language:** TypeScript | **License:** Apache-2.0
+- **Last commit:** 2026-06-14
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 87/100
+
+### What It Does
+Superlog is an open-source observability platform (YC P26) that ingests OTLP traces, logs, and metrics, groups related signals into incidents, and uses AI agents to diagnose and self-heal issues. Free community edition plus hosted cloud option.
+
+### Why Now
+Traditional observability tools generate alerts but don't act on them. Superlog closes the loop by having AI agents not just detect issues but attempt remediation — turning passive monitoring into active incident response.
+
+### Why It Matters
+Instead of waking up at 3 AM to triage alerts, Superlog agents can diagnose root causes and apply fixes automatically. The OTLP-native approach means it works with existing instrumentation (OpenTelemetry).
+
+### Who Should Care
+- DevOps/SRE teams running microservices
+- Startups that can't afford 24/7 on-call rotations
+- Anyone using OpenTelemetry for observability
+
+### Execution Pattern
+Deploy Superlog alongside your existing observability stack. Configure OTLP endpoints to send traces/logs/metrics. Superlog groups signals into incidents and triggers AI-powered diagnosis. Community edition runs locally; cloud edition scales to production.
+
+### Skill Potential
+Yes — CLI/API for incident management automation.
+
+
+---
+
+## [codeseek](https://github.com/CodeBendKit/codeseek)
+
+> Rust-powered code intelligence CLI for AI coding agents — hybrid search across 7 languages
+
+- **Stars:** 121 | **Language:** Rust | **License:** MIT
+- **Last commit:** 2026-06-10
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 85/100
+
+### What It Does
+codeseek is a Rust-powered code intelligence CLI that builds call graphs and hybrid semantic search indexes (Dense + Sparse + RRF + Reranker) across 7 programming languages. Ships as native MCP tools for Claude Code and Codex CLI, enabling agents to understand code structure before making changes.
+
+### Why Now
+AI coding agents often make changes without understanding the full call graph, leading to broken dependencies. codeseek gives agents the code intelligence they need to make informed edits — understanding what calls what, what depends on what.
+
+### Why It Matters
+Hybrid search (vector + BM25 + call graph) means agents can find relevant code by meaning, not just text matching. MCP integration means it works out of the box with Claude Code and Codex.
+
+### Who Should Care
+- Developers using Claude Code or Codex CLI
+- Teams working on large codebases where call graphs matter
+- Anyone building AI-powered code tools
+
+### Execution Pattern
+Install via cargo or download the binary. Run codeseek on your project to build the search index, then connect it to your agent via MCP. The agent can now query code structure, find call chains, and understand dependencies.
+
+### Skill Potential
+Yes — MCP server with clear automation potential for code intelligence.

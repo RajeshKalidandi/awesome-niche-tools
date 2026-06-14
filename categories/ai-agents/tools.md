@@ -1427,3 +1427,67 @@ The accessibility snapshot approach means AI agents can reliably interact with w
 Yes — agent-browser is a natural fit for Hermes skills that need browser interaction capabilities.
 
 - **Discovered:** 2026-06-14 via GitHub Search (credibility: 0.75)
+
+
+---
+
+## [Ponytail](https://github.com/DietrichGebert/ponytail)
+
+> Makes your AI agent think like the laziest senior dev in the room — 80-94% less code output
+
+- **Stars:** 7,051 (new — created 2026-06-12, 3 days old) | **Language:** JavaScript | **License:** MIT
+- **Last commit:** 2026-06-14
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 95/100
+
+### What It Does
+Ponytail is an AI agent skill that enforces minimal code output. It instructs coding agents to think before writing, prefer zero-code solutions, and generate 80-94% less code than default. Works with 11+ agents including Claude Code, Cursor, Codex, and Windsurf.
+
+### Why Now
+As AI coding agents gain adoption, over-engineering has become a real problem. Agents default to generating verbose code when simpler solutions exist. Ponytail flips this by embedding "lazy senior dev" principles directly into the agent system prompt.
+
+### Why It Matters
+The best code is the code you never wrote. Ponytail prevents AI agents from over-engineering solutions, reducing maintenance burden and complexity. Teams using AI coding tools will see immediate quality improvements.
+
+### Who Should Care
+- Developers using Claude Code, Cursor, Codex, or any AI coding agent
+- Tech leads worried about AI-generated code bloat
+- Solo devs who want leaner, more maintainable output
+
+### Execution Pattern
+Install as a skill in your agent framework. The skill modifies the agent system prompt to enforce minimal-code thinking. No configuration needed — just add the skill and restart your agent session.
+
+### Skill Potential
+Yes — can be adapted as a Hermes skill for any agent framework.
+
+
+---
+
+## [Kimi Code](https://github.com/MoonshotAI/kimi-code)
+
+> Terminal AI coding agent with video input, subagents, MCP support, and ACP editor integration — ships as a single binary
+
+- **Stars:** 2,376 | **Language:** TypeScript | **License:** MIT
+- **Last commit:** 2026-06-14
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 90/100
+
+### What It Does
+Kimi Code is a terminal-based AI coding agent from Moonshot AI. It supports video input (screenshots, screen recordings), sub-agent orchestration, MCP tool integration, and ACP editor connections. Ships as a single binary with no dependencies.
+
+### Why Now
+The AI coding agent space is maturing rapidly. Kimi Code differentiates by supporting multimodal input (video/screenshot) and providing a clean CLI experience that integrates with existing editor workflows via ACP.
+
+### Why It Matters
+Video input means you can show your agent exactly what you see on screen — no more copy-pasting error messages or describing UI bugs. Sub-agent support enables complex multi-step workflows.
+
+### Who Should Care
+- Developers who prefer terminal-based workflows
+- Teams needing multimodal coding assistance
+- Anyone exploring ACP (Agent Communication Protocol) integration
+
+### Execution Pattern
+Install via npm or download the binary. Configure your LLM provider, then run kimi-code in any project directory. Use video input by passing screenshot paths or screen recording URLs.
+
+### Skill Potential
+Yes — CLI agent with MCP/ACP support, clear automation patterns.
