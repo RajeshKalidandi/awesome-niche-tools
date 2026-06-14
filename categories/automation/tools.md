@@ -117,3 +117,35 @@ Successfully installed cloakbrowser-0.3.31
 Yes — CloakBrowser could be wrapped as a Hermes skill for stealth web browsing capabilities.
 
 - **Discovered:** 2026-06-14 via GitHub Trending (credibility: 1.00)
+
+
+---
+
+## [Skill Creator](https://github.com/sandiiarov/skill-creator)
+
+> Turn any MCP server, OpenAPI spec, or GraphQL endpoint into a CLI at runtime
+
+- **Stars:** 610 | **Language:** TypeScript | **License:** MIT
+- **Last commit:** 2026-06-03
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 88/100
+
+### What It Does
+Skill Creator generates reusable AI agent skills from MCP servers, OpenAPI specs, or GraphQL endpoints. Supports 9+ agent frameworks and includes an auto-improvement loop that learns from runtime gotchas. Turns any API into a first-class agent tool.
+
+### Why Now
+As MCP adoption grows, developers have dozens of MCP servers but no standardized way to turn them into agent-compatible skills. Skill Creator bridges this gap by auto-generating skills from existing API definitions.
+
+### Why It Matters
+Instead of manually writing SKILL.md files for every MCP server, Skill Creator automates the entire process. The auto-improvement loop means skills get better over time as they encounter edge cases.
+
+### Who Should Care
+- MCP server authors wanting agent integration
+- Teams building agent workflows from existing APIs
+- Anyone maintaining multiple AI agent skills
+
+### Execution Pattern
+Point Skill Creator at an MCP server URL, OpenAPI spec, or GraphQL endpoint. It generates a complete skill package with usage examples, error handling, and gotcha documentation. Install the generated skill in your agent framework.
+
+### Skill Potential
+Yes — meta-tool for generating other skills. High automation value.
