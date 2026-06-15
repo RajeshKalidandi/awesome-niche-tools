@@ -1491,3 +1491,171 @@ Install via npm or download the binary. Configure your LLM provider, then run ki
 
 ### Skill Potential
 Yes — CLI agent with MCP/ACP support, clear automation patterns.
+
+
+---
+
+## [Agent-Reach](https://github.com/Panniantong/Agent-Reach)
+
+> Give your AI agent one-click access to the entire internet — Twitter, Reddit, YouTube, GitHub, Bilibili, and more. Zero API fees.
+
+- **Stars:** 29,952 (↑1,045/day) | **Language:** Python | **License:** MIT
+- **Last commit:** 2026-06-12
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 91/100
+- **Discovered:** 2026-06-16 via GitHub Trending (credibility: 1.00)
+
+### What It Does
+Agent-Reach is a one-click internet access layer for AI agents. It connects your agent to Twitter/X, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu, LinkedIn, V2EX, and web search — all without API fees. Each platform has a primary + fallback backend, so when one access path dies, it auto-switches. Includes  for health checks.
+
+### Why Now
+AI agents can write code and manage projects, but reading the internet remains painful — Twitter API costs 15/month, Reddit blocks server IPs, Bilibili blocks overseas access. Agent-Reach solves this with free, open-source backends that handle authentication, proxying, and fallback routing automatically.
+
+### Why It Matters
+This turns any AI agent from a code-only assistant into a research-capable one. Instead of paying for API access or debugging proxy configs, you get one command that wires up internet access across 8+ platforms. The auto-fallback architecture means it stays working even when platforms change their APIs.
+
+### Who Should Care
+- Solo developers building AI agents that need to research the web
+- Teams running Claude Code, OpenClaw, Cursor, or Windsurf who need internet access
+- Anyone tired of paying for Twitter API or debugging Reddit 403 errors
+
+### Execution Pattern
+
+
+### Skill Potential
+Yes — Agent-Reach has a CLI () and can be integrated into agent workflows. A SKILL.md would cover installation, platform setup, and health check patterns.
+
+### Composable Stack Potential
+Agent-Reach + Claude Code + any research agent = fully internet-capable AI assistant. Pairs well with tools like SurfSense for knowledge management and cli-printing-press for generating platform-specific CLIs.
+
+### Limitations & Trade-offs
+- Primarily Chinese-language documentation (English docs available but less detailed)
+- Some platforms require cookie/auth setup (Twitter, XiaoHongShu)
+- Server-side usage may need a proxy (/month)
+- Very new project (created Feb 2026) — may have stability issues
+
+---
+
+## [cli-printing-press](https://github.com/mvanhorn/cli-printing-press)
+
+> Generates token-efficient CLIs for AI agents by reading API docs, studying community CLIs, and applying power-user patterns. Prints Go binaries + Claude Code skills + MCP servers.
+
+- **Stars:** 3,412 (↑100/day) | **Language:** Go | **License:** MIT
+- **Last commit:** 2026-06-13
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 87/100
+- **Discovered:** 2026-06-16 via GitHub Trending (credibility: 1.00)
+
+### What It Does
+CLI Printing Press reads official API docs, studies every popular community CLI and MCP server, sniffs the web for undocumented APIs (like Google Flights or Dominos), and generates a token-efficient Go CLI plus Claude Code skill plus MCP server for any API or website. It follows Peter Steinberger's power-user playbook: local SQLite, compound commands, agent-native flags.
+
+### Why Now
+AI agents waste tokens hunting through docs and taking wrong turns with CLIs. A well-designed CLI is muscle memory for an agent. The Printing Press automates CLI creation — instead of hand-crafting tool interfaces for each API, you point it at docs and get a production-ready CLI with skills attached.
+
+### Why It Matters
+This flips the CLI creation process from manual to automated. Instead of spending hours building a CLI for a new API, you run the Press and get a Go binary, Claude Code skill, and MCP server in one shot. The generated CLIs are optimized for agent consumption — token-efficient, compound-query capable, and offline-ready via SQLite.
+
+### Who Should Care
+- Developers building AI agents that need to interact with multiple APIs
+- Teams using Claude Code who want custom CLIs for their workflows
+- Anyone who's tired of writing boilerplate CLI wrappers for REST APIs
+
+### Execution Pattern
+[1;32mCLI Printing Press installer[0m
+[0;90mInstall the generator binary and Claude Code skills[0m
+
+[0;34m->[0m Running preflight checks
+
+### Skill Potential
+Yes — the tool itself generates skills, and it has a catalog of pre-built CLIs. A SKILL.md would cover installation, CLI generation, and catalog browsing.
+
+### Composable Stack Potential
+cli-printing-press + Agent-Reach = generate custom CLIs for any API, then use Agent-Reach to give those CLIs internet access. Also pairs with Claude Code for the full agent loop.
+
+### Limitations & Trade-offs
+- Requires Go 1.26.4+ and Node/npm for npx
+- Primary interface is Claude Code skills — other harnesses may not work as well
+- Generated CLIs depend on the quality of the API docs you provide
+- Very new project (created March 2026) — catalog is still growing
+
+---
+
+## [SurfSense](https://github.com/MODSetter/SurfSense)
+
+> Open-source, privacy-focused alternative to NotebookLM for teams. No data limits, 25+ data sources, real-time multiplayer, AI automations.
+
+- **Stars:** 14,731 (↑185/day) | **Language:** Python | **License:** Apache-2.0
+- **Last commit:** 2026-06-15
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 83/100
+- **Discovered:** 2026-06-16 via GitHub Trending (credibility: 1.00)
+
+### What It Does
+SurfSense is a self-hosted knowledge management platform that replaces Google's NotebookLM with no data limits. It supports 25+ external data sources (Google Drive, OneDrive, Dropbox, Notion, etc.), real-time multiplayer collaboration, AI-powered file sorting, and AI automations that trigger on document changes. Run AI agents on a schedule or trigger them when a document lands in a folder.
+
+### Why Now
+NotebookLM is powerful but limited — source caps, notebook caps, vendor lock-in, no multiplayer. SurfSense solves all of these while adding features NotebookLM doesn't have: AI automations, folder-based triggers, and desktop app integration. The 14.7k stars in under 2 years show strong demand for an open alternative.
+
+### Why It Matters
+This is the knowledge management layer that AI agents have been missing. Instead of manually feeding documents to an agent, SurfSense auto-organizes, indexes, and triggers AI workflows on your data. The multiplayer support means teams can collaborate on research in real-time.
+
+### Who Should Care
+- Teams doing research who've hit NotebookLM's data limits
+- Developers building AI-powered knowledge bases
+- Anyone who wants self-hosted, private knowledge management with AI
+
+### Execution Pattern
+
+
+### Skill Potential
+Medium — SurfSense is a web app, not a CLI. But it has API endpoints and automation triggers that could be scripted. A SKILL.md would cover self-hosting, data source integration, and automation setup.
+
+### Composable Stack Potential
+SurfSense + Agent-Reach = knowledge management with full internet access. SurfSense indexes your data, Agent-Reach fetches new data from the web, and AI automations keep everything fresh.
+
+### Limitations & Trade-offs
+- Self-hosted — requires server infrastructure
+- Complex setup compared to cloud NotebookLM
+- Apache-2.0 license (not MIT)
+- Desktop app is a separate component
+
+---
+
+## [cua](https://github.com/trycua/cua)
+
+> Open-source infrastructure for Computer-Use Agents. Sandboxes, SDKs, and benchmarks to train and evaluate AI agents that control full desktops.
+
+- **Stars:** 18,102 (↑57/day) | **Language:** Go/Python | **License:** MIT
+- **Last commit:** 2026-06-15
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 85/100
+- **Discovered:** 2026-06-16 via GitHub Trending (credibility: 1.00)
+
+### What It Does
+cua provides the infrastructure layer for building computer-use agents — AI agents that can control full desktops (macOS, Linux, Windows). It includes: Cua Drivers (background computer-use for any agent), Cua Sandboxes (agent-ready environments for any OS), Cua Bench (benchmarks and RL environments for evaluation), and Lume (macOS virtualization). Think of it as the Docker for AI desktop agents.
+
+### Why Now
+Computer-use agents are the next frontier beyond code-only agents. But building them requires sandboxing, OS virtualization, evaluation benchmarks, and driver layers — all of which cua provides out of the box. With 18k stars in 18 months, this is becoming the standard infrastructure for desktop AI agents.
+
+### Why It Matters
+This removes the hardest part of building computer-use agents: the infrastructure. Instead of writing your own VM management, sandbox isolation, and evaluation harnesses, you use cua's battle-tested components. It's the difference between building a web app from scratch vs. using Kubernetes.
+
+### Who Should Care
+- AI researchers building computer-use agents
+- Teams evaluating desktop AI agent performance
+- Developers who want to give coding agents a full desktop environment
+
+### Execution Pattern
+
+
+### Skill Potential
+Medium — cua is an SDK/infrastructure, not a direct CLI tool. But Lume (macOS VMs) and Cua Bench (evaluation) have CLI interfaces. A SKILL.md would cover sandbox setup and evaluation workflows.
+
+### Composable Stack Potential
+cua + Agent-Reach = computer-use agents with full internet access. cua provides the desktop environment, Agent-Reach provides web access. Together they enable agents that can browse, research, and act on any platform.
+
+### Limitations & Trade-offs
+- HTML listed as primary language (likely docs/landing page)
+- Complex infrastructure — not a simple install
+- macOS focus with Linux/Windows as secondary
+- Benchmarks require specific model setups
