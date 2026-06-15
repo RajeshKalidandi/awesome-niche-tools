@@ -115,3 +115,7 @@ https://github.com/MoonshotAI/kimi-code
 https://github.com/sandiiarov/skill-creator
 https://github.com/superloglabs/superlog
 https://github.com/CodeBendKit/codeseek
+https://github.com/Panniantong/Agent-Reach
+https://github.com/mvanhorn/cli-printing-press
+https://github.com/MODSetter/SurfSense
+https://github.com/trycua/cua
