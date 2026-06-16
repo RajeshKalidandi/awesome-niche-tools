@@ -1659,3 +1659,104 @@ cua + Agent-Reach = computer-use agents with full internet access. cua provides 
 - Complex infrastructure — not a simple install
 - macOS focus with Linux/Windows as secondary
 - Benchmarks require specific model setups
+
+## [andrej-karpathy-skills](https://github.com/andrej-karpathy/skills)
+
+> Skills automation platform for Andrej Karpathy's code. Transforms code into reusable agent skills.
+
+- **Stars:** 87,592 (↑3,600/day) | **Language:** Python | **License:** MIT
+- **Last commit:** 2026-06-14
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 90/100
+
+### What It Does
+andrej-karpathy-skills automatically parses Andrej Karpathy's code and breaks it into reusable agent skills. Each skill handles: parsing code structure, optimization routines, comprehensive testing, documentation generation, and CI/CD integration. This transforms complex codebases into modular, reusable components that AI agents can consume directly.
+
+### Why Now
+The AI agent space is exploding with new frameworks, creating a demand for skills that can parse and optimize existing code. Andrej Karpathy's work on AI coding represents some of the most sophisticated agent skills available. This platform makes those skills accessible to any agent, regardless of their architecture.
+
+### Why It Matters
+Skills automation eliminates the need for agents to repeatedly reinvent the wheel. Instead of starting from scratch, any agent can now consume Karpathy's proven skills directly. This dramatically improves code quality and development velocity across the agent ecosystem.
+
+### Who Should Care
+- AI agent builders looking to leverage proven skills
+- Teams wanting to standardize agent capabilities
+- Developers wanting to make their code agent-accessible
+- Anyone frustrated with agents writing redundant code
+
+### Execution Pattern
+
+
+### Skill Potential
+Yes — SKILL.md should cover: installation, skill parsing, skill optimization, testing automation, documentation generation, CI/CD integration, and agent skill loading.
+
+- **Discovered:** 2026-06-14 via GitHub Trending (credibility: 1.00)
+
+---
+
+## [superpowers](https://github.com/superpowers-ai/superpowers)
+
+> AI-2-AI translation for multi-agent communication. Converts between different agent architectures.
+
+- **Stars:** 75,261 (↑2,900/day) | **Language:** TypeScript | **License:** MIT
+- **Last commit:** 2026-06-14
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 88/100
+
+### What It Does
+superpowers translates between different AI agent architectures and communication protocols. It enables agents to interoperate regardless of their underlying framework — whether it's Claude Code, OpenCode, pi-mono, or custom implementations. The system handles protocol conversion, message transformation, and semantic bridging to ensure seamless multi-agent collaboration.
+
+### Why Now
+Multi-agent systems are becoming increasingly common, but each agent typically speaks its own language. With the rise of specialized agent frameworks (coding agents, web agents, desktop agents), the need for universal communication protocols has become critical. superpowers provides the missing bridge.
+
+### Why It Matters
+Without superpowers, teams building multi-agent systems need custom integration work for each framework combination. With superpowers, any agent can communicate with any other agent, enabling true plug-and-play agent ecosystems. This dramatically reduces integration complexity and accelerates multi-agent deployment.
+
+### Who Should Care
+- Teams building multi-agent systems
+- Organizations evaluating multiple agent frameworks
+- Anyone needing to integrate different AI agent architectures
+- Developers building cross-framework agent tools
+
+### Execution Pattern
+
+added 1 package in 481ms
+
+### Skill Potential
+Yes — SKILL.md should cover: installation, framework detection, protocol translation, message transformation, testing frameworks, and integration patterns.
+
+- **Discovered:** 2026-06-14 via GitHub Trending (credibility: 1.00)
+
+---
+
+## [pi-mono](https://github.com/pi-mono/pi-mono)
+
+> Terminal-based AI coding agent with hash-anchored edits and LSP integration.
+
+- **Stars:** 45,113 (↑1,800/day) | **Language:** TypeScript | **License:** MIT
+- **Last commit:** 2026-06-14
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 86/100
+
+### What It Does
+pi-mono is a terminal-based AI coding agent that specializes in precise code modifications through hash-anchored edits. It includes LSP integration for semantic code understanding, Python execution capabilities, browser automation, and sub-agent spawning for parallel task execution. pi-mono runs entirely in your terminal, making it accessible for local AI coding work.
+
+### Why Now
+The AI coding agent space is maturing around terminal-based tools. While Claude Code and OpenCode dominate, pi-mono differentiates with hash-anchored edits — a more reliable approach to code modification that doesn't break on whitespace changes. The sub-agent support enables complex coding workflows with parallel execution.
+
+### Why It Matters
+Hash-anchored edits solve a fundamental problem: traditional line-number-based code edits break when code shifts. pi-mono's approach is more robust for real-world coding scenarios. Combined with LSP integration, it understands your code semantically, not just syntactically. This makes pi-mono a serious contender in the terminal AI coding space.
+
+### Who Should Care
+- Terminal-first developers wanting AI coding assistance
+- Anyone frustrated by fragile code edits from other agents
+- Developers needing parallel task execution via sub-agents
+- Python developers wanting integrated LSP support
+
+### Execution Pattern
+
+
+### Skill Potential
+No — better used as a standalone tool. A SKILL.md would focus on CLI usage and TUI navigation patterns.
+
+- **Discovered:** 2026-06-14 via GitHub Trending (credibility: 1.00)
