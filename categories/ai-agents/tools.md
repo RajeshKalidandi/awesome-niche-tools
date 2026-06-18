@@ -1862,3 +1862,57 @@ Eve + existing tools (agent-browser, MCP tools) creates a complete agent develop
 - **Novelty:** 70/100 (filesystem-first approach is novel; agent framework space is crowded)
 - **Star velocity:** 338★/day (🔥 hot)
 - **Contribution potential:** MEDIUM (documentation, examples, skill integrations)
+
+
+---
+
+## [Hyper-Extract](https://github.com/yifanfeng97/Hyper-Extract)
+
+> Smart knowledge extraction CLI — transform unstructured text into structured knowledge with one command. Supports graphs, hypergraphs, and spatio-temporal extractions.
+
+- **Stars:** 1,697 (↑~124/day) | **Language:** Python | **License:** Apache-2.0
+- **Last commit:** 2026-06-14
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 86/100
+
+### What It Does
+Hyper-Extract is an intelligent, LLM-powered knowledge extraction and evolution framework. It transforms highly unstructured text into persistent, strongly-typed Knowledge Abstracts across 8 formats — from simple Collections and Pydantic Models to complex Knowledge Graphs, Hypergraphs, and Spatio-Temporal Graphs. It ships with 80+ YAML templates across 6 domains (Finance, Legal, Medical, TCM, Industry, General) and supports OpenAI, Aliyun Baidian, and local vLLM deployments.
+
+### Why Now
+The gap between "read document" and "understand relationships" is still the hardest problem in knowledge management. Traditional extraction tools output flat key-value pairs or raw JSON — losing the structural richness of the source material. Hyper-Extract targets this gap with a CLI that produces queryable, visualizable knowledge structures in one command. Its incremental evolution capability means you can feed new documents to expand the same knowledge base without rebuilding.
+
+### Why It Matters
+Knowledge extraction from unstructured text is at the core of modern AI workflows — RAG, agent memory, research synthesis. Hyper-Extract's 8 knowledge structures (including unique spatio-temporal and hypergraph support) and 80+ zero-code templates mean domain experts can go from raw document to structured knowledge graph in minutes, without writing extraction pipelines. The local deployment option (vLLM + bge-m3) keeps sensitive data on-premise.
+
+### Who Should Care
+- Researchers synthesizing papers into structured knowledge bases
+- Legal/financial analysts extracting entities from complex documents
+- RAG pipeline engineers who need richer knowledge structures than plain vector search
+- Anyone building domain-specific knowledge graphs
+- Teams that need on-premise extraction for sensitive data
+
+### Execution Pattern
+```bash
+# Install
+uv tool install hyperextract
+
+# Configure
+he config init -k YOUR_OPENAI_API_KEY
+
+# Extract knowledge from a document into a graph
+he parse paper.pdf -t general/academic_graph -o ./paper_kb/
+
+# Query and visualize the knowledge base
+he search ./paper_kb/ "What are the key concepts?"
+he show ./paper_kb/
+```
+
+Python API: install with `uv pip install hyperextract` and import `Template` for programmatic access.
+
+### Skill Potential
+Yes — CLI tool with Python API, clear automation potential for batch document processing, knowledge base construction, and integration with research/documentation pipelines.
+
+- **Discovered:** 2026-06-19 via GitHub Trending (credibility: 1.00)
+- **Confidence:** HIGH (active commits, Apache-2.0, comprehensive docs, local deployment support)
+- **Novelty:** 80/100 (80+ domain templates, hypergraph support, and incremental evolution are genuinely differentiated)
+- **Star velocity:** 124★/day (📈 growing)
