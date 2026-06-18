@@ -119,3 +119,5 @@ https://github.com/Panniantong/Agent-Reach
 https://github.com/mvanhorn/cli-printing-press
 https://github.com/MODSetter/SurfSense
 https://github.com/trycua/cua
+https://github.com/tamnd/kage
+https://github.com/vercel/eve

@@ -1768,3 +1768,56 @@ Install via cargo or download the binary. Run codeseek on your project to build 
 
 ### Skill Potential
 Yes — MCP server with clear automation potential for code intelligence.
+
+
+---
+
+## [Kage](https://github.com/tamnd/kage)
+
+> Shadow any website for offline viewing, with the JavaScript stripped out. Clones live sites to static local HTML with all scripts removed, preserving layout, images, and CSS.
+
+- **Stars:** 1,863 (↑~466/day) | **Language:** Go | **License:** MIT
+- **Last commit:** 2026-06-17
+- **Source credibility weight:** 0.75 (GitHub Search — topic: none)
+- **Relevance score:** 83/100
+
+### What It Does
+Kage (影, "shadow") is a Go CLI that clones any website into a folder you can browse fully offline, with every script stripped out. It drives real headless Chrome, waits for the page to fully settle, snapshots the DOM a human would have seen, then removes all JavaScript and pulls CSS, images, and fonts down to local paths. What lands on disk looks and works like the live site but runs zero code — no tracking, no network calls, no surprises.
+
+### Why Now
+Web pages are increasingly ephemeral — single-page apps that break when servers go down, analytics scripts that phone home, and content that disappears when a startup shuts down. Kage solves the fundamental tension between "let JavaScript render the page" and "own a static copy" by using a real browser first, then stripping the scripts after. Created 4 days ago, already at 1,863 stars with explosive momentum.
+
+### Why It Matters
+If you archive web content for research, documentation, or personal reference, kage produces copies that actually work offline — unlike "Save As" which saves the unexecuted source, or screenshot-based tools that lose text and links. The output is plain HTML/CSS/images that will render in any browser forever.
+
+### Who Should Care
+- Researchers archiving web content for citation
+- Developers documenting external dependencies that may disappear
+- Anyone who wants to read articles offline without losing formatting
+- Digital preservationists building long-term archives
+
+### Execution Pattern
+Install with `go install github.com/tamnd/kage/cmd/kage@latest` or use the Docker image. Clone a site with `kage clone example.com`, serve it locally with `kage serve ~/data/kage/example.com`, or pack it into a single shareable ZIM file or executable binary with `kage pack example.com`.
+
+### Skill Potential
+Yes — CLI tool with clear automation potential for scheduled archiving, batch site mirroring, and integration with note-taking/documentation pipelines.
+
+### Deep Dive Analysis
+Kage works by driving a real Chrome/Chromium browser (headless) to each page, waiting for JavaScript execution to complete, then taking a DOM snapshot and saving it as static HTML with all scripts removed. External resources (CSS, images, fonts) are downloaded and remapped to local paths. The tool offers three output modes: (1) a directory of offline HTML files, (2) a single ZIM file (Wikipedia's offline archive format), and (3) a standalone executable binary using Electron. It supports shell completion for bash/zsh/fish/PowerShell.
+
+### Composable Stack Potential
+Kage + existing note-taking/documentation tools creates an offline-first research archiving workflow. Kage + ZIM viewers enables portable offline knowledge libraries. Kage + cron enables automated site mirroring.
+
+### Limitations & Trade-offs
+- Requires Chrome/Chromium installed on the host (or use Docker)
+- Cloned sites lose all dynamic/interactive functionality
+- Heavy sites with many pages take time and bandwidth to clone
+- Some sites may detect headless Chrome and serve different content
+
+### Tool Metadata
+- **Discovered:** 2026-06-18 via GitHub Search (credibility: 0.75)
+- **Deep dived:** 2026-06-18 via vibe shift
+- **Confidence:** HIGH (active commits, MIT license, 57 forks, Go ecosystem)
+- **Novelty:** 80/100 (new approach to old problem, under-discovered, explosive growth)
+- **Star velocity:** 466★/day (🔥 hot)
+- **Contribution potential:** MEDIUM (bug fixes, documentation improvements)

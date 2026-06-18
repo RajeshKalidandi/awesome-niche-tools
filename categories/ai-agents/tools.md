@@ -1815,3 +1815,50 @@ Yes - high automation potential for code intelligence workflows. The SKILL.md wo
 - **Stars growth:** +5,000/day (explosive)
 - **Confidence level:** HIGH (90/100)
 - **Priority:** TOP CURATION
+
+
+---
+
+## [Eve](https://github.com/vercel/eve)
+
+> Vercel's filesystem-first framework for building durable AI agents. Core agent capabilities live in conventional filesystem locations — system prompts as markdown, tools as TypeScript functions, channels for Slack/Discord/HTTP, and schedules as cron definitions.
+
+- **Stars:** 676 (↑~338/day) | **Language:** TypeScript | **License:** Apache-2.0
+- **Last commit:** 2026-06-17
+- **Source credibility weight:** 0.75 (GitHub Search)
+- **Relevance score:** 78/100
+
+### What It Does
+Eve is a framework for building durable AI agents where the filesystem IS the authoring interface. Agents are defined by a conventional directory structure: `agent/instructions.md` (system prompt), `agent/tools/` (typed functions), `agent/skills/` (markdown procedures), `agent/channels/` (message I/O), and `agent/schedules/` (cron jobs). The entire agent is a directory you can version control, inspect, and deploy.
+
+### Why Now
+As AI agents move from demos to production, teams need a standard way to structure, deploy, and maintain agent code. Eve provides that convention — it's "Next.js for agents" from the Vercel team, bringing the same developer experience patterns (file-system routing, conventional locations, zero-config deploys) to the agent ecosystem.
+
+### Why It Matters
+Eve standardizes agent structure through filesystem conventions, making agents inspectable, extensible, and deployable. The framework handles model configuration, tool loading, skill orchestration, channel integration, and scheduling — letting developers focus on agent logic rather than infrastructure.
+
+### Who Should Care
+- Developers building production AI agents
+- Teams looking for a standard agent project structure
+- Anyone familiar with Vercel/Next.js conventions who wants the same DX for agents
+- Agent framework evaluators comparing approaches
+
+### Execution Pattern
+`npx eve@latest init my-agent` creates a new agent project. Edit `agent/instructions.md` for the system prompt, add tools as TypeScript functions in `agent/tools/`, connect channels like Slack or Discord, and set up schedules. Deploy via Vercel.
+
+### Skill Potential
+Yes — agent orchestration framework with clear automation potential for building, deploying, and managing multi-agent workflows.
+
+### Deep Dive Analysis
+Eve takes a contrarian approach to agent frameworks: instead of defining agents through API/config objects, it uses filesystem convention. This makes agents trivially inspectable (every config is a text file), version-controllable, and composable. The framework is built on Node.js/TypeScript and ships as an npm package with full docs bundled in `node_modules/eve/docs` for offline reading by coding agents. Vercel's involvement suggests long-term stability and integration with their deploy infrastructure.
+
+### Composable Stack Potential
+Eve + existing tools (agent-browser, MCP tools) creates a complete agent development stack. Eve + Vercel deploy enables serverless agent hosting. The filesystem conventions mean agents can be generated, analyzed, and modified programmatically.
+
+### Tool Metadata
+- **Discovered:** 2026-06-18 via GitHub Search (credibility: 0.75)
+- **Deep dived:** 2026-06-18 via vibe shift
+- **Confidence:** HIGH (Vercel-backed, Apache-2.0, active commits, 29 forks)
+- **Novelty:** 70/100 (filesystem-first approach is novel; agent framework space is crowded)
+- **Star velocity:** 338★/day (🔥 hot)
+- **Contribution potential:** MEDIUM (documentation, examples, skill integrations)
