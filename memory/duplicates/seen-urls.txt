@@ -121,3 +121,6 @@ https://github.com/MODSetter/SurfSense
 https://github.com/trycua/cua
 https://github.com/tamnd/kage
 https://github.com/vercel/eve
+https://github.com/alibaba/zvec
+https://github.com/yifanfeng97/Hyper-Extract
+https://github.com/LMCache/LMCache

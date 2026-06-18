@@ -1821,3 +1821,111 @@ Kage + existing note-taking/documentation tools creates an offline-first researc
 - **Novelty:** 80/100 (new approach to old problem, under-discovered, explosive growth)
 - **Star velocity:** 466★/day (🔥 hot)
 - **Contribution potential:** MEDIUM (bug fixes, documentation improvements)
+
+
+---
+
+## [Zvec](https://github.com/alibaba/zvec)
+
+> Lightning-fast in-process vector database from Alibaba — embed directly into your application. Dense, sparse, full-text, and hybrid search in one query.
+
+- **Stars:** 11,177 (↑~344/day) | **Language:** C++ (Python/Node.js/Go/Rust SDKs) | **License:** Apache-2.0
+- **Last commit:** 2026-06-15
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 87/100
+
+### What It Does
+Zvec is an open-source, in-process vector database built by Alibaba Group — embed it directly into your application as a library with zero external services. It supports dense vectors, sparse vectors, full-text search (FTS), and hybrid search in a single query, all backed by durable WAL-based storage. Battle-tested within Alibaba's production infrastructure, it ships as a single library with official SDKs for Python, Node.js, Go, Rust, and Dart/Flutter.
+
+### Why Now
+Vector databases are becoming essential infrastructure for AI applications, but most require running a separate server process (Pinecone, Weaviate, Qdrant) or complex distributed setups. Zvec's in-process model eliminates deployment overhead — you get vector search with the simplicity of `pip install zvec`. With the v0.5.0 release adding FTS, hybrid retrieval, and DiskANN index support, it now competes with server-based solutions while keeping operational complexity near zero.
+
+### Why It Matters
+For developers building AI applications with semantic search, RAG, or recommendation systems, running a separate vector database server adds deployment complexity, latency, and cost. Zvec's in-process approach means no server to manage, no network calls for queries, and no Docker containers to orchestrate — just import a library and start searching. Combined with its production-grade durability (WAL), concurrent access support, and Alibaba's backing, it's a credible alternative to both managed services and server-based open-source options.
+
+### Who Should Care
+- Solo developers building AI apps without infrastructure budget
+- RAG pipeline builders who want zero-config vector storage
+- Teams deploying to edge devices or serverless environments
+- Anyone who wants vector search without managing a separate database
+- Mobile/desktop app developers needing local semantic search
+
+### Execution Pattern
+```bash
+# Install
+pip install zvec
+
+# Create collection and insert data
+python3 -c "
+import zvec
+schema = zvec.CollectionSchema(
+    name='my_collection',
+    vectors=zvec.VectorSchema('embedding', zvec.DataType.VECTOR_FP32, 384)
+)
+collection = zvec.create_and_open(path='./zvec_data', schema=schema)
+collection.insert([
+    zvec.Doc(id='doc_1', vectors={'embedding': [0.1]*384}),
+])
+results = collection.query(zvec.VectorQuery('embedding', vector=[0.2]*384), topk=10)
+print(results)
+"
+```
+
+For Node.js: `npm install @zvec/zvec`. For Go: `go get github.com/zvec-ai/zvec-go`.
+
+### Skill Potential
+Yes — in-process vector database with consistent CLI/API interface, clear automation potential for RAG pipelines, and integration with agent memory systems.
+
+- **Discovered:** 2026-06-19 via GitHub Trending (credibility: 1.00)
+- **Confidence:** HIGH (Alibaba-backed, active commits, 344★/day, multi-language SDKs, comprehensive docs)
+- **Novelty:** 85/100 (in-process vector DB is a genuinely differentiated approach; FTS + hybrid search in one library is rare)
+- **Star velocity:** 344★/day (📈 growing)
+
+
+---
+
+## [LMCache](https://github.com/LMCache/LMCache)
+
+> KV cache management layer for scalable LLM inference — reduces TTFT and improves throughput via persistent, tiered cache offloading and reuse.
+
+- **Stars:** 9,339 (↑~1,214/day) | **Language:** Python/C++ | **License:** Apache-2.0
+- **Last commit:** 2026-06-16
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 85/100
+
+### What It Does
+LMCache is a vendor-neutral KV cache management layer for LLM inference that turns KV cache from temporary state into reusable, persistent AI-native knowledge. It offloads KV caches from GPU memory into a tiered storage hierarchy (CPU RAM, local SSD, Redis, S3, InfiniStore) and reuses them across requests, sessions, and engine instances. The result is dramatically reduced time-to-first-token (TTFT) and increased throughput, especially for long-context agentic, multi-turn conversation, and RAG workloads.
+
+### Why Now
+As LLMs move to production with million-token contexts and multi-turn agentic workflows, the memory cost of KV cache is the primary bottleneck. Traditional serving re-computes KV cache for every request — wasteful and slow. LMCache's persistent tiered caching removes redundant prefill, reduces GPU memory pressure, and enables cache sharing across serving engines. With adoption from NVIDIA Dynamo, PyTorch Foundation, and AMD, it's becoming standard infrastructure for production LLM deployments.
+
+### Why It Matters
+Long-context LLM inference is prohibitively expensive without KV cache reuse. LMCache directly attacks the bottleneck — reducing prefill computation by storing and reusing KV caches across sessions. Its engine-independent architecture (standalone daemon process) means KV cache survives inference engine crashes, and its pluggable storage backends support everything from local RAM to S3-compatible object storage. The vendor neutrality means teams can switch serving engines (vLLM, SGLang) without rebuilding cache infrastructure.
+
+### Who Should Care
+- Teams running production LLM serving with long-context workloads
+- RAG pipeline operators who want to reduce per-request latency
+- Anyone deploying agentic systems with multi-turn conversations
+- Infrastructure engineers optimizing GPU memory utilization
+- Developers working with million-token context applications
+
+### Execution Pattern
+```bash
+# Install
+pip install lmcache
+
+# Run LMCache as a standalone daemon (multi-process mode)
+lmcache serve --config lmcache.yaml
+
+# Use it with vLLM or SGLang
+# vLLM: set VLLM_USE_LMCACHE=1
+# SGLang: --enable-lmcache
+```
+
+### Skill Potential
+Yes — CLI/server with clear automation potential for LLM infrastructure optimization, cache management, and production deployment.
+
+- **Discovered:** 2026-06-19 via GitHub Trending (credibility: 1.00)
+- **Confidence:** HIGH (PyTorch Foundation member, NVIDIA Dynamo integration, active commits, comprehensive docs)
+- **Novelty:** 75/100 (KV cache management is an established problem; tiered persistent caching and vendor neutrality are differentiated)
+- **Star velocity:** 1,214★/day (🔥 hot)
