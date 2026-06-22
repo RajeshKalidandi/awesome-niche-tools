@@ -4,6 +4,62 @@
 
 ---
 
+## [deer-flow](https://github.com/bytedance/deer-flow)
+
+> Long-horizon SuperAgent harness with sandboxes, memories, tools, and subagents
+
+- **Stars:** 72,500 (+2,353/day) | **Language:** TypeScript/Python | **License:** Apache-2.0
+- **Last commit:** 2026-06-21
+- **Source credibility weight:** 1.00 (GitHub Trending)
+- **Relevance score:** 98/100
+
+### What It Does
+ByteDance's explosive SuperAgent framework for long-horizon tasks. Features sandboxed execution environments, persistent memory management, tool integration, and multi-agent coordination. Designed for complex, multi-step AI agent workflows with enterprise-grade reliability.
+
+### Why Now
+The rapid acceleration of agent-based AI systems has created demand for frameworks that can handle long-horizon tasks with proper isolation, memory management, and tool integration. deer-flow's massive growth (72.5K stars in one day) indicates a critical need for production-grade agent frameworks with enterprise features.
+
+### Why It Matters
+This framework unlocks new capabilities for AI agents that need to coordinate across multiple days/weeks while maintaining state, using tools, and working in sandboxed environments. It represents the next evolution beyond short-horizon agent responses to sustained, complex problem-solving.
+
+### Who Should Care
+- AI agent framework developers building long-horizon capabilities
+- Teams deploying enterprise AI agents requiring persistent memory
+- Organizations needing sandboxed agent execution environments
+- Developers working with multi-step agent workflows and tool integration
+
+### Execution Pattern
+```bash
+# Install
+pip install deer-flow
+
+# Basic agent setup
+deer-flow init my-project --model openai/gpt-4
+
+# Create long-horizon task
+deer-flow task "Analyze quarterly business trends and provide strategic recommendations"
+
+# Monitor progress
+deer-flow monitor my-project
+
+# Export results
+deer-flow export my-project --format json > results.json
+```
+
+### Composable Stack Potential
+**Code Intelligence Stack:** deer-flow + existing curation tools
+- deer-flow provides agent orchestration and memory management
+- Existing tools (like DeusData/codebase-memory-mcp) provide semantic code indexing
+- Integration enables comprehensive codebase analysis with persistent agent state
+
+This combination allows developers to query entire codebases as knowledge graphs while maintaining conversational context across multiple interaction sessions.
+
+**Research + Production Stack:** deer-flow + Open WebUI + n8n
+- deer-flow for agent execution
+- Open WebUI for AI interface
+- n8n for workflow automation
+- Enables end-to-end AI-powered research and production workflows with agent orchestration
+
 ## [BB-Browser](https://github.com/epiral/bb-browser)
 
 > Your browser is the API. CLI + MCP server for AI agents to control Chrome with your login state.
